@@ -56,9 +56,16 @@ namespace Algorithms.Problems
 
         private static void ShowMaxProfitPairs(List<BuySellInterval> Intervals)
         {
-            foreach (BuySellInterval bsi in Intervals)
+            if (Intervals.Count > 0)
             {
-                Console.WriteLine(bsi.Buy.ToString() + "," + bsi.Sell.ToString());
+                foreach (BuySellInterval bsi in Intervals)
+                {
+                    Console.WriteLine(bsi.Buy.ToString() + "," + bsi.Sell.ToString());
+                }
+            }
+            else
+            {
+                Console.WriteLine("No Luck");
             }
         }
         #endregion Input and Output Funtions 
