@@ -1,4 +1,6 @@
 ﻿using System;
+using Algorithms.Entities;
+using System.Collections.Generic;
 
 namespace Algorithms.Problems
 {
@@ -10,15 +12,22 @@ namespace Algorithms.Problems
             //MaxDiffWithMinbeforeMax maxdiff = new MaxDiffWithMinbeforeMax();
             //var output = maxdiff.SimpleWithTwoLoops(input, input.Length);
             //ShowResult(output);
+
+            //var input = TakeInput();
+            //MaxDiffWithMinbeforeMax maxdiff = new MaxDiffWithMinbeforeMax();
+            //var output = maxdiff.EfficientWithMinValueTracking(input, input.Length);
+            //ShowResult(output);
+
             var input = TakeInput();
-            MaxDiffWithMinbeforeMax maxdiff = new MaxDiffWithMinbeforeMax();
-            var output = maxdiff.EfficientWithMinValueTracking(input, input.Length);
-            ShowResult(output);
+            BuySellWithMaxProfit bswmp = new BuySellWithMaxProfit();
+            var output = bswmp.BuySellPairsWithMaxProfit(input, input.Length);
+            ShowMaxProfitPairs(output);
+
             Console.Read();
 
         }
 
-        #region Input and Output Funtions for Finding Max Difference
+        #region Input and Output Funtions 
         private static long[] TakeInput()
         {
             Console.WriteLine("Please input numbers seperated by comma");
@@ -44,6 +53,14 @@ namespace Algorithms.Problems
             Console.Write(arrResult.ToString());
              
         }
-        #endregion Input and Output Funtions for Finding Max Difference
+
+        private static void ShowMaxProfitPairs(List<BuySellInterval> Intervals)
+        {
+            foreach (BuySellInterval bsi in Intervals)
+            {
+                Console.WriteLine(bsi.Buy.ToString() + "," + bsi.Sell.ToString());
+            }
+        }
+        #endregion Input and Output Funtions 
     }
 }
