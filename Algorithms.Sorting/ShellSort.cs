@@ -6,7 +6,7 @@ namespace Algorithms.Sorting
 {
     class ShellSort
     {
-        public int[] ShellSort1(int[] arrNumbers, int iMaxValue)
+        public int[] ShellSort1(int[] arrNumbers, int arrLength)
         {
             int i, j, iIndex;
             int iIncrement = 3;
@@ -14,7 +14,7 @@ namespace Algorithms.Sorting
             while (iIncrement > 0)
             {
 
-                for (i = 1; i < iMaxValue; i++)
+                for (i = 1; i < arrLength; i++)
                 {
                     iIndex = arrNumbers[i];
                     j = i;

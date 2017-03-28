@@ -6,11 +6,11 @@ namespace Algorithms.Sorting
 {
     class InsertionSort
     {
-        public int[] InsertionSort1(int[] arrNumbers, int iMaxValue)
+        public int[] InsertionSort1(int[] arrNumbers, int arrLength)
         {
             int j, iIndex;
 
-            for (int i = 1; i < iMaxValue; i++)
+            for (int i = 1; i < arrLength; i++)
             {
                 iIndex = arrNumbers[i];
                 j = i;
