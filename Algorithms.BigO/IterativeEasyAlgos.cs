@@ -218,7 +218,7 @@ namespace Algorithms.BigO
         ///  k = 1 : n=4: j = 2,4 : executed n*2 times
         ///  k = 2 : n=16: j = 2,4,16 : executed n*3 times
         ///  k = 3 : n=256 : j = 2,4,16,256 : executed n*4 times 
-        ///  Total Execution  Time : n*(k+1) where k= log log n
+        ///  Total Execution  Time : n*(k+1) where k = log log n
         ///  
         /// Time Complexity O(n  log  log n base 2) 
         /// </summary>
