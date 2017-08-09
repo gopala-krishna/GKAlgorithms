@@ -47,7 +47,7 @@ namespace Algorithms.BigO
         ///  k = log n
         /// Time Complexity O(logn base 2)
         /// </summary>
-        public void Method8()
+        public void Method4()
         {
             int n = int.MaxValue;
             for (int i = 1; i < n; i=i*2)
@@ -66,7 +66,7 @@ namespace Algorithms.BigO
         /// 
         /// Time Complexity O(n log n)
         /// </summary>
-        public void Method11()
+        public void Method5()
         {
             int n = int.MaxValue;
             for (int i = 1; i <= n; i++)
@@ -83,7 +83,7 @@ namespace Algorithms.BigO
         /// Time Complexity O(log n base 2)
         /// if j=m  then Time Complexity O(log n base m)
         /// </summary>
-        public void Method10()
+        public void Method6()
         {
             int n = int.MaxValue; int j = 2;
             while (n > 1)
@@ -95,7 +95,7 @@ namespace Algorithms.BigO
         /// <summary>
         /// Time Complexity O(n Square)
         /// </summary>
-        public void Method4()
+        public void Method7()
         {
             int n = int.MaxValue;
             for (int i = 1; i < n; i++)
@@ -110,13 +110,13 @@ namespace Algorithms.BigO
         /// <summary>
         /// i-> 1  2  3  4  5..................k
         /// j-> 1  3  6 10 15.................n
-        /// 
+        ///
         /// n =(k*(k+1))/2
         /// 
         /// Time Complexity O(Sqrt n)
         /// 
         /// </summary>
-        public void Method5()
+        public void Method8()
         {
             int i = 1; int j = 1; int n = int.MaxValue;
 
@@ -142,7 +142,7 @@ namespace Algorithms.BigO
         /// Time Complexity O(n Square)
         /// 
         /// </summary>
-        public void Method6()
+        public void Method9()
         {
              int n = int.MaxValue;
 
@@ -170,7 +170,7 @@ namespace Algorithms.BigO
         /// Time Complexity O(n exp 4)
         /// 
         /// </summary>
-        public void Method7()
+        public void Method10()
         {
             int n = int.MaxValue;
 
@@ -190,13 +190,13 @@ namespace Algorithms.BigO
 
         /// <summary>
         /// First forloop executes n/2 times
-        /// Second for loop executes  n/2 times
+        /// Second for loop10executes  n/2 times
         /// Third  for loop executes logn times
         /// 
         /// Time Complexity O(n  Squree log n base 2)
         /// 
         /// </summary>
-        public void Method9()
+        public void Method11()
         {
             int n = int.MaxValue;
 
