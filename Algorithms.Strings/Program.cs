@@ -6,8 +6,8 @@ namespace Algorithms.Strings
     {
         static void Main(string[] args)
         {
-            //StringComparisions sc = new StringComparisions();
-            //sc. TryStringComparisions();
+            StringComparisions sc = new StringComparisions();
+            sc. TryStringComparisions();
             
 
             StringAlgos strAlgos = new StringAlgos();

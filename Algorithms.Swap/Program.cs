@@ -8,8 +8,6 @@ namespace Algorithms.Swap
         {
             var input = TakeSwapInput();
 
-           
-
             //SwapWithTempVariable swapTemp = new SwapWithTempVariable();
             //var output = swapTemp.SwapUsingTempVar(input);
 
