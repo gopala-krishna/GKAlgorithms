@@ -11,7 +11,6 @@ namespace Algorithms.Search
             int minVal = 0;
             int maxVal = inputArr.Length;
             return BinarySearchRecursive(inputArr, searchVal, minVal, maxVal);
-
            
         }
 
