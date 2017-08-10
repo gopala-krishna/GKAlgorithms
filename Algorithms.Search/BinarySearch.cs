@@ -22,7 +22,7 @@ namespace Algorithms.Search
 
             if (inputArr[midVal] < searchVal) return BinarySearchRecursive(inputArr, searchVal, midVal + 1, maxVal);
 
-            if (inputArr[midVal] > searchVal) return BinarySearchRecursive(inputArr, searchVal, minVal, midVal + 1);
+            if (inputArr[midVal] > searchVal) return BinarySearchRecursive(inputArr, searchVal, minVal, midVal - 1);
 
             return -1;
         }

@@ -30,15 +30,15 @@ namespace Algorithms.Search
             //Console.WriteLine(output);
             //Console.Read();
 
-            //var input = TakeSearchInput();
-            //var output = js.JumpSearch1(input, 12);
-            //Console.WriteLine(output);
-            //Console.Read();
-
             var input = TakeSearchInput();
-            var output = es.ExponentialSearch1(input, 12);
+            var output = js.JumpSearch1(input, 12);
             Console.WriteLine(output);
             Console.Read();
+
+            //var input = TakeSearchInput();
+            //var output = es.ExponentialSearch1(input, 12);
+            //Console.WriteLine(output);
+            //Console.Read();
 
 
         }
