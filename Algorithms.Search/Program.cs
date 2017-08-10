@@ -10,7 +10,8 @@ namespace Algorithms.Search
             SearchMaxAndMinValuesInArray smm = new SearchMaxAndMinValuesInArray();
             LinearSearch ls = new LinearSearch();
             BinarySearch bs = new BinarySearch();
-
+            JumpSearch js = new JumpSearch();
+            ExponentialSearch es = new ExponentialSearch();
             //var input = TakeSearchInput();
             //var output = smm.GetMaxMinUsingLinearSearch(input, input.Length);
             //ShowSearchResult(output);
@@ -24,8 +25,18 @@ namespace Algorithms.Search
             //Console.WriteLine(output);
             //Console.Read();
 
+            //var input = TakeSearchInput();
+            //var output = bs.BinarySearch1(input, 12);
+            //Console.WriteLine(output);
+            //Console.Read();
+
+            //var input = TakeSearchInput();
+            //var output = js.JumpSearch1(input, 12);
+            //Console.WriteLine(output);
+            //Console.Read();
+
             var input = TakeSearchInput();
-            var output = bs.BinarySearch1(input, 12);
+            var output = es.ExponentialSearch1(input, 12);
             Console.WriteLine(output);
             Console.Read();
 
