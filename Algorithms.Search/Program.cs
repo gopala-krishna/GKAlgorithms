@@ -8,16 +8,27 @@ namespace Algorithms.Search
         static void Main(string[] args)
         {
             SearchMaxAndMinValuesInArray smm = new SearchMaxAndMinValuesInArray();
+            LinearSearch ls = new LinearSearch();
+            BinarySearch bs = new BinarySearch();
 
             //var input = TakeSearchInput();
             //var output = smm.GetMaxMinUsingLinearSearch(input, input.Length);
             //ShowSearchResult(output);
 
-            var input = TakeSearchInput();
-            var output = smm.GetMaxMinUsingBinarySearch(input, 0, input.Length -1);
-            ShowSearchResult(output);
+            //var input = TakeSearchInput();
+            //var output = smm.GetMaxMinUsingBinarySearch(input, 0, input.Length -1);
+            //ShowSearchResult(output);
 
+            //var input = TakeSearchInput();
+            //var output = ls.LinearSearch1(input, 12);
+            //Console.WriteLine(output);
+            //Console.Read();
+
+            var input = TakeSearchInput();
+            var output = bs.BinarySearch1(input, 12);
+            Console.WriteLine(output);
             Console.Read();
+
 
         }
 

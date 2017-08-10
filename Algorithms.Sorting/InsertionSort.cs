@@ -20,7 +20,6 @@ namespace Algorithms.Sorting
                     j = j - 1;
                 }
                 arrNumbers[j] = iIndex;
-
             }
             return arrNumbers;
         }
