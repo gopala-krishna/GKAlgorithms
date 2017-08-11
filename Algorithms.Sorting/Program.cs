@@ -15,11 +15,15 @@ namespace Algorithms.Sorting
             //InsertionSort ins = new InsertionSort();
             //var output = ins.InsertionSort1(input, input.Length);
 
-            ShellSort shs = new ShellSort();
-            var output = shs.ShellSort1(input, input.Length);
+            //ShellSort shs = new ShellSort();
+            //var output = shs.ShellSort1(input, input.Length);
 
 
-            ShowSortingResult(output);
+            QuickSort shs = new QuickSort();
+            shs.QuickSort1(input, input.Length);
+
+
+            //ShowSortingResult(output);
             Console.Read();
 
         }
