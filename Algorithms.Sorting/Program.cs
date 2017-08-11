@@ -20,8 +20,7 @@ namespace Algorithms.Sorting
 
 
             QuickSort shs = new QuickSort();
-            shs.QuickSort1(input, input.Length);
-
+            shs.QuickSort1(input);
 
             //ShowSortingResult(output);
             Console.Read();
