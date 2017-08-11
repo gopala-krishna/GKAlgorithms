@@ -1,6 +1,7 @@
 ﻿using System;
 using Algorithms.Entities;
 
+
 namespace Algorithms.Search
 {
     class Program
@@ -30,17 +31,24 @@ namespace Algorithms.Search
             //Console.WriteLine(output);
             //Console.Read();
 
-            var input = TakeSearchInput();
-            var output = js.JumpSearch1(input, 12);
-            Console.WriteLine(output);
-            Console.Read();
-
             //var input = TakeSearchInput();
-            //var output = es.ExponentialSearch1(input, 12);
+            //var output = js.JumpSearch1(input, 12);
             //Console.WriteLine(output);
             //Console.Read();
 
+            var input = TakeSearchInput();
+            try
+            {
+                var output = es.ExponentialSearch1(input, 12);
+                Console.WriteLine(output);
+                Console.Read();
 
+            }
+            catch (Exception ex)
+            {
+                Console.WriteLine(ex.Message);
+            }
+            
         }
 
         #region Input and Output Funtions for Search
