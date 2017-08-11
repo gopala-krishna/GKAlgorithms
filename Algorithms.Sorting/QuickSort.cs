@@ -7,12 +7,10 @@ namespace Algorithms.Sorting
     class QuickSort
     {
         /// <summary>
-        ///  7 3 4 9 5 1 6   
-        ///  3 7 4 9 5 1 6   
-        ///  3 4 7 9 5 1 6   
-        ///  3 4 5 9 7 1 6 
-        ///  3 4 5 1 7 9 6
-        ///  3 4 5 1 6 9 7
+        ///  7 3 4 9
+        ///  
+        ///  
+        /// 
         /// </summary>
         /// <param name="InputArr"></param>
         /// <param name="arrLength"></param>
@@ -21,7 +19,7 @@ namespace Algorithms.Sorting
         {
             int start = 0; int end = arrLength-1;
 
-            QuickSortRecursive(InputArr, start, end);
+           QuickSortRecursive(InputArr, start, end);
 
             for (int i = 0; i < InputArr.Length; i++)
             {
@@ -37,6 +35,8 @@ namespace Algorithms.Sorting
                 QuickSortRecursive(InputArr, start, partitionedIndex - 1);
                 QuickSortRecursive(InputArr, partitionedIndex + 1, end);
             }
+
+            //return InputArr;
         }
 
         public int Partition(int[] inputArr, int start, int end)
@@ -44,20 +44,21 @@ namespace Algorithms.Sorting
             
            int pivot = inputArr[end];  int i = start -1; int temp; 
 
-            for (int j = start; j < end -1; j++)
+            for (int j = start; j < end; j++)
             {
                 if( inputArr[j] <= pivot)
                 {
-                    i++;
+                    i = i + 1;
                     temp = inputArr[i];
                     inputArr[i] = inputArr[j];
                     inputArr[j] = temp;
                 }
-                temp = inputArr[i+1];
-                inputArr[i+1] = pivot;
-                pivot = temp;
-            }
-            return i+1;
+             }
+            temp = inputArr[i+1];
+            inputArr[i+1] = pivot;
+            pivot = temp;
+
+            return i +1;
         }
     }
 }
