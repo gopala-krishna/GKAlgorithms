@@ -6,6 +6,11 @@ namespace Algorithms.Sorting
 {
     class MergeSort
     {
+        /// <summary>
+        ///  Time Complexity : O(n log n)
+        ///  Space Complexity : O(n) (merge process : n stack : logn  total = n+logn) so o(n)
+        /// </summary>
+        /// <param name="input"></param>
         public static void MergeSort1(int[] input)
         {
             MergeSortRecursive(input, 0, input.Length - 1);
@@ -15,7 +20,6 @@ namespace Algorithms.Sorting
                 Console.Write(input[i] + ",");
             }
         }
-
 
         public static void MergeSortRecursive(int[] input, int low, int high)
         {
