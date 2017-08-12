@@ -22,8 +22,8 @@ namespace Algorithms.Sorting
             //QuickSort shs = new QuickSort();
             //shs.QuickSort1(input);
 
-            MergeSort ms = new MergeSort();
-            ms.MergeSort1(input);
+            //MergeSort. ms = new MergeSort();
+            MergeSort.MergeSort1(input);
 
             //ShowSortingResult(output);
             Console.Read();
