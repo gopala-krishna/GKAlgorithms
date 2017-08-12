@@ -13,22 +13,36 @@ namespace Algorithms.Math
         /// </summary>
         /// <param name="n"></param>
 
-        //public void FibonacciSeriesIterative(int n)
-        //{
-        //    int i = 0; int j = 1; int k = 0;
-        //    Console.WriteLine(i + "," + j + ",");
+        public void FibonacciSeriesIterative(int n)
+        {
+            int i = 0; int j = 1; int k = 0;
 
-        //    for (int m = 2; m < n; m++)
-        //    {
-        //        k = i + j;
-        //        Console.WriteLine(k + ",");
-        //        i = j;
-        //        j = k;
-        //    }
-        //}
+            for (int m = 2; m < n; m++)
+            {
+                k = i + j;
+                Console.Write(k + ",");
+                i = j;
+                j = k;
+            }
+        }
 
+        /// <summary>
+        ///  Recursive Fibonacci Series
+        /// </summary>
+        /// <param name="n"></param>
+        public void FibonacciSeriesRecursive(int n)
+        {
+            FibonacciRecursive(0, 1, 1, n);
+        }
 
-
+        public void FibonacciRecursive(int a, int b, int counter, int n)
+        {
+            if (counter <= n)
+            {
+                Console.Write(a + ",");
+                FibonacciRecursive(b, a + b, counter+1, n);
+            }
+        }
         /// <summary>
         ///  nth Fibonacci number Iterative
         /// </summary>

@@ -23,7 +23,8 @@ namespace Algorithms.Math
             Console.WriteLine("Please input an interger");
             var input = Console.ReadLine();
             Fibonacci fb = new Fibonacci();
-            fb.FibonacciSeriesIterative(Convert.ToInt32(input));
+            // fb.FibonacciSeriesIterative(Convert.ToInt32(input));
+            fb.FibonacciSeriesRecursive(Convert.ToInt32(input));
 
             Console.Read();
         }
