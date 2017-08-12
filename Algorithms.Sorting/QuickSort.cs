@@ -6,6 +6,11 @@ namespace Algorithms.Sorting
 {
     class QuickSort
     {
+        /// <summary>
+        /// Time Complexity : O(n*n) but mostly O(nlogn)
+        /// Space Complexity : O(logn) 
+        /// </summary>
+        /// <param name="inputArr"></param>
 
         public void QuickSort1(int[] inputArr)
         {
