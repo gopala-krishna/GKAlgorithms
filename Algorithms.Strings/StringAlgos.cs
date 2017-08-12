@@ -85,8 +85,6 @@ namespace Algorithms.Strings
              string searchWithinThis = "ABCDEFGHIJKLMNOP";
              string word = "NiP";
 
-            
-
             for (int i = 0; i < searchWithinThis.Length - word.Length+1; i++)
             {
                 // Match word at current position
