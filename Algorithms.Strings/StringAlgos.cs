@@ -29,7 +29,7 @@ namespace Algorithms.Strings
             return sOutparstring;
         }
 
-        public string ReverseWords(string str)
+        public string ReverseWordsCSharp(string str)
         {
             char[] charArray = str.ToCharArray();
 
@@ -52,6 +52,24 @@ namespace Algorithms.Strings
                 sb.Append(" ");
             }
             return sb.ToString();
+        }
+
+        public void ReverseWords(string str)
+        {
+            int k = 0; char[] word = new char[str.Length];
+            for (int i = str.Length -1; i >= 0; i--)
+            {
+                    word[k] = str[i];
+                    k++;
+                    if (str[i] == ' ' || i == 0)
+                    {
+                        for (int m = word.Length -1; m >= 0; m--)
+                        {
+                            Console.Write(word[m] +" ");
+                        }
+                    k = 0; word = new char[str.Length];
+                }
+            }
         }
 
         public  int SearchSubString(string searchWithinThis, string searchForThis)
