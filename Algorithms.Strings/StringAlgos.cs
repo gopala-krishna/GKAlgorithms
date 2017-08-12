@@ -56,7 +56,7 @@ namespace Algorithms.Strings
 
         public void ReverseWords(string str)
         {
-            int k = 0; char[] word = new char[str.Length];
+            int k = 0; char[] word = new char[8];
             for (int i = str.Length -1; i >= 0; i--)
             {
                     word[k] = str[i];
@@ -67,17 +67,47 @@ namespace Algorithms.Strings
                         {
                             Console.Write(word[m] +" ");
                         }
-                    k = 0; word = new char[str.Length];
+                    k = 0; word = new char[8];
                 }
             }
         }
 
-        public  int SearchSubString(string searchWithinThis, string searchForThis)
+        public  int SearchSubStringCSharp(string searchWithinThis, string searchForThis)
         {
             //string searchWithinThis = "ABCDEFGHIJKLMNOP";
            // string searchForThis = "DEF";
             int firstCharacter = searchWithinThis.IndexOf(searchForThis);
             return firstCharacter;
+        }
+
+        public void SearchSubString()
+        {
+             string searchWithinThis = "ABCDEFGHIJKLMNOP";
+             string word = "NiP";
+
+            
+
+            for (int i = 0; i < searchWithinThis.Length - word.Length+1; i++)
+            {
+                // Match word at current position
+                int found = 1;
+                for (int j = 0; j < word.Length; j++)
+                {
+                    
+                    // If word is not matched
+                    if (searchWithinThis[i + j] != word[j])
+                    {
+                        found = 0;
+                        break;
+                    }
+                }
+                // If word have been found then print found message
+                if (found == 1)
+                {
+                    Console.WriteLine("found");
+                }
+            }
+          
         }
 
         public bool Palindrome(string str)

@@ -18,7 +18,9 @@ namespace Algorithms.Strings
             //Console.WriteLine(strAlgos.Palindrome("abcba"));
             //Console.WriteLine(strAlgos.SearchSubString("ABCDEFGHIJKLMNOP","DEF"));
 
-            strAlgos.ReverseWords("Gopala is great");
+            strAlgos.SearchSubString();
+
+            //strAlgos.ReverseWords("Gopala krishna is great");
 
             Console.Read();
         }
