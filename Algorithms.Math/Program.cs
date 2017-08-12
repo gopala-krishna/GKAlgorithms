@@ -10,10 +10,20 @@ namespace Algorithms.Math
     {
         static void Main(string[] args)
         {
+            //Console.WriteLine("Please input an interger");
+            //var input = Console.ReadLine();
+            //PrimeNumbers primes = new PrimeNumbers();
+            //primes.SieveofEratosthenes(Convert.ToInt32(input));
+
+            //Console.WriteLine("Please input an interger");
+            //var input = Console.ReadLine();
+            //Fibonacci fb = new Fibonacci();
+            //Console.WriteLine(fb.NthFibonacciIterative(Convert.ToInt32(input)));
+
             Console.WriteLine("Please input an interger");
             var input = Console.ReadLine();
-            PrimeNumbers primes = new PrimeNumbers();
-            primes.SieveofEratosthenes(Convert.ToInt32(input));
+            Fibonacci fb = new Fibonacci();
+            fb.FibonacciSeriesIterative(Convert.ToInt32(input));
 
             Console.Read();
         }
