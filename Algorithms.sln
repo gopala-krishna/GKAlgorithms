@@ -5,8 +5,6 @@ VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Sorting", "Algorithms.Sorting\Algorithms.Sorting.csproj", "{9A57B220-4CA9-4224-A459-107602F01F56}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Factorial", "Algorithms.Factorial\Algorithms.Factorial.csproj", "{0334A881-EC1C-4A96-AE8E-EBB744F23778}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Search", "Algorithms.Search\Algorithms.Search.csproj", "{DCAC19C4-F6F7-4539-A864-1FBD1D3E6ED8}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Swap", "Algorithms.Swap\Algorithms.Swap.csproj", "{12253075-AEA7-4F1F-9551-F64F71260D68}"
@@ -32,6 +30,8 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{
 		..\..\Users\Gopala\Desktop\Corner Cases in Coding.docx = ..\..\Users\Gopala\Desktop\Corner Cases in Coding.docx
 	EndProjectSection
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Math", "Algorithms.Math\Algorithms.Math.csproj", "{2FC32C3C-C45C-4BAB-90C0-18E9D7CEC752}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -42,10 +42,6 @@ Global
 		{9A57B220-4CA9-4224-A459-107602F01F56}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{9A57B220-4CA9-4224-A459-107602F01F56}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{9A57B220-4CA9-4224-A459-107602F01F56}.Release|Any CPU.Build.0 = Release|Any CPU
-		{0334A881-EC1C-4A96-AE8E-EBB744F23778}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{0334A881-EC1C-4A96-AE8E-EBB744F23778}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{0334A881-EC1C-4A96-AE8E-EBB744F23778}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{0334A881-EC1C-4A96-AE8E-EBB744F23778}.Release|Any CPU.Build.0 = Release|Any CPU
 		{DCAC19C4-F6F7-4539-A864-1FBD1D3E6ED8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{DCAC19C4-F6F7-4539-A864-1FBD1D3E6ED8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DCAC19C4-F6F7-4539-A864-1FBD1D3E6ED8}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -74,6 +70,10 @@ Global
 		{90E5451E-3E0F-4528-AB12-576E2FB3BC75}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{90E5451E-3E0F-4528-AB12-576E2FB3BC75}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{90E5451E-3E0F-4528-AB12-576E2FB3BC75}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FC32C3C-C45C-4BAB-90C0-18E9D7CEC752}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FC32C3C-C45C-4BAB-90C0-18E9D7CEC752}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FC32C3C-C45C-4BAB-90C0-18E9D7CEC752}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FC32C3C-C45C-4BAB-90C0-18E9D7CEC752}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

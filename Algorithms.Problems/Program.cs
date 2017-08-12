@@ -18,10 +18,12 @@ namespace Algorithms.Problems
             //var output = maxdiff.EfficientWithMinValueTracking(input, input.Length);
             //ShowResult(output);
 
-            var input = TakeInput();
-            BuySellWithMaxProfit bswmp = new BuySellWithMaxProfit();
-            var output = bswmp.BuySellPairsWithMaxProfit(input, input.Length);
-            ShowMaxProfitPairs(output);
+
+            //var input = TakeInput();
+            //BuySellWithMaxProfit bswmp = new BuySellWithMaxProfit();
+            //var output = bswmp.BuySellPairsWithMaxProfit(input, input.Length);
+            //ShowMaxProfitPairs(output);
+            //ShowResult(output);
 
             Console.Read();
 
