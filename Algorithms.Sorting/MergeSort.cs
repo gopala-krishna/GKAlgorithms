@@ -25,7 +25,7 @@ namespace Algorithms.Sorting
         {
             if (low < high)
             {
-                int middle = (low +high )/ 2);
+                int middle = (low +high )/ 2;
                 MergeSortRecursive(input, low, middle);
                 MergeSortRecursive(input, middle + 1, high);
                 Merge(input, low, middle, high);

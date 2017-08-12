@@ -12,8 +12,8 @@ namespace Algorithms.Sorting
             //BubbleSort bs = new BubbleSort();
             //var output= bs.BubbleSort1(input, input.Length);
 
-            //InsertionSort ins = new InsertionSort();
-            //var output = ins.InsertionSort1(input, input.Length);
+            InsertionSort ins = new InsertionSort();
+            var output = ins.InsertionSort2(input, input.Length);
 
             //ShellSort shs = new ShellSort();
             //var output = shs.ShellSort1(input, input.Length);
@@ -23,9 +23,9 @@ namespace Algorithms.Sorting
             //shs.QuickSort1(input);
 
             //MergeSort. ms = new MergeSort();
-            MergeSort.MergeSort1(input);
+            //MergeSort.MergeSort1(input);
 
-            //ShowSortingResult(output);
+            ShowSortingResult(output);
             Console.Read();
 
         }
