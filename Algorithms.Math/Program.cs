@@ -26,12 +26,17 @@ namespace Algorithms.Math
             //// fb.FibonacciSeriesIterative(Convert.ToInt32(input));
             //fb.FibonacciSeriesRecursive(Convert.ToInt32(input));
 
+            //Console.WriteLine("Please input an interger");
+            //var input = Console.ReadLine();
+            //Factors fb = new Factors();
+            //// fb.FibonacciSeriesIterative(Convert.ToInt32(input));
+            //fb.PrintFactors(Convert.ToInt32(input));
+
             Console.WriteLine("Please input an interger");
             var input = Console.ReadLine();
-            Factors fb = new Factors();
-            // fb.FibonacciSeriesIterative(Convert.ToInt32(input));
-            fb.PrintFactors(Convert.ToInt32(input));
-
+            Magicumbers mn = new Magicumbers();
+            mn.MagicNumbers(Convert.ToInt32(input));
+            //mn.GetFactorsSum(Convert.ToInt32(input));
 
             Console.Read();
         }

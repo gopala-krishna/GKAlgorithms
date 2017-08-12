@@ -11,14 +11,14 @@ namespace Algorithms.Math
         public void PrintFactors(int n)
         {
             int i = 1;
-            while( i<= System.Math.Sqrt(n))
+            while (i <= System.Math.Sqrt(n))
             {
-                if(n%i == 0)
+                if (n % i == 0)
                 {
-                    if (n/ i == i)
+                    if (n / i == i)
                     {
-                        
-                        Console.Write(i + "," );
+
+                        Console.Write(i + ",");
                     }
                     else
                     {
@@ -27,6 +27,8 @@ namespace Algorithms.Math
                 }
                 i++;
             }
+            
         }
+        
     }
 }
