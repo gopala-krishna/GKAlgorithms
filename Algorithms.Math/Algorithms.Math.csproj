@@ -43,6 +43,7 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="Factorial.cs" />
+    <Compile Include="Factors.cs" />
     <Compile Include="Fibonacci.cs" />
     <Compile Include="PrimeNumbers.cs" />
     <Compile Include="Program.cs" />

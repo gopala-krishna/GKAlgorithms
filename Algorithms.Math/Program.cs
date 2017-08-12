@@ -20,11 +20,18 @@ namespace Algorithms.Math
             //Fibonacci fb = new Fibonacci();
             //Console.WriteLine(fb.NthFibonacciIterative(Convert.ToInt32(input)));
 
+            //Console.WriteLine("Please input an interger");
+            //var input = Console.ReadLine();
+            //Fibonacci fb = new Fibonacci();
+            //// fb.FibonacciSeriesIterative(Convert.ToInt32(input));
+            //fb.FibonacciSeriesRecursive(Convert.ToInt32(input));
+
             Console.WriteLine("Please input an interger");
             var input = Console.ReadLine();
-            Fibonacci fb = new Fibonacci();
+            Factors fb = new Factors();
             // fb.FibonacciSeriesIterative(Convert.ToInt32(input));
-            fb.FibonacciSeriesRecursive(Convert.ToInt32(input));
+            fb.PrintFactors(Convert.ToInt32(input));
+
 
             Console.Read();
         }
