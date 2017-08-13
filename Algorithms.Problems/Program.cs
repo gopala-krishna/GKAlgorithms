@@ -25,6 +25,11 @@ namespace Algorithms.Problems
             //ShowMaxProfitPairs(output);
             //ShowResult(output);
 
+            ClockAngle ca = new ClockAngle();
+            {
+                ca.HMClockAngle(39, 75);
+            }
+
 
             Console.Read();
 
