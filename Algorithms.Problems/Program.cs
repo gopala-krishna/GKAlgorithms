@@ -27,13 +27,14 @@ namespace Algorithms.Problems
 
             //ClockAngle ca = new ClockAngle();
             //ca.HMClockAngle(39, 75);
-            
-            MinimumSquares ms = new MinimumSquares();
-            ms.MinimumSquares1(13,29);
 
+            //MinimumSquares ms = new MinimumSquares();
+            //ms.MinimumSquares1(13,29);
+
+            StringsFromChars sfc = new StringsFromChars();
+            sfc.StringsFromChars1();
 
             Console.Read();
-
         }
 
         #region Input and Output Funtions 
