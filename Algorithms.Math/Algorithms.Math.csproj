@@ -46,6 +46,7 @@
     <Compile Include="Factorial.cs" />
     <Compile Include="Factors.cs" />
     <Compile Include="Fibonacci.cs" />
+    <Compile Include="KthSmallest.cs" />
     <Compile Include="Magicumbers.cs" />
     <Compile Include="PrimeFactors.cs" />
     <Compile Include="PrimeNumbers.cs" />

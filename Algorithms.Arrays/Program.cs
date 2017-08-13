@@ -10,10 +10,14 @@ namespace Algorithms.Arrays
     {
         static void Main(string[] args)
         {
-            SubArrayWithGivenSum sawgs = new SubArrayWithGivenSum();
+            //SubArrayWithGivenSum sawgs = new SubArrayWithGivenSum();
+            //var input = TakeSearchInput();
+            //sawgs.SubArrayWithGivenSum1(input, 6);
 
-            var input = TakeSearchInput();
-            sawgs.SubArrayWithGivenSum1(input, 6);
+            ClosestPair cp = new ClosestPair();
+            cp.ClosestPairsFromSortedArrays1();
+
+
             Console.Read();
         }
 
