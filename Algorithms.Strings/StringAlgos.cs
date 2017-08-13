@@ -179,19 +179,19 @@ namespace Algorithms.Strings
                 "ninety "
             };
 
-            string partsent = string.Empty;
+            string partSentence = string.Empty;
 
             if(n>19)
             {
-                partsent += ten[n / 10] + one[n % 10];
+                partSentence += ten[n / 10] + one[n % 10];
             }
             else
-                partsent += one[n % 10];
+                partSentence += one[n % 10];
 
             if (n>0)
-                partsent += word;
+                partSentence += word;
 
-            return partsent;
+            return partSentence;
         }
     }
 }
