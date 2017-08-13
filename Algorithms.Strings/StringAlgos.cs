@@ -121,7 +121,21 @@ namespace Algorithms.Strings
             return false;
         }
 
+        public void StringToASCII()
+        {
+            string s = "abcdefghijklmnopqrstuvwxyz";
 
+            for (int i = 0; i < s.Length; i++)
+            {
+                int n = s[i];
+
+                Console.WriteLine(n);
+            }
+
+            char c = (char)103;
+            Console.WriteLine(c);
+
+        }
 
     }
 }

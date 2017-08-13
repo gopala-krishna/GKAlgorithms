@@ -18,8 +18,10 @@ namespace Algorithms.Strings
             //Console.WriteLine(strAlgos.Palindrome("abcba"));
             //Console.WriteLine(strAlgos.SearchSubString("ABCDEFGHIJKLMNOP","DEF"));
 
-            strAlgos.SearchSubString();
+            //
+            //strAlgos.SearchSubString();
 
+            strAlgos.StringToNumbers();
             //strAlgos.ReverseWords("Gopala krishna is great");
 
             Console.Read();

@@ -38,12 +38,17 @@ namespace Algorithms.Math
             //mn.MagicNumbers(Convert.ToInt32(input));
             ////mn.GetFactorsSum(Convert.ToInt32(input));
 
+            //Console.WriteLine("Please input an interger");
+            //var input = Console.ReadLine();
+            //PrimeFactors pf = new PrimeFactors();
+            //pf.PrimeFactors1(Convert.ToInt32(input));
+            ////bool res = pf.IsPrime(Convert.ToInt32(input));
+            //mn.GetFactorsSum(Convert.ToInt32(input));
+
             Console.WriteLine("Please input an interger");
             var input = Console.ReadLine();
-            PrimeFactors pf = new PrimeFactors();
-            pf.PrintPrimeFactors(Convert.ToInt32(input));
-            //bool res = pf.IsPrime(Convert.ToInt32(input));
-            //mn.GetFactorsSum(Convert.ToInt32(input));
+            Factorial f = new Factorial();
+            f.DigitsCountFactorial(Convert.ToInt32(input));
 
             Console.Read();
         }

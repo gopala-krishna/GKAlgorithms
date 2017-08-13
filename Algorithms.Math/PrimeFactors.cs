@@ -8,7 +8,7 @@ namespace Algorithms.Math
 {
     class PrimeFactors
     {
-        public void PrintPrimeFactors(int n)
+        public void PrimeFactors1(int n)
         {
 
             int i = 1;
@@ -20,7 +20,7 @@ namespace Algorithms.Math
                     {
                         Console.Write(i + ",");
                     }
-                    
+
                     //if (n / i == i)
                     //{
                     //    if (IsPrime(i))
@@ -61,7 +61,11 @@ namespace Algorithms.Math
             }
             if (count > 1) return false; return true;
         }
+
+        }
+
+
     }
 
     
-}
+
