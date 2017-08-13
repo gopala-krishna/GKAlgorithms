@@ -25,10 +25,11 @@ namespace Algorithms.Problems
             //ShowMaxProfitPairs(output);
             //ShowResult(output);
 
-            ClockAngle ca = new ClockAngle();
-            {
-                ca.HMClockAngle(39, 75);
-            }
+            //ClockAngle ca = new ClockAngle();
+            //ca.HMClockAngle(39, 75);
+            
+            MinimumSquares ms = new MinimumSquares();
+            ms.MinimumSquares1(13,29);
 
 
             Console.Read();
