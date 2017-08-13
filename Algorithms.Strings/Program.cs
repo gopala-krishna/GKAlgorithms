@@ -18,13 +18,13 @@ namespace Algorithms.Strings
             //Console.WriteLine(strAlgos.Palindrome("abcba"));
             //Console.WriteLine(strAlgos.SearchSubString("ABCDEFGHIJKLMNOP","DEF"));
 
-            //
             //strAlgos.SearchSubString();
-            Console.WriteLine("Please input any number");
-            var input = Console.ReadLine();
+            //Console.WriteLine("Please input any number");
+            //var input = Console.ReadLine();
+            //strAlgos.NumberInWords(Convert.ToInt64(input));
+            ////strAlgos.ReverseWords("Gopala krishna is great");
 
-            strAlgos.NumberInWords(Convert.ToInt64(input));
-            //strAlgos.ReverseWords("Gopala krishna is great");
+            strAlgos.MetaStrings();
 
             Console.Read();
         }
