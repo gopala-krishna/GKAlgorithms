@@ -20,11 +20,34 @@ namespace Algorithms.Strings
 
             //
             //strAlgos.SearchSubString();
+            Console.WriteLine("Please input any number");
+            var input = Console.ReadLine();
 
-            strAlgos.StringToNumbers();
+            strAlgos.NumberInWords(Convert.ToInt64(input));
             //strAlgos.ReverseWords("Gopala krishna is great");
 
             Console.Read();
+        }
+
+        private static long[] TakeInput()
+        {
+            Console.WriteLine("Please input numbers seperated by comma");
+            string numbers = Console.ReadLine();
+            var arrRawInput = numbers.Split(new char[] { ',' });
+            long[] arrInput = new long[arrRawInput.Length];
+
+            if (numbers.Length > 0)
+            {
+                for (int i = 0; i < arrRawInput.Length; i++)
+                {
+                    arrInput[i] = Convert.ToInt32(arrRawInput[i]);
+                }
+            }
+            else
+            {
+                Console.WriteLine("Please input numbers seperated by ", " ");
+            }
+            return arrInput;
         }
     }
 }
