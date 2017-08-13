@@ -194,7 +194,6 @@ namespace Algorithms.Strings
             return partSentence;
         }
 
-
         public void MetaStrings()
         {
             string str1 = "abcdef"; string str2 = "aecdbf"; bool found = false;
@@ -218,11 +217,11 @@ namespace Algorithms.Strings
 
             if(found)
             {
-                Console.WriteLine("they are meta strings");
+                Console.WriteLine("They are meta strings");
             }
             else
             {
-                Console.WriteLine("they are not meta strings");
+                Console.WriteLine("They are not meta strings");
             }
 
 
