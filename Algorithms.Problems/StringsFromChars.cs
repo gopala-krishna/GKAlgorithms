@@ -32,7 +32,7 @@ namespace Algorithms.Problems
             {
 
                 // Next character of input added
-                String newPrefix = prefix + set[i];
+                string newPrefix = prefix + set[i];
 
                 // k is decreased, because we have added a new character
                 StringsFromCharsRecursive(set, newPrefix, charsSize, arrSize - 1);
