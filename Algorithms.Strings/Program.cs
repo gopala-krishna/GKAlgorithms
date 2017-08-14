@@ -10,7 +10,6 @@ namespace Algorithms.Strings
             //sc. TryStringComparisions();
             
 
-            StringAlgos strAlgos = new StringAlgos();
 
             //Console.WriteLine(strAlgos.ReverseString("Gopala"));
             //Console.WriteLine(strAlgos.ParallelReverseString("ParallelGopala"));
@@ -24,7 +23,7 @@ namespace Algorithms.Strings
             //strAlgos.NumberInWords(Convert.ToInt64(input));
             ////strAlgos.ReverseWords("Gopala krishna is great");
 
-            strAlgos.MetaStrings();
+            //strAlgos.MetaStrings();
 
             Console.Read();
         }
