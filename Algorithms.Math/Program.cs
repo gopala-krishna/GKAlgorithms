@@ -45,13 +45,13 @@ namespace Algorithms.Math
             ////bool res = pf.IsPrime(Convert.ToInt32(input));
             //mn.GetFactorsSum(Convert.ToInt32(input));
 
-            //Console.WriteLine("Please input an interger");
-            //var input = Console.ReadLine();
-            //Factorial f = new Factorial();
-            //f.DigitsCountFactorial(Convert.ToInt32(input));
+            Console.WriteLine("Please input an interger");
+            var input = Console.ReadLine();
+            Factorial f = new Factorial();
+            f.DigitsCountFactorial(Convert.ToInt32(input));
 
-            BiggestNumberFromNumbers bg = new BiggestNumberFromNumbers();
-            bg.BiggestNumberFromNumbers1();
+            //BiggestNumberFromNumbers bg = new BiggestNumberFromNumbers();
+            //bg.BiggestNumberFromNumbers1();
 
             Console.Read();
         }
