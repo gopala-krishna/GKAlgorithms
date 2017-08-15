@@ -31,9 +31,7 @@ namespace Algorithms.Problems
             //MinimumSquares ms = new MinimumSquares();
             //ms.MinimumSquares1(13,29);
 
-            StringsFromChars sfc = new StringsFromChars();
-            sfc.StringsFromChars1();
-
+           
             Console.Read();
         }
 

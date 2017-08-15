@@ -26,14 +26,28 @@ namespace Algorithms.Strings
             //IsPermutation ip = new IsPermutation();
             //ip.IsPermutation2("GOPALA", "OGPALA");
 
-            const string input = "abc d e f";
-            var characterArray = new char[input.Length + 3 * 2 + 1];
-            for (var i = 0; i < input.Length; i++)
-            {
-                characterArray[i] = input[i];
-            }
-            URLify u = new URLify();
-            u.URLify1(characterArray, input.Length);
+            //char[] set = new char[] { 'a', 'b', 'c' }; int arrSize = 2;
+            //StringsFromChars sfc = new StringsFromChars();
+            //sfc.StringsFromChars1(set, arrSize);
+
+            Permutations p = new Permutations();
+            p.GetPermutations("abc");
+
+            //PermutationPalindrome pp = new PermutationPalindrome();
+            //pp.IsPermutaionPalindrome("abc");
+
+
+            //const string input = "abc d e f";
+            //var characterArray = new char[input.Length + 3 * 2 + 1];
+            //for (var i = 0; i < input.Length; i++)
+            //{
+            //    characterArray[i] = input[i];
+            //}
+            //URLify u = new URLify();
+            //u.URLify1(characterArray, input.Length);
+
+            //PermutationPalindrome pp = new PermutationPalindrome();
+            //pp.GetCombinations();
 
 
             Console.Read();
