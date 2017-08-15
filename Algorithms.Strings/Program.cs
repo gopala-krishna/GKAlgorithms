@@ -8,22 +8,19 @@ namespace Algorithms.Strings
         {
             //StringComparisions sc = new StringComparisions();
             //sc. TryStringComparisions();
-            
-
-
             //Console.WriteLine(strAlgos.ReverseString("Gopala"));
             //Console.WriteLine(strAlgos.ParallelReverseString("ParallelGopala"));
             //Console.WriteLine(strAlgos.ReverseWords("Gopala Krishna"));
             //Console.WriteLine(strAlgos.Palindrome("abcba"));
             //Console.WriteLine(strAlgos.SearchSubString("ABCDEFGHIJKLMNOP","DEF"));
-
             //strAlgos.SearchSubString();
             //Console.WriteLine("Please input any number");
             //var input = Console.ReadLine();
             //strAlgos.NumberInWords(Convert.ToInt64(input));
             ////strAlgos.ReverseWords("Gopala krishna is great");
-
             //strAlgos.MetaStrings();
+            CharsIsUnique ciu = new CharsIsUnique();
+            ciu.CharsIsUnique2("gopla");
 
             Console.Read();
         }

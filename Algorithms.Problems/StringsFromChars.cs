@@ -12,7 +12,7 @@ namespace Algorithms.Problems
         /// <param name="n"></param>
         public void StringsFromChars1( )
         {
-            char[] set = new char[] { 'a', 'b','c','d','e' }; int arrSize = 8;
+            char[] set = new char[] { 'a', 'b','c'}; int arrSize = 3;
 
             int charsSize = set.Length;
             StringsFromCharsRecursive(set, "",charsSize, arrSize);
@@ -28,7 +28,7 @@ namespace Algorithms.Problems
             }
 
             // call for arrSize equals to arrSize-1
-            for (int i = 0; i < charsSize; ++i)
+            for (int i = 0; i < charsSize; i++)
             {
 
                 // Next character of input added
@@ -40,5 +40,41 @@ namespace Algorithms.Problems
 
         }
 
+        public void StringsFromCharsRecursive1(char[] set, string prefix, int charsSize, int arrSize)
+        {
+            // Base case: arrSize is 0, print prefix
+            if (arrSize == 0)
+            {
+                if (CharCount(prefix, 'b') < 2 && CharCount(prefix, 'c') < 3)
+                {
+                    Console.WriteLine(prefix);
+                }
+                return;
+            }
+
+            // call for arrSize equals to arrSize-1
+            for (int i = 0; i < charsSize; i++)
+            {
+
+                // Next character of input added
+                string newPrefix = prefix + set[i];
+
+                // arrSize is decreased, because we have added a new character
+                StringsFromCharsRecursive(set, newPrefix, charsSize, arrSize - 1);
+            }
+
+        }
+
+
+        public int CharCount( string s, char c)
+        {
+            int count = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if(s[i]==c)
+                { count++; }
+            }
+            return count;
+        }
     }
 }
