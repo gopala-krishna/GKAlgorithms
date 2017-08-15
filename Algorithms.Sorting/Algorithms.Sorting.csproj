@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{90E5451E-3E0F-4528-AB12-576E2FB3BC75}</ProjectGuid>
+    <ProjectGuid>{D3C8542F-106A-403F-9A6D-1997B5C301EB}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>Algorithms.Arrays</RootNamespace>
-    <AssemblyName>Algorithms.Arrays</AssemblyName>
+    <RootNamespace>Algorithms.Sorting</RootNamespace>
+    <AssemblyName>Algorithms.Sorting</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,20 +42,16 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="ClosestPair.cs" />
-    <Compile Include="PeaksAndValleys.cs" />
+    <Compile Include="BubbleSort.cs" />
+    <Compile Include="InsertionSort.cs" />
+    <Compile Include="MergeSort.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="SubArrayWithGivenSum.cs" />
+    <Compile Include="QuickSort.cs" />
+    <Compile Include="ShellSort.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Algorithms.Sorting\Algorithms.Sorting.csproj">
-      <Project>{d3c8542f-106a-403f-9a6d-1997b5c301eb}</Project>
-      <Name>Algorithms.Sorting</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

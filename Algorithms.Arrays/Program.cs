@@ -20,7 +20,7 @@ namespace Algorithms.Arrays
             var input = TakeSearchInput();
 
             PeaksAndValleys pv = new PeaksAndValleys();
-            pv.PeaksAndValleys1(input);
+            pv.PeaksAndValleys2(input);
 
             Console.Read();
         }
