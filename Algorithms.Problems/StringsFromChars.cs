@@ -7,7 +7,7 @@ namespace Algorithms.Problems
     class StringsFromChars
     {
         /// <summary>
-        /// Given a length n, count the number of strings of length n that can be made using ‘a’, ‘b’ and ‘c’ with at-most one ‘b’ and two ‘c’s allowed.
+        /// Given a length n, count the number of strings of length n that can be made using characters
         /// </summary>
         /// <param name="n"></param>
         public void StringsFromChars1( )
@@ -16,8 +16,8 @@ namespace Algorithms.Problems
 
             int charsSize = set.Length;
             StringsFromCharsRecursive(set, "",charsSize, arrSize);
-
         }
+
         public void StringsFromCharsRecursive(char[] set, string prefix, int charsSize, int arrSize)
         {
             // Base case: arrSize is 0, print prefix
@@ -40,6 +40,13 @@ namespace Algorithms.Problems
 
         }
 
+        /// <summary>
+        /// Given a length n, count the number of strings of length n that can be made using ‘a’, ‘b’ and ‘c’ with at-most one ‘b’ and two ‘c’s allowed.
+        /// </summary>
+        /// <param name="set"></param>
+        /// <param name="prefix"></param>
+        /// <param name="charsSize"></param>
+        /// <param name="arrSize"></param>
         public void StringsFromCharsRecursive1(char[] set, string prefix, int charsSize, int arrSize)
         {
             // Base case: arrSize is 0, print prefix
@@ -62,7 +69,6 @@ namespace Algorithms.Problems
                 // arrSize is decreased, because we have added a new character
                 StringsFromCharsRecursive(set, newPrefix, charsSize, arrSize - 1);
             }
-
         }
 
 
