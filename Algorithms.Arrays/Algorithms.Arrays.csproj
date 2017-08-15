@@ -52,9 +52,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\Algorithms.Sorting\Algorithms.Sorting.csproj">
-      <Project>{9a57b220-4ca9-4224-a459-107602f01f56}</Project>
-      <Name>Algorithms.Sorting</Name>
+    <ProjectReference Include="..\Algorithms.Math\Algorithms.Math.csproj">
+      <Project>{2fc32c3c-c45c-4bab-90c0-18e9d7cec752}</Project>
+      <Name>Algorithms.Math</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

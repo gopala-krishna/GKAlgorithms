@@ -24,9 +24,9 @@ namespace Algorithms.Arrays
             {
                 for (int j = 0; j < arr2.Length; j++)
                 {
-                    if ((Math.Abs(arr1[i] + arr2[j] - x) < minVal))
+                    if ((System.Math.Abs(arr1[i] + arr2[j] - x) < minVal))
                     {
-                        minVal = Math.Abs(arr1[i] + arr2[j] - x);
+                        minVal = System.Math.Abs(arr1[i] + arr2[j] - x);
                         ind1 = arr1[i];
                         ind2 = arr2[j];
                     }
@@ -45,9 +45,9 @@ namespace Algorithms.Arrays
 
             while( l<arr1.Length && r>0)
             {
-                if ((Math.Abs(arr1[l] + arr2[r] - x) < minVal))
+                if ((System.Math.Abs(arr1[l] + arr2[r] - x) < minVal))
                 {
-                    minVal = Math.Abs(arr1[l] + arr2[r] - x);
+                    minVal = System.Math.Abs(arr1[l] + arr2[r] - x);
                     ind1 = arr1[l];
                     ind2 = arr2[r];
                 }

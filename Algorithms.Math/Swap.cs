@@ -6,14 +6,26 @@ using System.Threading.Tasks;
 
 namespace Algorithms.Math
 {
-    class Swap
+    public class Swap
     {
+
         /// <summary>
         ///  Simple
         /// </summary>
         /// <param name="arrInput"></param>
         /// <returns></returns>
-        public int[] SwapUsingTempVar(int[] arrInput)
+        public static void SimpleSwap(int a, int b)
+        {
+            int iTemp = a;
+            a = b;
+            b = iTemp;
+        }
+        /// <summary>
+        ///  Simple
+        /// </summary>
+        /// <param name="arrInput"></param>
+        /// <returns></returns>
+        public static int[] SwapUsingTempVar(int[] arrInput)
         {
             
             int iTemp = arrInput[0];
@@ -27,7 +39,7 @@ namespace Algorithms.Math
         /// <typeparam name="T"></typeparam>
         /// <param name="arrInput"></param>
         /// <returns></returns>
-        public T[] SwapUsingGenerics<T>(T[] arrInput)
+        public static T[] SwapUsingGenerics<T>(T[] arrInput)
         {
             
             T  iTemp = arrInput[0];

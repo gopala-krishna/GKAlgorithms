@@ -14,20 +14,24 @@ namespace Algorithms.Arrays
             //var input = TakeSearchInput();
             //sawgs.SubArrayWithGivenSum1(input, 6);
 
-            ClosestPair cp = new ClosestPair();
-            cp.ClosestPairsFromSortedArrays1();
+            //ClosestPair cp = new ClosestPair();
+            //cp.ClosestPairsFromSortedArrays1();
 
+            var input = TakeSearchInput();
+
+            PeaksAndValleys pv = new PeaksAndValleys();
+            pv.PeaksAndValleys1(input);
 
             Console.Read();
         }
 
         #region Input and Output Funtions for Search
-        private static long[] TakeSearchInput()
+        private static int[] TakeSearchInput()
         {
             Console.WriteLine("Please input numbers seperated by comma");
             string numbers = Console.ReadLine();
             var arrRawInput = numbers.Split(new char[] { ',' });
-            long[] arrInput = new long[arrRawInput.Length];
+            int[] arrInput = new int[arrRawInput.Length];
 
             if (numbers.Length > 0)
             {
