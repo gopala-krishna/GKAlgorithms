@@ -8,7 +8,10 @@ namespace Algorithms.Strings
     {
         public void IsPermutaionPalindrome(string str)
         {
-            //GetPermutations(str, "", str.Length, str.Length);
+            //Permutations p = new Permutations();
+            //var pms = p.GetPermutations();
+
+            
         }
 
        

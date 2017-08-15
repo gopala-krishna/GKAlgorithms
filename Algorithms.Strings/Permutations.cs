@@ -22,6 +22,17 @@ namespace Algorithms.Strings
 
         public void GetPermutations(string str)
         {
+            
+            if(str1 == str2)
+            {
+                Console.Write("yes");
+            }
+            else
+            {
+                Console.Write("no");
+            }
+
+
             Permute(str, 0, str.Length - 1);
         }
 
