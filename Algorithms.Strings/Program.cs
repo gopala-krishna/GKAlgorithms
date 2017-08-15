@@ -23,8 +23,18 @@ namespace Algorithms.Strings
             //StringToASCII st = new StringToASCII();
             //st.StringToASCII1();
 
-            IsPermutation ip = new IsPermutation();
-            ip.IsPermutation2("GOPALA", "OGPALA");
+            //IsPermutation ip = new IsPermutation();
+            //ip.IsPermutation2("GOPALA", "OGPALA");
+
+            const string input = "abc d e f";
+            var characterArray = new char[input.Length + 3 * 2 + 1];
+            for (var i = 0; i < input.Length; i++)
+            {
+                characterArray[i] = input[i];
+            }
+            URLify u = new URLify();
+            u.URLify1(characterArray, input.Length);
+
 
             Console.Read();
         }
