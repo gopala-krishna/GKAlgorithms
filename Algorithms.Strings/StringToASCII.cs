@@ -17,7 +17,7 @@ namespace Algorithms.Strings
                 Console.WriteLine(n);
             }
 
-            char c = (char)103;
+            char c = (char)60;
             Console.WriteLine(c);
 
         }

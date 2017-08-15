@@ -19,8 +19,12 @@ namespace Algorithms.Strings
             //strAlgos.NumberInWords(Convert.ToInt64(input));
             ////strAlgos.ReverseWords("Gopala krishna is great");
             //strAlgos.MetaStrings();
-            CharsIsUnique ciu = new CharsIsUnique();
-            ciu.CharsIsUnique2("gopla");
+
+            //StringToASCII st = new StringToASCII();
+            //st.StringToASCII1();
+
+            IsPermutation ip = new IsPermutation();
+            ip.IsPermutation2("GOPALA", "OGPALA");
 
             Console.Read();
         }
