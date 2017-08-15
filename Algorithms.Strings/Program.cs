@@ -31,7 +31,7 @@ namespace Algorithms.Strings
             //sfc.StringsFromChars1(set, arrSize);
 
             Permutations p = new Permutations();
-            p.GetPermutations("abc");
+            p.GetPermutations("aba");
 
             //PermutationPalindrome pp = new PermutationPalindrome();
             //pp.IsPermutaionPalindrome("abc");
