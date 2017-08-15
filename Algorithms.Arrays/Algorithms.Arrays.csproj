@@ -43,12 +43,19 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="ClosestPair.cs" />
+    <Compile Include="PeaksAndValleys.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubArrayWithGivenSum.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Algorithms.Sorting\Algorithms.Sorting.csproj">
+      <Project>{9a57b220-4ca9-4224-a459-107602f01f56}</Project>
+      <Name>Algorithms.Sorting</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

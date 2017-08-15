@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Algorithms.Sorting
 {
-    class MergeSort
+  public class MergeSort
     {
         /// <summary>
         ///  Time Complexity : O(n log n)
