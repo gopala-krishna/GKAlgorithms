@@ -36,11 +36,12 @@ namespace Algorithms.Strings
             //Permutations p = new Permutations();
             //p.GetPermutationsWithoutDuplicates("aba");
 
-            
+            OneAway ow = new OneAway();
+            ow.IsOneAway("pale", "bale");
 
 
-            PermutationPalindrome pp = new PermutationPalindrome();
-            pp.IsPermutationPalindrome("tactcoa");
+            //PermutationPalindrome pp = new PermutationPalindrome();
+            //pp.IsPermutationPalindrome("tactcoa");
             //pp.PalindromePermutations("abc");
 
 
