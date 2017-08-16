@@ -40,7 +40,7 @@ namespace Algorithms.Strings
             //ow.IsOneAway("pale", "bale");
 
             StringCompression sc = new StringCompression();
-            sc.StringCompression1("aaaabbbbddfff");
+            string s =sc.StringCompression1("abcd");
 
             //PermutationPalindrome pp = new PermutationPalindrome();
             //pp.IsPermutationPalindrome("tactcoa");

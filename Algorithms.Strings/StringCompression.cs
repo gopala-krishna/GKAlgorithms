@@ -6,20 +6,33 @@ namespace Algorithms.Strings
 {
     class StringCompression
     {
-        public void StringCompression1(string str)
+        public string StringCompression1(string str)
         {
             int[] intArr = new int[256];
             for(int i =0; i<str.Length;i++)
             {
                 intArr[str[i]]++;
             }
+
+            string result = string.Empty; int 
+
             for (int i = 0; i < intArr.Length; i++)
             {
                 if(intArr[i]>0)
                 {
                     char c = (char)i;
-                    Console.Write(c); Console.Write(intArr[i]);
+                    result += c.ToString() + intArr[i].ToString();
+                    //Console.Write(c); Console.Write(intArr[i]);
                 }
+            }
+
+            if (result.Length < str.Length)
+            {
+                return result;
+            }
+            else
+            {
+                return str;
             }
         }
     }
