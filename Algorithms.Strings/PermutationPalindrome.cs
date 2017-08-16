@@ -41,6 +41,10 @@ namespace Algorithms.Strings
                 {
                     count++;
                 }
+                if(count >1)
+                {
+                    break;
+                }
             }
             if (count < 2)
             {
