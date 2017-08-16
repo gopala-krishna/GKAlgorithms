@@ -14,7 +14,7 @@ namespace Algorithms.Strings
                 intArr[str[i]]++;
             }
 
-            string result = string.Empty; int 
+            string result = string.Empty; 
 
             for (int i = 0; i < intArr.Length; i++)
             {
