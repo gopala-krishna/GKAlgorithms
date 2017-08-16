@@ -40,7 +40,8 @@ namespace Algorithms.Strings
 
 
             PermutationPalindrome pp = new PermutationPalindrome();
-            pp.PalindromePermutations("aabb");
+            pp.IsPermutationPalindrome("tactcoa");
+            //pp.PalindromePermutations("abc");
 
 
             //const string input = "abc d e f";
