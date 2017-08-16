@@ -36,9 +36,11 @@ namespace Algorithms.Strings
             //Permutations p = new Permutations();
             //p.GetPermutationsWithoutDuplicates("aba");
 
+            
+
 
             PermutationPalindrome pp = new PermutationPalindrome();
-            pp.IsPermutaionPalindrome("aabb");
+            pp.PalindromePermutations("tactcoa");
 
 
             //const string input = "abc d e f";

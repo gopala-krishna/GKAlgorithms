@@ -8,15 +8,15 @@ namespace Algorithms.Strings
     {
         public bool Palindrome1(string str)
         {
+            bool IsPalindrome = true;
             for (int i = 0; i < str.Length / 2; i++)
             {
                 if (str[i] != str[str.Length - i - 1])
                 {
-                    break;
+                    IsPalindrome = false;break;
                 }
-                return true;
             }
-            return false;
+            return IsPalindrome;
         }
     }
 }
