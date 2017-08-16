@@ -20,24 +20,39 @@ namespace Algorithms.Strings
         }
 
 
-        public void GetPermutations(string str)
+        public string[] GetPermutations(string str)
         {
-            Permute(str, 0, str.Length);
-        }
+            int resultLen=1;
+            for(int i =1; i<= str.Length;i++)
+            {
+                resultLen *= i;
+            }
 
-        private void Permute(string str, int left, int right)
+            string[] result = new string[resultLen];
+
+             result =Permute(str, 0, str.Length, result);
+
+            return result;
+        }
+        int m = 0;
+        private string[] Permute(string str, int left, int right, string []result)
         {
             if (left == right)
-                Console.WriteLine(str);
+            {
+                //Console.WriteLine(str);
+                result[m] = str;
+                m++;
+            }
             else
             {
                 for (int i = left; i < right; i++)
                 {
                     str = Swap(str, left, i);
-                    Permute(str, left + 1, right);
+                    Permute(str, left + 1, right, result);
                     str = Swap(str, left, i);
                 }
             }
+            return result;
         }
 
         public void GetPermutationsWithoutDuplicates(string str)

@@ -33,12 +33,12 @@ namespace Algorithms.Strings
             //Permutations p = new Permutations();
             //p.GetPermutations("abc");
 
-            Permutations p = new Permutations();
-            p.GetPermutationsWithoutDuplicates("aba");
+            //Permutations p = new Permutations();
+            //p.GetPermutationsWithoutDuplicates("aba");
 
 
-            //PermutationPalindrome pp = new PermutationPalindrome();
-            //pp.IsPermutaionPalindrome("abc");
+            PermutationPalindrome pp = new PermutationPalindrome();
+            pp.IsPermutaionPalindrome("aabb");
 
 
             //const string input = "abc d e f";
