@@ -36,9 +36,11 @@ namespace Algorithms.Strings
             //Permutations p = new Permutations();
             //p.GetPermutationsWithoutDuplicates("aba");
 
-            OneAway ow = new OneAway();
-            ow.IsOneAway("pale", "bale");
+            //OneAway ow = new OneAway();
+            //ow.IsOneAway("pale", "bale");
 
+            StringCompression sc = new StringCompression();
+            sc.StringCompression1("aaaabbbbddfff");
 
             //PermutationPalindrome pp = new PermutationPalindrome();
             //pp.IsPermutationPalindrome("tactcoa");
