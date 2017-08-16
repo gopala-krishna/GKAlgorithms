@@ -30,8 +30,12 @@ namespace Algorithms.Strings
             //StringsFromChars sfc = new StringsFromChars();
             //sfc.StringsFromChars1(set, arrSize);
 
+            //Permutations p = new Permutations();
+            //p.GetPermutations("abc");
+
             Permutations p = new Permutations();
-            p.GetPermutations("aba");
+            p.GetPermutationsWithoutDuplicates("aba");
+
 
             //PermutationPalindrome pp = new PermutationPalindrome();
             //pp.IsPermutaionPalindrome("abc");

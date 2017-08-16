@@ -22,7 +22,7 @@ namespace Algorithms.Strings
 
         public void GetPermutations(string str)
         {
-            Permute(str, 0, str.Length - 1);
+            Permute(str, 0, str.Length);
         }
 
         private void Permute(string str, int left, int right)
@@ -31,7 +31,7 @@ namespace Algorithms.Strings
                 Console.WriteLine(str);
             else
             {
-                for (int i = left; i <= right; i++)
+                for (int i = left; i < right; i++)
                 {
                     str = Swap(str, left, i);
                     Permute(str, left + 1, right);
@@ -39,6 +39,49 @@ namespace Algorithms.Strings
                 }
             }
         }
+
+        public void GetPermutationsWithoutDuplicates(string str)
+        {
+            PermuteWithoutDuplicates(str, 0, str.Length);
+        }
+
+        string[] result = new string[128];int k = 0;
+        private void PermuteWithoutDuplicates(string str, int left, int right)
+        {
+             bool IsFound = false;
+
+            if (left == right)
+            {
+                if (result.Length > 0 && result != null)
+                {
+                    for (int i = 0; i < result.Length; i++)
+                    {
+                        if (str == result[i])
+                        {
+                            IsFound = true; break;
+                        }
+                    }
+                }
+               
+
+                if (!IsFound)
+                {
+                    Console.WriteLine(str);
+                    result[k] = str;k++;
+                }
+            }
+            else
+            {
+                for (int i = left; i < right; i++)
+                {
+                    str = Swap(str, left, i);
+                    PermuteWithoutDuplicates(str, left + 1, right);
+                    str = Swap(str, left, i);
+                }
+            }
+        }
+
+
 
         private string Swap(string str, int left, int right)
         { 
