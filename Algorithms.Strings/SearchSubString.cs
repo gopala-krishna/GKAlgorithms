@@ -42,11 +42,8 @@ namespace Algorithms.Strings
 
         }
 
-        public void SearchSubString2()
+        public bool SearchSubString2(string searchWithinThis, string word)
         {
-            string searchWithinThis = "ABCDEFGHIJKLMNOP";
-            string word = "NiP";
-
             int index = 0;
 
             for (int i= 0; i<searchWithinThis.Length; i++)
@@ -61,10 +58,10 @@ namespace Algorithms.Strings
 
             bool found = true;
 
-            for (int i = 0; i < searchWithinThis.Length-index; i++)
+            for (int i = 0; i < word.Length; i++)
             {
                 // If word is not matched
-                if (searchWithinThis[i+index] != word[i])
+             if (searchWithinThis[i+index] != word[i])
                 {
                     found = false;
                     break;
@@ -83,6 +80,8 @@ namespace Algorithms.Strings
                 Console.WriteLine("not found");
 
             }
+
+            return found;
 
         }
     }
