@@ -17,15 +17,15 @@ namespace Algorithms.Arrays
             //ClosestPair cp = new ClosestPair();
             //cp.ClosestPairsFromSortedArrays1();
 
-            // var input = TakeSearchInput();
+             var input = TakeSearchInput();
 
-            //PeaksAndValleys pv = new PeaksAndValleys();
-            //pv.PeaksAndValleys2(input);
+            PeaksAndValleys pv = new PeaksAndValleys();
+            pv.PeaksAndValleys2(input);
 
-            ZeroMatrix zm = new ZeroMatrix();
-            zm.ZeroMatrix1();
+            //ZeroMatrix zm = new ZeroMatrix();
+            //zm.ZeroMatrix1();
 
-            
+
             Console.Read();
         }
 

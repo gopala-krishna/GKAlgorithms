@@ -16,14 +16,16 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Arrays", "Algorithms.Arrays\Algorithms.Arrays.csproj", "{90E5451E-3E0F-4528-AB12-576E2FB3BC75}"
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{479E48DF-8C25-4B72-982F-168A5336FE3D}"
-	ProjectSection(SolutionItems) = preProject
-		AlgorithmsLinks.txt = AlgorithmsLinks.txt
-	EndProjectSection
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Resources", "Resources", "{2496AAF0-6217-4505-BD19-3B01108517AA}"
 	ProjectSection(SolutionItems) = preProject
+		..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\Algorithms Design.docx = ..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\Algorithms Design.docx
 		AlgorithmsLinks.txt = AlgorithmsLinks.txt
 		..\..\Users\Gopala\Desktop\Corner Cases in Coding.docx = ..\..\Users\Gopala\Desktop\Corner Cases in Coding.docx
+		..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\CrackingTheCodingInterview_GayleLaakmann.pdf = ..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\CrackingTheCodingInterview_GayleLaakmann.pdf
+		..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\the-algorithm-design-canvas.JPG = ..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\the-algorithm-design-canvas.JPG
+		..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\the-common-complexities-handout.pdf = ..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\the-common-complexities-handout.pdf
+		..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\the-common-constraints-handout.pdf = ..\..\Users\Gopala\Google Drive\Google Interview\Algorithms Design\the-common-constraints-handout.pdf
 	EndProjectSection
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Math", "Algorithms.Math\Algorithms.Math.csproj", "{2FC32C3C-C45C-4BAB-90C0-18E9D7CEC752}"
