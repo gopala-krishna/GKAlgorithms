@@ -1,2 +1,3 @@
 https://www.youtube.com/watch?v=aGjL7YXI31Q&list=PLEbnTDJUr_IeHYw_sfBOJ6gk5pie0yP-0       
 http://www.geeksforgeeks.org/convert-number-to-words/
+https://google.github.io/styleguide/cppguide.html
