@@ -10,7 +10,5 @@ namespace Algorithms.Strings
             sr.AreRotaredStrings("water", "terwa");
             Console.Read();
         }
-
-       
     }
 }

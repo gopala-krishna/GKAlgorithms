@@ -6,6 +6,13 @@ namespace Algorithms.Search
 {
     class JumpSearch
     {
+        /// <summary>
+        /// Time Complexity : O(√n)
+        /// Auxiliary Space : O(1)
+        /// </summary>
+        /// <param name="inputArr"></param>
+        /// <param name="searchVal"></param>
+        /// <returns></returns>
         public int JumpSearch1(long[] inputArr, int searchVal)
         {
             int jumpInterval = Convert.ToInt32(Math.Sqrt(inputArr.Length)); int maxIndex =0; int minIndex =0;
