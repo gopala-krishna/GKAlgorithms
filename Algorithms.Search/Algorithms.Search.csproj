@@ -6,6 +6,11 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="BreadthFirstSearch.cs" />
+    <Compile Remove="DepthFirstSearch.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Algorithms.Entities\Algorithms.Entities.csproj" />
   </ItemGroup>
 
