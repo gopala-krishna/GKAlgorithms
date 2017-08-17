@@ -48,6 +48,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SubArrayWithGivenSum.cs" />
     <Compile Include="ZeroMatrix.cs" />
+    <Compile Include="ZigZag.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
