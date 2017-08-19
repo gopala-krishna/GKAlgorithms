@@ -26,38 +26,38 @@ namespace Algorithms.Search
             //Console.WriteLine(output);
             //Console.Read();
 
-            //var input = TakeSearchInput();
-            //var output = bs.BinarySearch1(input, 12);
-            //Console.WriteLine(output);
-            //Console.Read();
+            var input = TakeSearchInput();
+            var output = bs.BinarySearch2(input, 12);
+            Console.WriteLine(output);
+            Console.Read();
 
             //var input = TakeSearchInput();
             //var output = js.JumpSearch1(input, 12);
             //Console.WriteLine(output);
             //Console.Read();
 
-            var input = TakeSearchInput();
-            try
-            {
-                var output = es.ExponentialSearch1(input, 12);
-                Console.WriteLine(output);
-                Console.Read();
+            //var input = TakeSearchInput();
+            //try
+            //{
+            //    var output = es.ExponentialSearch1(input, 12);
+            //    Console.WriteLine(output);
+            //    Console.Read();
 
-            }
-            catch (Exception ex)
-            {
-                Console.WriteLine(ex.Message);
-            }
+            //}
+            //catch (Exception ex)
+            //{
+            //    Console.WriteLine(ex.Message);
+            //}
             
         }
 
         #region Input and Output Funtions for Search
-        private static long[] TakeSearchInput()
+        private static int[] TakeSearchInput()
         {
             Console.WriteLine("Please input numbers seperated by comma");
             string numbers = Console.ReadLine();
             var arrRawInput = numbers.Split(new char[] { ',' });
-            long[] arrInput = new long[arrRawInput.Length];
+            int[] arrInput = new int[arrRawInput.Length];
 
             if (numbers.Length > 0)
             {

@@ -13,7 +13,7 @@ namespace Algorithms.Search
         /// <param name="inputArr"></param>
         /// <param name="searchVal"></param>
         /// <returns></returns>
-        public int JumpSearch1(long[] inputArr, int searchVal)
+        public int JumpSearch1(int[] inputArr, int searchVal)
         {
             int jumpInterval = Convert.ToInt32(Math.Sqrt(inputArr.Length)); int maxIndex =0; int minIndex =0;
             if (searchVal == inputArr[0]) return 0;

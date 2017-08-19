@@ -6,7 +6,7 @@ namespace Algorithms.Search
 {
     class ExponentialSearch
     {
-        public int ExponentialSearch1(long[] inputArr, int searchVal)
+        public int ExponentialSearch1(int[] inputArr, int searchVal)
         {
             int maxIndex = 0; int minIndex = 0;
             if (searchVal == inputArr[0]) return 0;
