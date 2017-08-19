@@ -8,6 +8,11 @@ namespace Algorithms.Arrays
 {
     class ZigZag
     {
+        /// <summary>
+        ///  Check whether the sequence is zig zag
+        ///  Time Complexity : O(N)
+        /// </summary>
+        /// <param name="intArr"></param>
         public void IsZigzag(int[] intArr)
         {
              bool increasing = false; bool IsZigzag = true;
