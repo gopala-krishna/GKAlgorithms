@@ -6,14 +6,14 @@ namespace Algorithms.Problems
 {
     class MinimumSquares
     {
-        public void MinimumSquares1(long a, long b)
+        public void MinimumSquares1(int a, int b)
         {
-            long result = 0; long rem = 0;
+            int result = 0; int rem = 0;
 
             // swap if a is small size side .
             if (a < b)
             {
-                long t = a;
+                int t = a;
                 a = b;
                 b = t;
             }

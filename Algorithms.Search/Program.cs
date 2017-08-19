@@ -36,9 +36,9 @@ namespace Algorithms.Search
             //Console.WriteLine(output);
             //Console.Read();
 
-            var input = TakeSearchInput();
-            InterpolationSearch ips = new InterpolationSearch();
-           int abc =   ips.interpolationSearch1(input, 8);
+           // var input = TakeSearchInput();
+           // InterpolationSearch ips = new InterpolationSearch();
+           //int abc =   ips.interpolationSearch1(input, 8);
                 
 
             //var input = TakeSearchInput();

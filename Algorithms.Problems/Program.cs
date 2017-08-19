@@ -19,17 +19,17 @@ namespace Algorithms.Problems
             //ShowResult(output);
 
 
-            var input = TakeInput();
-            BuySellWithMaxProfit bswmp = new BuySellWithMaxProfit();
-            bswmp.EfficientBuySellPairsWithMaxProfit(input);
-            //ShowMaxProfitPairs(output);
+            //var input = TakeInput();
+            //BuySellWithMaxProfit bswmp = new BuySellWithMaxProfit();
+            //bswmp.EfficientBuySellPairsWithMaxProfit(input);
+            ////ShowMaxProfitPairs(output);
             //ShowResult(output);
 
             //ClockAngle ca = new ClockAngle();
             //ca.HMClockAngle(39, 75);
 
-            //MinimumSquares ms = new MinimumSquares();
-            //ms.MinimumSquares1(13,29);
+            MinimumSquares ms = new MinimumSquares();
+            ms.MinimumSquares1(15, 4);
 
 
             Console.Read();
