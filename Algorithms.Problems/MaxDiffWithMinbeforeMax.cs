@@ -17,13 +17,13 @@ namespace Algorithms.Problems
         /// <param name="arrInput"></param>
         /// <param name="arrLength"></param>
         /// <returns></returns>
-        public long SimpleWithTwoLoops(long[] arrInput, long arrLength)
+        public long SimpleWithTwoLoops(long[] arrInput)
         {
             long max_diff = arrInput[1] - arrInput[0];
 
-            for (long i = 0; i < arrLength; i++)
+            for (long i = 0; i < arrInput.Length; i++)
             {
-                for (long j = i + 1; j < arrLength; j++)
+                for (long j = i + 1; j < arrInput.Length; j++)
                 {
                     if (arrInput[j] - arrInput[i] > max_diff)
                         max_diff = arrInput[j] - arrInput[i];
@@ -43,18 +43,25 @@ namespace Algorithms.Problems
         /// <param name="arrInput"></param>
         /// <param name="arrLength"></param>
         /// <returns></returns>
-        public long EfficientWithMinValueTracking(long[] arrInput, long arrLength)
+        public int EfficientWithMinValueTracking(int[] arrInput)
         {
-            long max_diff = arrInput[1] - arrInput[0];
-            long min_element = arrInput[0];
+            int max_diff = arrInput[1] - arrInput[0];
+            int min_element = arrInput[0]; int min=0; int max=0;
 
-            for (long i = 1; i < arrLength; i++)
+            for (int i = 1; i < arrInput.Length; i++)
             {
                 if (arrInput[i] - min_element > max_diff)
+                {
                     max_diff = arrInput[i] - min_element;
+                    max = i;
+                }
                 if (arrInput[i] < min_element)
+                {
                     min_element = arrInput[i];
+                    min = i;
+                }
             }
+            Console.WriteLine(min+","+max);
             return max_diff;
         }
     }

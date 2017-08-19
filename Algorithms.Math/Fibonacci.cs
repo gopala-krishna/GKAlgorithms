@@ -9,7 +9,7 @@ namespace Algorithms.Math
     class Fibonacci
     {
         /// <summary>
-        ///  Iteratve Fibonacci Series
+        ///  Iterative Fibonacci Series
         /// </summary>
         /// <param name="n"></param>
 
@@ -51,13 +51,13 @@ namespace Algorithms.Math
         public int NthFibonacciIterative(int n)
         {
             int[] Fib = new int[n + 1];
-            Fib[0] = 0; Fib[1] = 1;
+            Fib[0] = 1; Fib[1] = 2;
 
             for (int i = 2; i < n; i++)
             {
                 Fib[i] = Fib[i - 1] + Fib[i - 2];
             }
-            return Fib[n - 1];
+            return Fib[n-1];
         }
 
         /// <summary>

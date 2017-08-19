@@ -18,7 +18,6 @@ namespace Algorithms.Problems
             // Prices must be given for at least two days
             if (arrLength == 1)
                 return null;
-            long count = 0;
 
             // solution array
             List<BuySellInterval> sol = new List<BuySellInterval>();
@@ -46,13 +45,23 @@ namespace Algorithms.Problems
                     i++;
 
                 // Store the index of maxima
-                bsi.Sell = i - 1;
+                bsi.Sell = i --;
                 sol.Add(bsi);
-
-                // Increment number of buy/sell
-                count++;
             }
             return sol;
         }
+
+        public void EfficientBuySellPairsWithMaxProfit(int[] arrInput)
+        {
+            BuySellRecursive(arrInput, 0, arrInput.Length);
+        }
+
+        public void BuySellRecursive(int[] arrInput, int start, int end)
+        {
+            
+                
+            
+        }
+            
     }
 }

@@ -15,13 +15,13 @@ namespace Algorithms.Problems
 
             //var input = TakeInput();
             //MaxDiffWithMinbeforeMax maxdiff = new MaxDiffWithMinbeforeMax();
-            //var output = maxdiff.EfficientWithMinValueTracking(input, input.Length);
+            //var output = maxdiff.EfficientWithMinValueTracking(input);
             //ShowResult(output);
 
 
-            //var input = TakeInput();
-            //BuySellWithMaxProfit bswmp = new BuySellWithMaxProfit();
-            //var output = bswmp.BuySellPairsWithMaxProfit(input, input.Length);
+            var input = TakeInput();
+            BuySellWithMaxProfit bswmp = new BuySellWithMaxProfit();
+            bswmp.EfficientBuySellPairsWithMaxProfit(input);
             //ShowMaxProfitPairs(output);
             //ShowResult(output);
 
@@ -31,17 +31,17 @@ namespace Algorithms.Problems
             //MinimumSquares ms = new MinimumSquares();
             //ms.MinimumSquares1(13,29);
 
-           
+
             Console.Read();
         }
 
         #region Input and Output Funtions 
-        private static long[] TakeInput()
+        private static int[] TakeInput()
         {
             Console.WriteLine("Please input numbers seperated by comma");
             string numbers = Console.ReadLine();
             var arrRawInput = numbers.Split(new char[] { ',' });
-            long[] arrInput = new long[arrRawInput.Length];
+            int[] arrInput = new int[arrRawInput.Length];
 
             if (numbers.Length > 0)
             {

@@ -20,21 +20,6 @@ namespace Algorithms.Math
                     {
                         Console.Write(i + ",");
                     }
-
-                    //if (n / i == i)
-                    //{
-                    //    if (IsPrime(i))
-                    //    {
-                    //        Console.Write(i + ",");
-                    //    } 
-                    //}
-                    //else
-                    //{
-                    //    if (IsPrime(n/i))
-                    //    {
-                    //        Console.Write(i + "," +n/i +",");
-                    //    }
-                    //}
                 }
                 i++;
             }
