@@ -35,6 +35,7 @@ namespace Algorithms.Arrays
             Console.WriteLine(ind1.ToString() + "," + ind2.ToString());
         }
 
+       
         public void ClosestPairsFromSortedArrays1()
         {
             int[] arr1 = new int[] { 1, 4, 5, 7 };

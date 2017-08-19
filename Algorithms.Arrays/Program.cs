@@ -10,22 +10,24 @@ namespace Algorithms.Arrays
     {
         static void Main(string[] args)
         {
-            //SubArrayWithGivenSum sawgs = new SubArrayWithGivenSum();
             //var input = TakeSearchInput();
-            //sawgs.SubArrayWithGivenSum1(input, 6);
+
+            SubArrayWithGivenSum sawgs = new SubArrayWithGivenSum();
+            var input = TakeSearchInput();
+            sawgs.SubArrayWithGivenSum1(input, 6);
 
             //ClosestPair cp = new ClosestPair();
             //cp.ClosestPairsFromSortedArrays1();
 
-            // var input = TakeSearchInput();
+            ////var input = TakeSearchInput();
 
-            //PeaksAndValleys pv = new PeaksAndValleys();
-            //pv.PeaksAndValleys2(input);
+            ////PeaksAndValleys pv = new PeaksAndValleys();
+            ////pv.PeaksAndValleys2(input);
 
-            var input = TakeSearchInput();
+            //var input = TakeSearchInput();
 
-            ZigZag zz = new ZigZag();
-            zz.IsZigzag(input);
+            //ZigZag zz = new ZigZag();
+            //zz.IsZigzag(input);
 
             //ZeroMatrix zm = new ZeroMatrix();
             //zm.ZeroMatrix1();

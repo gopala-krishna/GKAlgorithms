@@ -8,30 +8,36 @@ namespace Algorithms.Arrays
 {
     class SubArrayWithGivenSum
     {
-        public void SubArrayWithGivenSum1(long[] inputArr, long sum)
+        /// <summary>
+        /// Time Complexity : O(N*N)
+        /// </summary>
+        /// <param name="inputArr"></param>
+        /// <param name="sum"></param>
+        public void SubArrayWithGivenSum1(int[] inputArr, int sum)
         {
-             long start=0 ; long end =0;
-            
-            for (long i = 0; i < inputArr.Length; i++)
+            for (int i = 0; i < inputArr.Length; i++)
             {
-                long addsum = inputArr[i];  start = i; 
-
-                for (long j = i+1; j < inputArr.Length; j++)
+                int addsum = inputArr[i];
+                if (addsum == sum)
                 {
-                    addsum += inputArr[j];
+                    Console.WriteLine(i);
+                    Console.WriteLine("-------");
+                }
 
-                    if (addsum > sum) break;
-
-                    else if (addsum == sum)
-                    {
-                        end = j;
-                        Console.WriteLine(start); Console.WriteLine(end);
+                for (int j = i+1 ; j < inputArr.Length; j++)
+                {
+                   
+                   addsum += inputArr[j];
+                   if (addsum == sum)
+                    { 
+                        Console.WriteLine(i); Console.WriteLine(j);
                         Console.WriteLine("-------");
-                        break;
                     }
                 }
             }
-            
+
+
+
 
         }
     }
