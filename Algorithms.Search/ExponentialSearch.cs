@@ -47,7 +47,7 @@ namespace Algorithms.Search
 
 
 
-            //for (int i = 1; i < inputArr.Length; i = 2*i)
+            //for (int i = 1; i < inputArr.Length; i = i*2)
             //{
 
             //    if (i >= inputArr.Length)

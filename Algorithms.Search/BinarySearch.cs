@@ -36,7 +36,7 @@ namespace Algorithms.Search
         }
 
         /// <summary>
-        /// This is the  version of binary search
+        /// This is the  iterative version of binary search
         /// Time Complexity : O(logN)
         /// Space Complexity : O(1)
         /// </summary>
