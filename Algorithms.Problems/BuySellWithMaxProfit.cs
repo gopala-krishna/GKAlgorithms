@@ -9,6 +9,7 @@ namespace Algorithms.Problems
     {
         /// <summary>
         /// find best buying and selling days
+        /// Time Complexity : O(N)
         /// </summary>
         /// <param name="arrInput"></param>
         /// <param name="arrLength"></param>
@@ -58,7 +59,31 @@ namespace Algorithms.Problems
 
         public void BuySellRecursive(int[] arrInput, int start, int end)
         {
-            
+
+            int max_diff = arrInput[start+1] - arrInput[start];
+            int min_element = arrInput[start]; 
+
+            for (int i = start; i <end; i++)
+            {
+                if (arrInput[i] - min_element > max_diff)
+                {
+                    max_diff = arrInput[i] - min_element;
+                    end = i;
+                }
+                if (arrInput[i] < min_element)
+                {
+                    min_element = arrInput[i];
+                    start = i;
+                }
+            }
+
+            Console.WriteLine(start + "," + end);
+
+
+            BuySellRecursive(arrInput, 0, start);
+
+               
+                //BuySellRecursive(arrInput, end + 1, arrInput.Length);
                 
             
         }

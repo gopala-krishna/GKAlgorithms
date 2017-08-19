@@ -8,11 +8,11 @@ namespace Algorithms.Search
     {
         static void Main(string[] args)
         {
-            SearchMaxAndMinValuesInArray smm = new SearchMaxAndMinValuesInArray();
-            LinearSearch ls = new LinearSearch();
-            BinarySearch bs = new BinarySearch();
-            JumpSearch js = new JumpSearch();
-            ExponentialSearch es = new ExponentialSearch();
+            //SearchMaxAndMinValuesInArray smm = new SearchMaxAndMinValuesInArray();
+            //LinearSearch ls = new LinearSearch();
+            //BinarySearch bs = new BinarySearch();
+            //JumpSearch js = new JumpSearch();
+            //ExponentialSearch es = new ExponentialSearch();
             //var input = TakeSearchInput();
             //var output = smm.GetMaxMinUsingLinearSearch(input, input.Length);
             //ShowSearchResult(output);
@@ -26,15 +26,20 @@ namespace Algorithms.Search
             //Console.WriteLine(output);
             //Console.Read();
 
-            var input = TakeSearchInput();
-            var output = bs.BinarySearch2(input, 12);
-            Console.WriteLine(output);
-            Console.Read();
+            //var input = TakeSearchInput();
+            //var output = bs.BinarySearch2(input, 12);
+            //Console.WriteLine(output);
+            //Console.Read();
 
             //var input = TakeSearchInput();
             //var output = js.JumpSearch1(input, 12);
             //Console.WriteLine(output);
             //Console.Read();
+
+            var input = TakeSearchInput();
+            InterpolationSearch ips = new InterpolationSearch();
+           int abc =   ips.interpolationSearch1(input, 8);
+                
 
             //var input = TakeSearchInput();
             //try
