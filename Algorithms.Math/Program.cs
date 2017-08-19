@@ -45,23 +45,27 @@ namespace Algorithms.Math
             ////bool res = pf.IsPrime(Convert.ToInt32(input));
             //mn.GetFactorsSum(Convert.ToInt32(input));
 
-            Console.WriteLine("Please input an interger");
-            var input = Console.ReadLine();
-            Factorial f = new Factorial();
-            f.DigitsCountFactorial(Convert.ToInt32(input));
+            //Console.WriteLine("Please input an interger");
+            //var input = Console.ReadLine();
+            //Factorial f = new Factorial();
+            //f.DigitsCountFactorial(Convert.ToInt32(input));
 
             //BiggestNumberFromNumbers bg = new BiggestNumberFromNumbers();
             //bg.BiggestNumberFromNumbers1();
 
+            var input = TakeInput();
+            KthSmallest ks = new KthSmallest();
+            ks.GetKthSmallestUnsorted(input, 4);
+
             Console.Read();
         }
 
-        private static long[] TakeInput()
+        private static int[] TakeInput()
         {
             Console.WriteLine("Please input numbers seperated by comma");
             string numbers = Console.ReadLine();
             var arrRawInput = numbers.Split(new char[] { ',' });
-            long[] arrInput = new long[arrRawInput.Length];
+            int[] arrInput = new int[arrRawInput.Length];
 
             if (numbers.Length > 0)
             {
