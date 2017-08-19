@@ -6,9 +6,9 @@ namespace Algorithms.Search
 {
     class LinearSearch
     {
-        public long LinearSearch1(long[] inputArr, long searchVal)
+        public int LinearSearch1(int[] inputArr, int searchVal)
         {
-            for (long i = 0; i < inputArr.Length; i++)
+            for (int i = 0; i < inputArr.Length; i++)
             {
                 if (inputArr[i] == searchVal)
                     return i;
