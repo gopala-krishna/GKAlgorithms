@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BiggestNumberFromNumbers.cs" />
     <Compile Include="Factorial.cs" />
     <Compile Include="Factors.cs" />
     <Compile Include="Fibonacci.cs" />
