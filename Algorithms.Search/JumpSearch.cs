@@ -18,9 +18,11 @@ namespace Algorithms.Search
             int jumpInterval = Convert.ToInt32(Math.Sqrt(inputArr.Length)); int maxIndex =0; int minIndex =0;
             if (searchVal == inputArr[0]) return 0;
 
+            // This is while loop implementation
+
             int i = 1;
 
-            while ( i < inputArr.Length)
+            while (i < inputArr.Length)
             {
                 if (searchVal <= inputArr[i])
                 {
@@ -29,7 +31,7 @@ namespace Algorithms.Search
                     break;
                 }
 
-                if (i*jumpInterval >= inputArr.Length)
+                if (i * jumpInterval >= inputArr.Length)
                 {
                     maxIndex = inputArr.Length;
                     minIndex = i;
@@ -40,6 +42,8 @@ namespace Algorithms.Search
                     i = i * jumpInterval;
                 }
             }
+
+            // This is for loop implementation
 
             // if(searchVal == inputArr[0]) return 0;
 
