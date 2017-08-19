@@ -44,7 +44,7 @@ namespace Algorithms.Math
             }
         }
         /// <summary>
-        ///  nth Fibonacci number Iterative
+        /// Find  nth Fibonacci number Iterative
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
@@ -61,7 +61,7 @@ namespace Algorithms.Math
         }
 
         /// <summary>
-        ///  nth Fibonacci number Recursive
+        /// Find  nth Fibonacci number Recursive
         /// </summary>
         /// <param name="n"></param>
         /// <returns></returns>
