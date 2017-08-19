@@ -28,8 +28,11 @@ namespace Algorithms.Problems
             //ClockAngle ca = new ClockAngle();
             //ca.HMClockAngle(39, 75);
 
-            MinimumSquares ms = new MinimumSquares();
-            ms.MinimumSquares1(15, 4);
+            //MinimumSquares ms = new MinimumSquares();
+            //ms.MinimumSquares1(15, 4);
+
+            MinCost mc = new MinCost();
+            mc.MinCost2();
 
 
             Console.Read();

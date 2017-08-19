@@ -67,7 +67,7 @@ namespace Algorithms.Math
         /// <returns></returns>
         public int NthFibonacciRecursive(int n)
         {
-            if (n == 0 || n == 1)    //1 2 3 5 8 13 21 34
+            if (n<=1)    //1 2 3 5 8 13 21 34
             {
                 return n;
             }
@@ -76,6 +76,40 @@ namespace Algorithms.Math
                  return NthFibonacciRecursive(n - 1) + NthFibonacciRecursive(n - 2);
             }
         }
+
+        public int NthFibonacciMemotized(int n)
+        {
+            int[] cache = new int[100];
+
+            if (n <= 1)    //1 2 3 5 8 13 21 34
+            {
+                cache[n] = n;
+            }
+            else
+            {
+                cache[n] = NthFibonacciMemotized(n - 1) + NthFibonacciMemotized(n - 2);
+            }
+            return cache[n];
+        }
+
+        public int NthFibonacciMemotizedIterative(int n)
+        {
+            int[] fib = new int[n + 1];
+
+            /* 0th and 1st number of the series are 0 and 1*/
+            fib[0] = 0;
+            fib[1] = 1;
+
+            for (int i = 2; i <= n; i++)
+            {
+                /* Add the previous 2 numbers in the series
+                   and store it */
+                fib[i] = fib[i - 1] + fib[i - 2];
+            }
+
+            return fib[n];
+        }
+
     }
 }
 

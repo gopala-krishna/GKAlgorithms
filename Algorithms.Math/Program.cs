@@ -18,7 +18,7 @@ namespace Algorithms.Math
             Console.WriteLine("Please input an interger");
             var input = Console.ReadLine();
             Fibonacci fb = new Fibonacci();
-            Console.WriteLine(fb.NthFibonacciIterative(Convert.ToInt32(input)));
+            Console.WriteLine(fb.NthFibonacciMemotizedIterative(Convert.ToInt32(input)));
 
             //Console.WriteLine("Please input an interger");
             //var input = Console.ReadLine();
