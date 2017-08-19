@@ -48,14 +48,7 @@ namespace Algorithms.Math
             {
                 if (num % i == 0)
                 {
-                    if (num / i == i)
-                    {
-                        count++;
-                    }
-                    else
-                    {
-                        count++;
-                    }
+                    count++;
                 }
                 i++;
             }

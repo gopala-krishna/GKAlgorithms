@@ -53,10 +53,12 @@ namespace Algorithms.Math
             //BiggestNumberFromNumbers bg = new BiggestNumberFromNumbers();
             //bg.BiggestNumberFromNumbers1();
 
-            var input = TakeInput();
-            KthSmallest ks = new KthSmallest();
-            ks.GetKthSmallestUnsorted(input, 4);
+            //var input = TakeInput();
+            //KthSmallest ks = new KthSmallest();
+            //ks.GetKthSmallestUnsorted(input, 4);
 
+            PrimeFactors pf = new PrimeFactors();
+            bool b = pf.IsPrime(13);
             Console.Read();
         }
 
