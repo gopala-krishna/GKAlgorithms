@@ -75,7 +75,7 @@ namespace Algorithms.Strings
 
                 if (letters[s2[i]] < 0)
                 {
-                    IsPermutation = false;
+                    IsPermutation = false; break;
                 }
             }
 
@@ -110,5 +110,9 @@ namespace Algorithms.Strings
             }
             //return arrNumbers;
         }
+
+       
+
+
     }
 }
