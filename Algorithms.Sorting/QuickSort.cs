@@ -6,56 +6,53 @@ namespace Algorithms.Sorting
 {
     class QuickSort
     {
-        /// <summary>
-        /// Time Complexity : O(n*n) but mostly O(nlogn)
-        /// Space Complexity : O(logn) 
-        /// </summary>
-        /// <param name="inputArr"></param>
+        ///// <summary>
+        ///// Time Complexity : O(n*n) but mostly O(nlogn)
+        ///// Space Complexity : O(logn) 
+        ///// </summary>
+        ///// <param name="inputArr"></param>
 
-        public void QuickSort1(int[] inputArr)
+        public void QuickSort1(int[] arr)
         {
-            QuickSortRecursive(inputArr, 0, inputArr.Length-1);
-
-            for (int i = 0; i < inputArr.Length; i++)
+            QuickSortRecursive(arr, 0, arr.Length - 1);
+            for (int i = 0; i < arr.Length; i++)
             {
-                Console.Write(inputArr[i] + ",");
+                Console.Write(arr[i] + ",");
             }
         }
 
-        public void QuickSortRecursive(int[]inputArr, int start, int end)
+        private void QuickSortRecursive(int[] arr, int low, int high)
         {
-            if (start < end)
+            if (low < high)
             {
-                int partitionedIndex = Partition(inputArr, start, end);
-             
-                QuickSortRecursive(inputArr, start, partitionedIndex - 1);
-                QuickSortRecursive(inputArr, partitionedIndex + 1, end);
+                int partitionIndex = Partition(arr, low, high);
+                QuickSortRecursive(arr, low, partitionIndex - 1);
+                QuickSortRecursive(arr, partitionIndex + 1, high);
             }
         }
-
-        public int Partition(int[] inputArr, int start, int end)
+        private int Partition(int[] arr, int low, int high)
         {
-
-            int pivot = inputArr[end];
-
-            int i = start - 1;
-
-
-            for (int j = start; j < end; j++)
+            int i = low - 1; int j = low; int pivot = arr[high];
+            while (j < high)
             {
-                if (inputArr[j] <= pivot)
+                if (arr[j] < pivot)
                 {
                     i++;
-                    int temp = inputArr[i];
-                    inputArr[i] = inputArr[j];
-                    inputArr[j] = temp;
+                    int temp = arr[i];
+                    arr[i] = arr[j];
+                    arr[j] = temp;
                 }
+                j++;
             }
-           int  temp1 = inputArr[i + 1];
-            inputArr[i + 1] = inputArr[end];
-            inputArr[end]= temp1;
+
+            int temp1 = arr[i + 1];
+            arr[i + 1] = arr[high];
+            arr[high] = temp1;
 
             return i + 1;
+
         }
+
+
     }
 }

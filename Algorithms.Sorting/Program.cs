@@ -19,10 +19,10 @@ namespace Algorithms.Sorting
             //var output = shs.ShellSort1(input, input.Length);
 
 
-            //QuickSort shs = new QuickSort();
-            //shs.QuickSort1(input);
+            QuickSort shs = new QuickSort();
+            shs.QuickSort1(input);
 
-            MergeSort.MergeSort1(input);
+            //MergeSort.MergeSort1(input);
 
            // ShowSortingResult(output);
             Console.Read();

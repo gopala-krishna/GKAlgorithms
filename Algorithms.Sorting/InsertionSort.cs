@@ -26,6 +26,8 @@ namespace Algorithms.Sorting
         }
         /// <summary>
         ///  Written by me on 12-8-2017
+        ///  Time Complexity : O(N*N)
+        ///  Space Complexity : O(1)
         /// </summary>
         /// <param name="arrNumbers"></param>
         /// <param name="arrLength"></param>
