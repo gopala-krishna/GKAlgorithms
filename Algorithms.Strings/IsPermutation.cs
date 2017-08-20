@@ -16,11 +16,11 @@ namespace Algorithms.Strings
         {
             if (s1.Length != s2.Length)
             {
-                Console.WriteLine("These strings are not permutaions");return;
+                Console.WriteLine("These strings are not permutations");return;
             }
-            bool IsPermutation = false;
+            bool IsPermutation = true;
             int[] intS1 = new int[s1.Length];
-            int[] intS2 = new int[s1.Length];
+            int[] intS2 = new int[s2.Length];
 
             for (int i = 0; i< s1.Length; i++)
             {
@@ -33,19 +33,19 @@ namespace Algorithms.Strings
 
             for(int i = 0; i<intS1.Length; i++)
             {
-                if(intS1[i]== intS2[i])
+                if(intS1[i] != intS2[i])
                 {
-                    IsPermutation = true; break;
+                    IsPermutation = false; break;
                 }
             }
 
             if (IsPermutation)
             {
-                Console.WriteLine("These strings are permutaions");
+                Console.WriteLine("These strings are permutations");
             }
             else
             {
-                Console.WriteLine("These strings are not permutaions");
+                Console.WriteLine("These strings are not permutations");
             }
 
         }
