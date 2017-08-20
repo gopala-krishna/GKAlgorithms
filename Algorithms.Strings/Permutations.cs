@@ -19,7 +19,7 @@ namespace Algorithms.Strings
             sfc.StringsFromChars1(charArr, str.Length);
         }
 
-        public void Permutations1(char[] set, int arrSize)
+        public void Permutations1(char[] set)
         {
             StringsFromCharsRecursive2(set, "", set.Length);
         }

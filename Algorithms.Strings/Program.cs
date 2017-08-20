@@ -20,7 +20,7 @@ namespace Algorithms.Strings
             //P.GetPermutationsWithoutDuplicates("abcc");
             //Console.Read();
 
-            P.Permutations1(charset,arraySize);
+            P.Permutations1(charset);
             Console.Read();
         }
     }
