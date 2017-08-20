@@ -12,15 +12,15 @@ namespace Algorithms.Sorting
             //BubbleSort bs = new BubbleSort();
             //var output = bs.BubbleSort1(input);
 
-            //InsertionSort ins = new InsertionSort();
-            //var output = ins.InsertionSort2(input, input.Length);
+            InsertionSort ins = new InsertionSort();
+            ins.InsertionSort2(input);
 
             //ShellSort shs = new ShellSort();
             //var output = shs.ShellSort1(input, input.Length);
 
 
-            QuickSort shs = new QuickSort();
-            shs.QuickSort1(input);
+            //QuickSort shs = new QuickSort();
+            //shs.QuickSort1(input);
 
             //MergeSort.MergeSort1(input);
 
