@@ -12,8 +12,8 @@ namespace Algorithms.Sorting
             //BubbleSort bs = new BubbleSort();
             //var output = bs.BubbleSort1(input);
 
-            InsertionSort ins = new InsertionSort();
-            ins.InsertionSort2(input);
+            //InsertionSort ins = new InsertionSort();
+            //ins.InsertionSort2(input);
 
             //ShellSort shs = new ShellSort();
             //var output = shs.ShellSort1(input, input.Length);
