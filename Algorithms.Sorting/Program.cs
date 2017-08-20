@@ -9,11 +9,11 @@ namespace Algorithms.Sorting
             
            var input = TakeSortingInput();
 
-            //BubbleSort bs = new BubbleSort();
-            //var output= bs.BubbleSort1(input, input.Length);
+            BubbleSort bs = new BubbleSort();
+            var output = bs.BubbleSort1(input);
 
-            InsertionSort ins = new InsertionSort();
-            var output = ins.InsertionSort2(input, input.Length);
+            //InsertionSort ins = new InsertionSort();
+            //var output = ins.InsertionSort2(input, input.Length);
 
             //ShellSort shs = new ShellSort();
             //var output = shs.ShellSort1(input, input.Length);

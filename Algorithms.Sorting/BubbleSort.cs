@@ -6,24 +6,29 @@ namespace Algorithms.Sorting
 {
     class BubbleSort
     {
-        public int[] BubbleSort1(int[] arrNumbers, int arrLength)
+        /// <summary>
+        ///  Time Complexity: O(N*N) 
+        ///  
+        /// </summary>
+        /// <param name="arr"></param>
+        /// <returns></returns>
+        public int[] BubbleSort1(int[] arr)
         {
             int iTemp;                                                                                         // 5 4 3 2 1--- 4 5 3 2 1- 4 3 5 2 1- 4 3 2 5 1 - 4 3 2 1 5
                                                                                                                // 4 3 2 1 5 --- 3 4 2 1 5 - 3 2 4 1 5 - 3 2 1 4 5
-            for (int i = arrLength - 1; i >= 0; i--)                                                // 3 2 1 4 5 --- 2 3 1 4 5 - 2 1 3 4 5 
+            for (int i = 0; i <arr.Length-1; i++)                                                // 3 2 1 4 5 --- 2 3 1 4 5 - 2 1 3 4 5 
             {                                                                                                      // 2 1 3 4 5 --- 1 2 3 4 5  
-
-                for (int j = 1; j <= i; j++)
+                for (int j = 0; j <arr.Length-i-1; j++)
                 {
-                    if (arrNumbers[j - 1] > arrNumbers[j])
+                   if (arr[j] > arr[j+1])
                     {
-                        iTemp = arrNumbers[j - 1];
-                        arrNumbers[j - 1] = arrNumbers[j];
-                        arrNumbers[j] = iTemp;
+                        iTemp = arr[j];
+                        arr[j] = arr[j+1];
+                        arr[j+1] = iTemp;
                     }
                 }
             }
-            return arrNumbers;
+            return arr;
         }
     }
 }
