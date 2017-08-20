@@ -10,10 +10,17 @@ namespace Algorithms.Strings
             //sr.AreRotaredStrings("water", "terwa");
             //Console.Read();
 
-            StringsFromChars sc = new StringsFromChars();
-            char[] charset = new char[] { 'a', 'b', 'c' };
-            int arraySize = 3;
-            sc.StringsFromChars3(charset, arraySize);
+            //StringsFromChars sc = new StringsFromChars();
+            char[] charset = new char[] { 'a', 'b', 'c','d','e' };
+            //int arraySize = 3;
+            //sc.StringsFromChars3(charset, arraySize);
+            //Console.Read();
+
+            Permutations P = new Permutations();
+            //P.GetPermutationsWithoutDuplicates("abcc");
+            //Console.Read();
+
+            P.Permutations1(charset,arraySize);
             Console.Read();
         }
     }

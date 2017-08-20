@@ -19,6 +19,58 @@ namespace Algorithms.Strings
             sfc.StringsFromChars1(charArr, str.Length);
         }
 
+        public void Permutations1(char[] set, int arrSize)
+        {
+            StringsFromCharsRecursive2(set, "", set.Length);
+        }
+        public void StringsFromCharsRecursive2(char[] set, string prefix, int arrSize)
+        {
+            if (arrSize == 0)
+            {
+                bool[] IsOneChar= new bool[set.Length]; bool IsFound = true;
+                for (int i = 0; i < set.Length; i++)
+                {
+                    if(CharCount(prefix,set[i])==1)
+                    {
+                        IsOneChar[i] = true;
+                    }
+                }
+                for (int i = 0; i < IsOneChar.Length; i++)
+                {
+                    if(IsOneChar[i] != true)
+                    {
+                        IsFound = false;
+                    }
+                }
+                if (IsFound)
+                    Console.WriteLine(prefix.ToString());
+                return;
+            }
+
+            for (int i = 0; i < set.Length; i++)
+            {
+
+                // Next character of input added
+                string newPrefix = prefix + set[i];
+
+                // arrSize is decreased, because we have added a new character
+                StringsFromCharsRecursive2(set, newPrefix, arrSize - 1);
+            }
+        }
+
+
+        public int CharCount(string s, char c)
+        {
+            int count = 0;
+            for (int i = 0; i < s.Length; i++)
+            {
+                if (s[i] == c)
+                { count++; }
+            }
+            return count;
+        }
+
+
 
         public string[] GetPermutations(string str)
         {
@@ -39,7 +91,7 @@ namespace Algorithms.Strings
         {
             if (left == right)
             {
-                //Console.WriteLine(str);
+                Console.WriteLine(str);
                 result[m] = str;
                 m++;
             }

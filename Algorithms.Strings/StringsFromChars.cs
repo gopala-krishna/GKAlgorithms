@@ -50,7 +50,6 @@ namespace Algorithms.Strings
         }
         public void StringsFromCharsRecursive2(char[] set, string prefix, int arrSize)
         {
-            // Base case: arrSize is 0, print prefix
             if (arrSize == 0)
             {
                 if ((CharCount(prefix, 'b') < 2) && (CharCount(prefix, 'c') < 3))
@@ -60,7 +59,6 @@ namespace Algorithms.Strings
                 return;
             }
 
-            // call for arrSize equals to arrSize-1
             for (int i = 0; i < set.Length; i++)
             {
 
@@ -105,7 +103,6 @@ namespace Algorithms.Strings
 
                 for (int i = 0; i < charset.Length; i++)
                 {
-
                     newPrefix = prefix + charset[i];
                     Console.WriteLine(newPrefix.ToString());
                     StringsFromCharsRecursive3(charset, newPrefix, arrSize - 1);
