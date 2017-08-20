@@ -9,8 +9,8 @@ namespace Algorithms.Sorting
             
            var input = TakeSortingInput();
 
-            BubbleSort bs = new BubbleSort();
-            var output = bs.BubbleSort1(input);
+            //BubbleSort bs = new BubbleSort();
+            //var output = bs.BubbleSort1(input);
 
             //InsertionSort ins = new InsertionSort();
             //var output = ins.InsertionSort2(input, input.Length);
@@ -22,10 +22,9 @@ namespace Algorithms.Sorting
             //QuickSort shs = new QuickSort();
             //shs.QuickSort1(input);
 
-            //MergeSort. ms = new MergeSort();
-            //MergeSort.MergeSort1(input);
+            MergeSort.MergeSort1(input);
 
-            ShowSortingResult(output);
+           // ShowSortingResult(output);
             Console.Read();
 
         }
