@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Algorithms.Sorting
 {
-  public class MergeSort
+    public class MergeSort
     {
         /// <summary>
         ///  Time Complexity : O(N log N)
@@ -86,61 +86,59 @@ namespace Algorithms.Sorting
                 j++;
                 k++;
             }
-
-
-
-
-
-
-
-
-            //    //int left = low;                                            //4,8,5,1,3,9,2      1 4 5 8   2 3 9     1 2 3 4 5 8 9
-            //    //int right = middle + 1;
-            //    //int[] tmp = new int[(high - low) + 1];
-            //    //int tmpIndex = 0;
-
-            //    //while ((left <= middle) && (right <= high))
-            //    //{
-            //    //    if (input[left] < input[right])
-            //    //    {
-            //    //        tmp[tmpIndex] = input[left];
-            //    //        left = left + 1;
-            //    //    }
-            //    //    else
-            //    //    {
-            //    //        tmp[tmpIndex] = input[right];
-            //    //        right = right + 1;
-            //    //    }
-            //    //    tmpIndex = tmpIndex + 1;
-            //    //}
-
-            //    //if (left <= middle)
-            //    //{
-            //    //    while (left <= middle)
-            //    //    {
-            //    //        tmp[tmpIndex] = input[left];
-            //    //        left = left + 1;
-            //    //        tmpIndex = tmpIndex + 1;
-            //    //    }
-            //    //}
-
-            //    //if (right <= high)
-            //    //{
-            //    //    while (right <= high)
-            //    //    {
-            //    //        tmp[tmpIndex] = input[right];
-            //    //        right = right + 1;
-            //    //        tmpIndex = tmpIndex + 1;
-            //    //    }
-            //    //}
-
-            //    //for (int i = 0; i < tmp.Length; i++)
-            //    //{
-            //    //    input[low + i] = tmp[i];
-            //    //}
-
-            }
-
         }
+
+
+
+
+
+
+
+
+        //    //int left = low;                                            //4,8,5,1,3,9,2      1 4 5 8   2 3 9     1 2 3 4 5 8 9
+        //    //int right = middle + 1;
+        //    //int[] tmp = new int[(high - low) + 1];
+        //    //int tmpIndex = 0;
+
+        //    //while ((left <= middle) && (right <= high))
+        //    //{
+        //    //    if (input[left] < input[right])
+        //    //    {
+        //    //        tmp[tmpIndex] = input[left];
+        //    //        left = left + 1;
+        //    //    }
+        //    //    else
+        //    //    {
+        //    //        tmp[tmpIndex] = input[right];
+        //    //        right = right + 1;
+        //    //    }
+        //    //    tmpIndex = tmpIndex + 1;
+        //    //}
+
+        //    //if (left <= middle)
+        //    //{
+        //    //    while (left <= middle)
+        //    //    {
+        //    //        tmp[tmpIndex] = input[left];
+        //    //        left = left + 1;
+        //    //        tmpIndex = tmpIndex + 1;
+        //    //    }
+        //    //}
+
+        //    //if (right <= high)
+        //    //{
+        //    //    while (right <= high)
+        //    //    {
+        //    //        tmp[tmpIndex] = input[right];
+        //    //        right = right + 1;
+        //    //        tmpIndex = tmpIndex + 1;
+        //    //    }
+        //    //}
+
+        //    //for (int i = 0; i < tmp.Length; i++)
+        //    //{
+        //    //    input[low + i] = tmp[i];
+        //    //}
+
 
     }
