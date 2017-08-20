@@ -54,8 +54,9 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <Content Include="bubble-sort1.png" />
-    <Content Include="Merge-Sort.png" />
+    <Content Include="BubbleSort1.png" />
+    <Content Include="MergeSort.png" />
+    <Content Include="QuickSort.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

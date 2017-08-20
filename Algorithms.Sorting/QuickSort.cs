@@ -57,7 +57,5 @@ namespace Algorithms.Sorting
 
             return i + 1;
         }
-
-
     }
 }
