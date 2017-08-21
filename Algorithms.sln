@@ -34,6 +34,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Math", "Algorith
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Sorting", "Algorithms.Sorting\Algorithms.Sorting.csproj", "{D3C8542F-106A-403F-9A6D-1997B5C301EB}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.HashTable", "DataStructures.HashTable\DataStructures.HashTable.csproj", "{26475A25-8FBB-4E69-A1CC-6A25AA3BEE8C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Dictionary", "DataStructures.Dictionary\DataStructures.Dictionary.csproj", "{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -72,6 +76,14 @@ Global
 		{D3C8542F-106A-403F-9A6D-1997B5C301EB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{D3C8542F-106A-403F-9A6D-1997B5C301EB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{D3C8542F-106A-403F-9A6D-1997B5C301EB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{26475A25-8FBB-4E69-A1CC-6A25AA3BEE8C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{26475A25-8FBB-4E69-A1CC-6A25AA3BEE8C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{26475A25-8FBB-4E69-A1CC-6A25AA3BEE8C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{26475A25-8FBB-4E69-A1CC-6A25AA3BEE8C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
