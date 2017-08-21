@@ -10,18 +10,30 @@ namespace DataStructures.HashTable
     {
         static void Main(string[] args)
         {
-            Hashtable ht = new Hashtable();
+            AnagramsForWordInDict ana = new AnagramsForWordInDict();
+            string[] arr = new string[] { "bca", "cde", "cac", "cab", "ccc" };
+            ana.AnagramsForWordInDict1("abc", arr);
 
-            ht.Add(1, "Gopala");
-            ht.Add(1, "krishna");
-            ht.Add(4, "Rao");
+            //Hashtable ht = new Hashtable();
 
-            foreach (var i in ht)
-            {
+            //ht.Add(1, "Gopala");
+            ////ht.Add(1, "krishna");  // Can't add same key
+            //ht.Add(4, "Rao");
+            //ht.Add(1.ToString(),"one");
+            //ht.Add(2.ToString(), "two");
+
+            //string value = (string)ht[1];
+
+            //foreach (var i in ht)
+            //{
+                
 
 
+            //}
 
-            }
+            //HashSet<int> hs = new HashSet<int>();
+
+            Console.Read();
         }
     }
 }
