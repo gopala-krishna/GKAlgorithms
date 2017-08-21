@@ -38,6 +38,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.HashTable", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Dictionary", "DataStructures.Dictionary\DataStructures.Dictionary.csproj", "{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.NameValueCollection", "DataStructures.NameValueCollection\DataStructures.NameValueCollection.csproj", "{2C3FE6CC-F422-41F3-87BA-546FF19FADD0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -84,6 +86,10 @@ Global
 		{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{CF3F35DA-A050-4B96-8FF7-4F5CB9D0F836}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2C3FE6CC-F422-41F3-87BA-546FF19FADD0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2C3FE6CC-F422-41F3-87BA-546FF19FADD0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2C3FE6CC-F422-41F3-87BA-546FF19FADD0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2C3FE6CC-F422-41F3-87BA-546FF19FADD0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
