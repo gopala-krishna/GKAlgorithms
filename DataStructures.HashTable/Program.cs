@@ -33,7 +33,6 @@ namespace DataStructures.HashTable
 
             //HashSet<int> hs = new HashSet<int>();
 
-
             Console.Read();
         }
     }

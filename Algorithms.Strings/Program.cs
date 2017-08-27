@@ -22,6 +22,9 @@ namespace Algorithms.Strings
 
             //P.Permutations1(charset);
 
+            StringToASCII sc = new StringToASCII();
+            sc.StringToASCII2("abcdefg");
+
             IsPermutation ip = new IsPermutation();
             ip.IsPermutation1("gopala", "gbplaa");
             Console.Read();

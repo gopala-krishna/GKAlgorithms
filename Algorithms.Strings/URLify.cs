@@ -6,6 +6,13 @@ namespace Algorithms.Strings
 {
     class URLify
     {
+        /// <summary>
+        /// Write a method to replace all the spaces in a string with ‘%20’.
+        /// You may assume that the string has sufficient space at the end to hold the additional 
+        /// characters, and that you are given the “true” length of the string.
+        /// </summary>
+        /// <param name="s"></param>
+        /// <param name="trueLength"></param>
         public void URLify1(char[] s, int trueLength)
         {
             //if (trueLength < s.Length)
@@ -30,7 +37,7 @@ namespace Algorithms.Strings
                 {
                     s[finalLen-1] = '0';
                     s[finalLen - 2] = '2';
-                    s[finalLen - 1] = '%';
+                    s[finalLen - 3] = '%';
                     finalLen = finalLen - 3;
                 }
                 else
@@ -46,5 +53,8 @@ namespace Algorithms.Strings
             }
 
         }
+
+
+
     }
 }
