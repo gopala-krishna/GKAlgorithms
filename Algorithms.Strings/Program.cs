@@ -28,8 +28,10 @@ namespace Algorithms.Strings
             //IsPermutation ip = new IsPermutation();
             //ip.IsPermutation1("gopala", "gbplaa");
 
-            //StringCompression sc = new StringCompression();
-            //sc.StringCompression2("aaabbccccddddd");
+
+            StringRotation sr = new StringRotation();
+            sr.StringRotation123("Gopala", "palaGa");
+
             Console.Read();
         }
     }
