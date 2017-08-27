@@ -48,5 +48,17 @@ namespace Algorithms.Strings
                 }
             }
         }
+
+        public void ReverseWords2(string[] strArr)
+        {
+            string result = string.Empty; ;
+            for (int i = strArr.Length-1; i >= 0; i--)
+            {
+                result += strArr[i] +" ";
+            }
+            Console.WriteLine(result);
+        }
+
+
     }
 }
