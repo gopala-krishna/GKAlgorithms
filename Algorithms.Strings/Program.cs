@@ -28,10 +28,12 @@ namespace Algorithms.Strings
             //IsPermutation ip = new IsPermutation();
             //ip.IsPermutation1("gopala", "gbplaa");
 
-            string[] strArr = new string[] { "Gopala", "Krishna", "Rao" };
-            ReverseWords rw = new ReverseWords();
-            rw.ReverseWords2(strArr);
+            //string[] strArr = new string[] { "Gopala", "Krishna", "Rao" };
+            //ReverseWords rw = new ReverseWords();
+            //rw.ReverseWords2(strArr);
 
+            ReverseString rs = new ReverseString();
+           // rs.ReverseString2("Gopala");
 
             //StringRotation sr = new StringRotation();
             //sr.StringRotation123("Gopala", "palaGa");
