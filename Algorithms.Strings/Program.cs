@@ -32,8 +32,11 @@ namespace Algorithms.Strings
             //ReverseWords rw = new ReverseWords();
             //rw.ReverseWords2(strArr);
 
-            ReverseString rs = new ReverseString();
-           // rs.ReverseString2("Gopala");
+            //ReverseString rs = new ReverseString();
+            // rs.ReverseString2("Gopala");
+
+            Palindrome p = new Palindrome();
+           // p.IsPalindrome("goppog");
 
             //StringRotation sr = new StringRotation();
             //sr.StringRotation123("Gopala", "palaGa");
