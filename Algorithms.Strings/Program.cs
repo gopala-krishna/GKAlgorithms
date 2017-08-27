@@ -11,16 +11,16 @@ namespace Algorithms.Strings
             //Console.Read();
 
             //StringsFromChars sc = new StringsFromChars();
-            //char[] charset = new char[] { 'a', 'b', 'c','d','e' };
+            // char[] charset = new char[] { 'a', 'b','c' };
             //int arraySize = 3;
-            //sc.StringsFromChars3(charset, arraySize);
+            //sc.StringsFromChars4(charset, "",arraySize);
             //Console.Read();
 
             //Permutations P = new Permutations();
-            //P.GetPermutationsWithoutDuplicates("abcc");
+            // P.GetPermutationsWithoutDuplicates("abcc");
             //Console.Read();
 
-            //P.Permutations1(charset);
+            //P.GetPermutationsWithRepititionOfChars("abc");
 
             //StringToASCII sc = new StringToASCII();
             //sc.StringToASCII2("abcdefg");
@@ -29,8 +29,11 @@ namespace Algorithms.Strings
             //ip.IsPermutation1("gopala", "gbplaa");
 
 
-            StringRotation sr = new StringRotation();
-            sr.StringRotation123("Gopala", "palaGa");
+            //StringRotation sr = new StringRotation();
+            //sr.StringRotation123("Gopala", "palaGa");
+
+            SearchSubString ss = new SearchSubString();
+            ss.SearchSubstring3("abcabcdgb", "abc");
 
             Console.Read();
         }

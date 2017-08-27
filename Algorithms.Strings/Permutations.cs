@@ -134,7 +134,8 @@ namespace Algorithms.Strings
                 if (!IsFound)
                 {
                     Console.WriteLine(str);
-                    result[k] = str;k++;
+                    result[k] = str;
+                    k++;
                 }
             }
             else

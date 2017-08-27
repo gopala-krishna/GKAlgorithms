@@ -84,5 +84,45 @@ namespace Algorithms.Strings
             return found;
 
         }
+
+        public void SearchSubstring3(string str, string substr)
+        {
+            int[] indexArr = new int[str.Length - substr.Length]; int m = 0; bool IsSubstring = true;
+            for (int i = 0; i < str.Length - substr.Length; i++)
+            {
+                if (str[i] == substr[0])
+                {
+                    indexArr[m] = i;
+                }
+                else
+                {
+                    indexArr[m] = -1;
+                }
+                m++;
+            }
+            
+                for (int i = 0; i < indexArr.Length; i++)
+                {
+                if (indexArr[i] >= 0)
+                {
+                    for (int j = 0; j < substr.Length; j++)
+                    {
+                        if (str[indexArr[i] + j] != substr[j])
+                        {
+                            IsSubstring = false; break;
+                        }
+                    }
+                }
+            }
+            if (IsSubstring)
+            {
+                Console.WriteLine("Found");
+            }
+            else
+            {
+                Console.WriteLine("Not Found");
+            }
+
+        }
     }
 }

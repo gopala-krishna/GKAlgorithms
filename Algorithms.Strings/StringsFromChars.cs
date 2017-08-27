@@ -110,8 +110,32 @@ namespace Algorithms.Strings
             }
         }
 
+        public void StringsFromChars4(char[] chars, string prefix, int arrSize)
+        {
+            StringsFromCharsRec4(chars, " ", arrSize);
+        }
 
-      
+        int count;
+        public void StringsFromCharsRec4(char[] chars, string prefix, int arrSize)
+        {
+            if (arrSize > 0)
+            {
+                string result = string.Empty;
+                for (int i = 0; i < chars.Length; i++)
+                {
+                    result = prefix + chars[i];
+                    count++;
+                    Console.WriteLine(count.ToString());
+                    Console.WriteLine(result.ToString());
+                    StringsFromCharsRec4(chars, result, arrSize - 1);
+                }
+            }
+
+        }
+
+
+
+
 
 
 
