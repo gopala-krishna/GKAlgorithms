@@ -10,21 +10,21 @@ namespace DataStructures.NameValueCollection
     {
         static void Main(string[] args)
         {
-            int i = 476;
+            //int i = 476;
 
-            NameValueCollection nv = new NameValueCollection();
-            nv.Add("a", "Gopala");
-            nv.Add("a", "Krishna");
+            //NameValueCollection nv = new NameValueCollection();
+            //nv.Add("a", "Gopala");
+            //nv.Add("a", "Krishna");
 
-            nv.Add(i.ToString(), "Gop");
-            nv.Add(i.ToString(), "Kris");
+            //nv.Add(i.ToString(), "Gop");
+            //nv.Add(i.ToString(), "Kris");
 
-            var values = nv.GetValues(i.ToString());
+            //var values = nv.GetValues(i.ToString());
 
-            foreach (var j in values)
-            {
-                Console.WriteLine(j.ToString());
-            }
+            //foreach (var j in values)
+            //{
+            //    Console.WriteLine(j.ToString());
+            //}
 
 
         }

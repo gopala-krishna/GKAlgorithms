@@ -9,18 +9,18 @@ namespace Algorithms.Problems
     {
         public void AnagramsForWordInDict1(string word, string[] dict)
         {
-           int  wordHash = ComputeHash(word);
+          // int  wordHash = ComputeHash(word);
 
 
         }
 
-        private int ComputeHash(string word)
-        {
-            Hashtable ht = new Hashtable();
-            return 0;
+        //private int ComputeHash(string word)
+        //{
+        //    //Hashtable ht = new Hashtable();
+        //    //return 0;
 
 
-        }
+        //}
 
     }
 }
