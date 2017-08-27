@@ -48,11 +48,11 @@ namespace Algorithms.Strings
             }
             if (count < 2)
             {
-                Console.WriteLine("This is a permutaion of palindrome");
+                Console.WriteLine("This is a permutation of palindrome");
             }
             else
             {
-                Console.WriteLine("This is not a permutaion of palindrome");
+                Console.WriteLine("This is not a permutation of palindrome");
 
             }
 

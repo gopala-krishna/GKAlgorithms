@@ -35,8 +35,8 @@ namespace Algorithms.Strings
             //ReverseString rs = new ReverseString();
             // rs.ReverseString2("Gopala");
 
-            Palindrome p = new Palindrome();
-           // p.IsPalindrome("goppog");
+            PermutationPalindrome p = new PermutationPalindrome();
+            p.IsPermutationPalindrome("gopgap");
 
             //StringRotation sr = new StringRotation();
             //sr.StringRotation123("Gopala", "palaGa");
