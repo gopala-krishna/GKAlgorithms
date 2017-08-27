@@ -9,7 +9,7 @@ namespace Algorithms.Strings
         public void IsOneAway(string str1, string str2)
         {
             int result = int.MinValue;
-            if(str1.Length - str2.Length > 2)
+            if(str1.Length - str2.Length > 1)
             {
                 Console.WriteLine("Not Oneaway");
             }

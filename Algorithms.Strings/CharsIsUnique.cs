@@ -40,13 +40,12 @@ namespace Algorithms.Strings
             bool[] asciiset = new bool[256];
             for (int i = 0; i < str.Length; i++)
             {
-                int val = str[i];
 
-                if (asciiset[val])
+                if (asciiset[str[i]])
                 {
                     unique = true;
                 }
-                asciiset[val] = true;
+                asciiset[str[i]] = true;
             }
 
             if (unique)
