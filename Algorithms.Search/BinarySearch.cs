@@ -47,7 +47,7 @@ namespace Algorithms.Search
             int maxVal = inputArr.Length;
             int midVal = (minVal + maxVal) / 2;
 
-            if (searchVal == midVal)
+            if (searchVal == inputArr[midVal])
                 return midVal;
 
 
