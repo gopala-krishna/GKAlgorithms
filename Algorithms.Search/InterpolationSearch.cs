@@ -16,14 +16,15 @@ namespace Algorithms.Search
             // Find indexes of two corners
             int lo = 0; int hi = arr.Length - 1;
 
+            // Probing the position with keeping
+            // uniform distribution in mind.
+            int pos = lo + (((int)(hi - lo) / (arr[hi] - arr[lo])) * (x - arr[lo]));
+
+
             // Since array is sorted, an element present
             // in array must be in range defined by corner
             while (lo <= hi && x >= arr[lo] && x <= arr[hi])
             {
-                // Probing the position with keeping
-                // uniform distribution in mind.
-                int pos = lo + (((hi - lo) /(arr[hi] - arr[lo])) * (x - arr[lo]));
-
                 // Condition of target found
                 if (arr[pos] == x)
                     return pos; 

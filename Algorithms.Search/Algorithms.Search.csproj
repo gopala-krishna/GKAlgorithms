@@ -8,7 +8,6 @@
   <ItemGroup>
     <Compile Remove="BreadthFirstSearch.cs" />
     <Compile Remove="DepthFirstSearch.cs" />
-    <Compile Remove="InterpolationSearch.cs" />
     <Compile Remove="TernarySearch.cs" />
   </ItemGroup>
 
