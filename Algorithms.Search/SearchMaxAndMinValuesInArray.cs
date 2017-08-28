@@ -93,12 +93,8 @@ namespace Algorithms.Search
                 minmax.MaxValue = mml.MaxValue;
             else
                 minmax.MaxValue = mmr.MaxValue;
-
             return minmax;
-
         }
-
-
     }
 
     
