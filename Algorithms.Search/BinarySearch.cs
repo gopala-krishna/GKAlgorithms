@@ -25,7 +25,7 @@ namespace Algorithms.Search
         {
             int midVal = (minVal + maxVal) / 2;
 
-            if (inputArr[(minVal + maxVal) / 2] == searchVal) return (minVal + maxVal) / 2;
+            if (inputArr[midVal] == searchVal) return midVal;
 
 
             if (inputArr[midVal] < searchVal) return BinarySearchRecursive(inputArr, searchVal, midVal + 1, maxVal);
