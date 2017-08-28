@@ -23,7 +23,6 @@ namespace DataStructures.Dictionary
                 Console.WriteLine(i.Key.ToString() + "," + i.Value.ToString());
             }
 
-
             Console.Read();
 
         }
