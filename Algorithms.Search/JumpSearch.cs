@@ -24,17 +24,16 @@ namespace Algorithms.Search
 
             while (i < inputArr.Length)
             {
-                if (searchVal <= inputArr[i])
-                {
-                    maxIndex = i;
-                    minIndex = i / jumpInterval;
-                    break;
-                }
-
                 if (i * jumpInterval >= inputArr.Length)
                 {
                     maxIndex = inputArr.Length;
                     minIndex = i;
+                    break;
+                }
+                if (searchVal <= inputArr[i])
+                {
+                    maxIndex = i;
+                    minIndex = i / jumpInterval;
                     break;
                 }
                 else
