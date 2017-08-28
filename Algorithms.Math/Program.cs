@@ -15,10 +15,10 @@ namespace Algorithms.Math
             //PrimeNumbers primes = new PrimeNumbers();
             //primes.SieveofEratosthenes(Convert.ToInt32(input));
 
-            Console.WriteLine("Please input an interger");
-            var input = Console.ReadLine();
-            Fibonacci fb = new Fibonacci();
-            Console.WriteLine(fb.NthFibonacciMemotizedIterative(Convert.ToInt32(input)));
+            //Console.WriteLine("Please input an interger");
+            //var input = Console.ReadLine();
+            //Fibonacci fb = new Fibonacci();
+            //Console.WriteLine(fb.NthFibonacciMemotizedIterative(Convert.ToInt32(input)));
 
             //Console.WriteLine("Please input an interger");
             //var input = Console.ReadLine();
@@ -38,10 +38,10 @@ namespace Algorithms.Math
             //mn.MagicNumbers(Convert.ToInt32(input));
             ////mn.GetFactorsSum(Convert.ToInt32(input));
 
-            //Console.WriteLine("Please input an interger");
-            //var input = Console.ReadLine();
-            //PrimeFactors pf = new PrimeFactors();
-            //pf.PrimeFactors1(Convert.ToInt32(input));
+            Console.WriteLine("Please input an interger");
+            var input = Console.ReadLine();
+            PrimeFactors pf = new PrimeFactors();
+            pf.PrimeFactors1(Convert.ToInt32(input));
             ////bool res = pf.IsPrime(Convert.ToInt32(input));
             //mn.GetFactorsSum(Convert.ToInt32(input));
 
@@ -57,8 +57,8 @@ namespace Algorithms.Math
             //KthSmallest ks = new KthSmallest();
             //ks.GetKthSmallestUnsorted(input, 4);
 
-            PrimeFactors pf = new PrimeFactors();
-            bool b = pf.IsPrime(13);
+            //PrimeFactors pf = new PrimeFactors();
+            //bool b = pf.IsPrime(13);
             Console.Read();
         }
 

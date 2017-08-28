@@ -12,13 +12,17 @@ namespace Algorithms.Math
         {
 
             int i = 1;
-            while (i <= n)
+            while (i <= System.Math.Sqrt(n))
             {
                 if (n % i == 0)
                 {
                     if (IsPrime(i))
                     {
                         Console.Write(i + ",");
+                    }
+                    if (IsPrime(n/i))
+                    {
+                        Console.Write(n/i + ",");
                     }
                 }
                 i++;
@@ -37,7 +41,8 @@ namespace Algorithms.Math
                 }
                 i++;
             }
-            if (count > 1) return false; return true;
+            if (count > 1) return false;
+            return true;
         }
 
         }
