@@ -48,7 +48,7 @@ namespace Algorithms.Strings
             //ciu.CharsIsUnique2("abcca");
 
             OneAway oa = new OneAway();
-            oa.IsOneAway("abc", "bbe");
+            oa.IsOneAway("abk", "nbe");
 
 
             Console.Read();

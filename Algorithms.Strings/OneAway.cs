@@ -8,7 +8,7 @@ namespace Algorithms.Strings
     {
         public void IsOneAway(string str1, string str2)
         {
-            int result = int.MinValue;
+            int result = 0;
             if(str1.Length - str2.Length > 1)
             {
                 Console.WriteLine("Not Oneaway");
@@ -25,16 +25,16 @@ namespace Algorithms.Strings
 
             for (int i = 0; i < charset.Length; i++)
             {
-                result = charset[i];
+                result += Math.Abs(charset[i]);
             }
 
-            if (result <=1)
+            if (result >2)
             {
-                Console.WriteLine("Oneaway");
+                Console.WriteLine("Not Oneaway");
             }
             else
             {
-                Console.WriteLine(" Not Oneaway");
+                Console.WriteLine("Oneaway");
             }
 
 
