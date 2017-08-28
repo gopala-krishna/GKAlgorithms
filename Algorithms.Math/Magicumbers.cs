@@ -38,7 +38,7 @@ namespace Algorithms.Math
                 }
                 i++;
             }
-         return sum - num;
+         return sum-num;
         }
 
     }

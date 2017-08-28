@@ -16,13 +16,23 @@ namespace Algorithms.Math
             {
                 if (n % i == 0)
                 {
-                    if (IsPrime(i))
+                    if (n / i == i)
                     {
-                        Console.Write(i + ",");
+                        if (IsPrime(i))
+                        {
+                            Console.Write(i + ",");
+                        }
                     }
-                    if (IsPrime(n/i))
+                    else
                     {
-                        Console.Write(n/i + ",");
+                        if (IsPrime(i))
+                        {
+                            Console.Write(i + ",");
+                        }
+                        if (IsPrime(n / i))
+                        {
+                            Console.Write(n / i + ",");
+                        }
                     }
                 }
                 i++;
