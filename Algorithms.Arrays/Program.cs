@@ -12,19 +12,19 @@ namespace Algorithms.Arrays
         {
             //var input = TakeSearchInput();
 
-            //SubArrayWithGivenSum sawgs = new SubArrayWithGivenSum();
-            //var input = TakeSearchInput();
-            //sawgs.SubArrayWithGivenSum1(input, 6);
+            SubArrayWithGivenSum sawgs = new SubArrayWithGivenSum();
+            var input = TakeSearchInput();
+            sawgs.SubArrayWithGivenSum1(input, 6);
 
-            ClosestPair cp = new ClosestPair();
-            cp.ClosestPairsFromUnSortedArrays();
+            //ClosestPair cp = new ClosestPair();
+            //cp.ClosestPairsFromUnSortedArrays();
 
             ////var input = TakeSearchInput();
 
             ////PeaksAndValleys pv = new PeaksAndValleys();
             ////pv.PeaksAndValleys2(input);
 
-           // var input = TakeSearchInput();
+            // var input = TakeSearchInput();
 
             //ZigZag zz = new ZigZag();
             //zz.IsZigzag(input);

@@ -35,10 +35,6 @@ namespace Algorithms.Arrays
                     }
                 }
             }
-
-
-
-
         }
     }
 }
