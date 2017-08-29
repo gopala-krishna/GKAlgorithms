@@ -3,11 +3,11 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.26403.3
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Search", "Algorithms.Search\Algorithms.Search.csproj", "{DCAC19C4-F6F7-4539-A864-1FBD1D3E6ED8}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Search", "Algorithms.Search\Algorithms.Search.csproj", "{DCAC19C4-F6F7-4539-A864-1FBD1D3E6ED8}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Problems", "Algorithms.Problems\Algorithms.Problems.csproj", "{8A62E321-2030-40B6-9652-EACF5E73D928}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Problems", "Algorithms.Problems\Algorithms.Problems.csproj", "{8A62E321-2030-40B6-9652-EACF5E73D928}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Strings", "Algorithms.Strings\Algorithms.Strings.csproj", "{465159B4-45A7-4580-B81A-F7C1909512B6}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Algorithms.Strings", "Algorithms.Strings\Algorithms.Strings.csproj", "{465159B4-45A7-4580-B81A-F7C1909512B6}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Entities", "Algorithms.Entities\Algorithms.Entities.csproj", "{8D7E1105-A98F-4B0A-94C4-BFC55DA210DD}"
 EndProject
@@ -51,6 +51,20 @@ EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.PersistentCache", "DataStructures.PersistentCache\DataStructures.PersistentCache.csproj", "{BD721A74-B16F-4D3E-872E-3237DD989901}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Linkedlist", "DataStructures.Linkedlist\DataStructures.Linkedlist.csproj", "{B07A715E-301D-4ADB-8665-5E55CA1D536F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.BinaryTree", "DataStructures.BinaryTree\DataStructures.BinaryTree.csproj", "{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.MaxHeap", "DataStructures.MaxHeap\DataStructures.MaxHeap.csproj", "{7C73659E-7111-4449-8809-8466FC6FF0D1}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.MinHeap", "DataStructures.MinHeap\DataStructures.MinHeap.csproj", "{F6C612EE-12C4-457B-9423-683879161284}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Trie", "DataStructures.Trie\DataStructures.Trie.csproj", "{24FC31F0-B97C-4046-B9F5-26242021777B}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Graph", "DataStructures.Graph\DataStructures.Graph.csproj", "{424F4AFD-8018-4914-BC38-6D34CC324E49}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.ArrayList", "DataStructures.ArrayList\DataStructures.ArrayList.csproj", "{A2DA53E0-BE76-4682-A80E-3268BE869900}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.StringBuilder", "DataStructures.StringBuilder\DataStructures.StringBuilder.csproj", "{E0D28A6B-7051-4079-9A5F-A588BB01C669}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -126,6 +140,34 @@ Global
 		{B07A715E-301D-4ADB-8665-5E55CA1D536F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B07A715E-301D-4ADB-8665-5E55CA1D536F}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B07A715E-301D-4ADB-8665-5E55CA1D536F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7C73659E-7111-4449-8809-8466FC6FF0D1}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7C73659E-7111-4449-8809-8466FC6FF0D1}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7C73659E-7111-4449-8809-8466FC6FF0D1}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7C73659E-7111-4449-8809-8466FC6FF0D1}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F6C612EE-12C4-457B-9423-683879161284}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F6C612EE-12C4-457B-9423-683879161284}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F6C612EE-12C4-457B-9423-683879161284}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F6C612EE-12C4-457B-9423-683879161284}.Release|Any CPU.Build.0 = Release|Any CPU
+		{24FC31F0-B97C-4046-B9F5-26242021777B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{24FC31F0-B97C-4046-B9F5-26242021777B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{24FC31F0-B97C-4046-B9F5-26242021777B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{24FC31F0-B97C-4046-B9F5-26242021777B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{424F4AFD-8018-4914-BC38-6D34CC324E49}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{424F4AFD-8018-4914-BC38-6D34CC324E49}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{424F4AFD-8018-4914-BC38-6D34CC324E49}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{424F4AFD-8018-4914-BC38-6D34CC324E49}.Release|Any CPU.Build.0 = Release|Any CPU
+		{A2DA53E0-BE76-4682-A80E-3268BE869900}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{A2DA53E0-BE76-4682-A80E-3268BE869900}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{A2DA53E0-BE76-4682-A80E-3268BE869900}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{A2DA53E0-BE76-4682-A80E-3268BE869900}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E0D28A6B-7051-4079-9A5F-A588BB01C669}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E0D28A6B-7051-4079-9A5F-A588BB01C669}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E0D28A6B-7051-4079-9A5F-A588BB01C669}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E0D28A6B-7051-4079-9A5F-A588BB01C669}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
