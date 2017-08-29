@@ -51,7 +51,6 @@ namespace Algorithms.Arrays
                     intArr[i +1] = intArr[i];
                     intArr[i] = temp;
                 }
-
             }
 
             for (int i = 0; i < intArr.Length; i++)
