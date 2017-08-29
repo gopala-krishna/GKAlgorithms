@@ -50,9 +50,6 @@ namespace Algorithms.Sorting
             arr[high] = temp1;
 
             return i + 1;
-
         }
-
-
     }
 }

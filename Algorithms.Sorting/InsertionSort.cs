@@ -34,7 +34,7 @@ namespace Algorithms.Sorting
          //<returns></returns>
         public int[] InsertionSort2(int[] arrNumbers, int arrLength)
         {
-            // 5,2,3,1,9,4  2 5 3 1 9 4                        3 5 1 9 4  2 3 1 5 9 4   6 3 9 2 7 1
+            // 5,2,3,1,9,4  2 5 3 1 9 4     3 5 1 9 4  2 3 1 5 9 4   6 3 9 2 7 1
 
             int i = 0;
             while (i < arrLength)
