@@ -235,17 +235,7 @@ namespace Algorithms.BigO
                     j = j * j;
                     Console.WriteLine("Gopala is great");
                 }
-
             }
-
         }
-
-
-
-
-
-
-
-
     }
 }
