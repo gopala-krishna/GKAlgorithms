@@ -40,11 +40,11 @@ namespace Algorithms.Arrays
         {
             int[] arr1 = new int[] { 1, 4, 5, 7 };
             int[] arr2 = new int[] { 10, 20, 30, 40 };
-            int x = 32;
+            int x = 11;
             int minVal = int.MaxValue; int ind1 = 0; int ind2 = 0;
             int l = 0; int r = arr2.Length-1;
 
-            while( l<arr1.Length && r>0)
+            while( l<arr1.Length && r>=0)
             {
                 if ((System.Math.Abs(arr1[l] + arr2[r] - x) < minVal))
                 {
