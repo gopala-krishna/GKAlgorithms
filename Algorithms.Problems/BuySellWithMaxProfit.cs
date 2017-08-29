@@ -27,6 +27,8 @@ namespace Algorithms.Problems
             int i = 0;
             while (i < arrLength - 1)    // 5,2,1,7,4,5,8
             {
+                BuySellInterval bsi = new BuySellInterval();
+
                 // Find Local Minima. Note that the limit is (n-2) as we are
                 // comparing present element to the next element. 
                 while ((i < arrLength - 1) && (arrInput[i + 1] <= arrInput[i]))
@@ -37,12 +39,11 @@ namespace Algorithms.Problems
                     break;
 
                 // Store the index of minima
-                BuySellInterval bsi = new BuySellInterval();
                 bsi.Buy = i++;
 
                 // Find Local Maxima.  Note that the limit is (n-1) as we are
                 // comparing to previous element
-                while ((i < arrLength) && (arrInput[i] >= arrInput[i - 1]))
+                while ((i < arrLength) && (arrInput[i-1] <= arrInput[i]))
                     i++;
 
                 // Store the index of maxima
