@@ -29,8 +29,8 @@ namespace Algorithms.Arrays
             //ZigZag zz = new ZigZag();
             //zz.IsZigzag(input);
 
-            //ZeroMatrix zm = new ZeroMatrix();
-            //zm.ZeroMatrix1();
+            ZeroMatrix zm = new ZeroMatrix();
+            zm.ZeroMatrix1();
 
 
             Console.Read();
