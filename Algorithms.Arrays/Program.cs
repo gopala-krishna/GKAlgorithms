@@ -17,7 +17,7 @@ namespace Algorithms.Arrays
             //sawgs.SubArrayWithGivenSum1(input, 6);
 
             ClosestPair cp = new ClosestPair();
-            cp.ClosestPairsFromSortedArrays1();
+            cp.ClosestPairsFromUnSortedArrays();
 
             ////var input = TakeSearchInput();
 

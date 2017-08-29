@@ -13,10 +13,10 @@ namespace Algorithms.Arrays
         /// we need to find the pair ar1[i] + ar2[j] 
         /// such that absolute value of (ar1[i] + ar2[j] – x) is minimum.
         /// </summary>
-        public void ClosestPairsFromSortedArrays()
+        public void ClosestPairsFromUnSortedArrays()
         {
-            int[] arr1 = new int[] { 1, 4, 5, 7 };
-            int[] arr2 = new int[] { 10, 20, 30, 40 };
+            int[] arr1 = new int[] { 1, 7, 5, 3 };
+            int[] arr2 = new int[] { 40, 20, 30, 10 };
             int x = 50; int minVal = int.MaxValue; int ind1 = 0; int ind2 = 0;
 
 
