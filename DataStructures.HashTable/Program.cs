@@ -16,8 +16,25 @@ namespace DataStructures.HashTable
 
             //HashTableBasics();
 
-            OpenHashing oh = new OpenHashing();
-            oh.HashTableChaining();
+            OpenHashingHashTable oh = new OpenHashingHashTable();
+            oh.InsertData(1, "gopala");
+            oh.InsertData(2, "krishna");
+            oh.InsertData(3, "rao");
+
+            Console.WriteLine(oh.Search(2));
+            Console.WriteLine(oh.Search(3));
+
+            oh.Delete(2);
+
+            Console.WriteLine(oh.Search(2));
+            Console.WriteLine(oh.Search(3));
+
+            oh.Delete(3);
+
+            oh.InsertData(2, "Krishna Rao");
+            Console.WriteLine(oh.Search(2));
+            Console.WriteLine(oh.Search(3));
+
 
             Console.Read();
         }

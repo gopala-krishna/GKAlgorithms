@@ -15,7 +15,7 @@ namespace DataStructures.HashTable
     /// is unoccupied, then the entry record is inserted in slot at the hashed index else it proceeds
     /// in some probe sequence until it finds an unoccupied slot.
     /// </summary>
-    public class ClosedHashing
+    public class ClosedHashingHashTable
     {
         public void LinearProbing()
         {
@@ -32,7 +32,7 @@ namespace DataStructures.HashTable
 
         }
 
-        public void DoubleHashing
+        public void DoubleHashing()
         {
 
         }
