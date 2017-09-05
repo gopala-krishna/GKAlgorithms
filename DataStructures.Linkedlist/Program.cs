@@ -10,13 +10,22 @@ namespace DataStructures.Linkedlist
     {
         static void Main(string[] args)
         {
-            SinglyLinkedList sll = new SinglyLinkedList();
-            sll.Add("A");
-            sll.Add("B");
-            sll.Add("C");
-            sll.Add("D");
-            sll.ListNodes();
-            var res =sll.Retrieve(2);
+            //SinglyLinkedList sll = new SinglyLinkedList();
+            //sll.InsertAtStart(11);
+            //sll.InsertAtStart(12);
+            //sll.Append(14);
+            //sll.PrintList();
+            //sll.DeleteNode(12);
+            //sll.PrintList();
+
+            DoublyLinkedList dll = new DoublyLinkedList();
+            dll.InsertAtStart(11);
+            dll.InsertAtStart(12);
+            dll.Append(14);
+            dll.PrintList(dll.head);
+            dll.DeleteNode(dll.head,dll.head.next);
+            dll.PrintList(dll.head);
+
             Console.Read();
 
         }
