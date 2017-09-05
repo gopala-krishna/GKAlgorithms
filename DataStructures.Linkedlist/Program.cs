@@ -10,6 +10,15 @@ namespace DataStructures.Linkedlist
     {
         static void Main(string[] args)
         {
+            SinglyLinkedList sll = new SinglyLinkedList();
+            sll.Add("A");
+            sll.Add("B");
+            sll.Add("C");
+            sll.Add("D");
+            sll.ListNodes();
+            var res =sll.Retrieve(2);
+            Console.Read();
+
         }
     }
 }

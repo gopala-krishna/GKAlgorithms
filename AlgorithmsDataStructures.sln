@@ -50,7 +50,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.InMemoryCach
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.PersistentCache", "DataStructures.PersistentCache\DataStructures.PersistentCache.csproj", "{BD721A74-B16F-4D3E-872E-3237DD989901}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.Linkedlist", "DataStructures.Linkedlist\DataStructures.Linkedlist.csproj", "{B07A715E-301D-4ADB-8665-5E55CA1D536F}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.LinkedList", "DataStructures.Linkedlist\DataStructures.LinkedList.csproj", "{B07A715E-301D-4ADB-8665-5E55CA1D536F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.BinaryTree", "DataStructures.BinaryTree\DataStructures.BinaryTree.csproj", "{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}"
 EndProject
