@@ -15,7 +15,10 @@ namespace DataStructures.HashTable
             //ana.AnagramsForWordInDict1("abc", arr);
 
             //HashTableBasics();
-            HashTableChaining();
+
+            OpenHashing oh = new OpenHashing();
+            oh.HashTableChaining();
+
             Console.Read();
         }
 
@@ -49,25 +52,6 @@ namespace DataStructures.HashTable
 
         }
 
-        ///// <summary>
-        ///// Check whether it is the right approach for chaining
-        ///// </summary>
-        //public static void HashTableChaining()
-        //{
-        //    Hashtable ht = new Hashtable();
-
-        //    List<string> chain1 = new List<string>();
-        //    chain1.Add("Gopala");
-        //    chain1.Add("Krishna");
-
-        //    List<string> chain2 = new List<string>();
-        //    chain2.Add("Rao");
-        //    chain2.Add("N");
-
-        //    ht.Add(1, chain1);
-        //    ht.Add(2, chain2);
-
-        //    var value = (List<string>)ht[2];
-        //}
+       
     }   
 }

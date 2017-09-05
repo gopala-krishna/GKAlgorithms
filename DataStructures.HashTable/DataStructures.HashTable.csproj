@@ -43,8 +43,6 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="AnagramsForWordInDict.cs" />
-    <Compile Include="ClosedHashing.cs" />
-    <Compile Include="DoubleHashing.cs" />
     <Compile Include="OpenHashing.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
