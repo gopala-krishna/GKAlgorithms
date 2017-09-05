@@ -6,6 +6,8 @@ namespace Algorithms.Strings
     {
         static void Main(string[] args)
         {
+            StringCompression sc = new StringCompression();
+            sc.StringCompression3("aaabbccccc");
             //StringRotation sr = new StringRotation();
             //sr.AreRotaredStrings("water", "terwa");
             //Console.Read();
@@ -47,8 +49,8 @@ namespace Algorithms.Strings
             //CharsIsUnique ciu = new CharsIsUnique();
             //ciu.CharsIsUnique2("abcca");
 
-            OneAway oa = new OneAway();
-            oa.IsOneAway("abk", "nbe");
+            //OneAway oa = new OneAway();
+            //oa.IsOneAway("abk", "nbe");
 
 
             Console.Read();

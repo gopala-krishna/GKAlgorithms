@@ -6,7 +6,36 @@ namespace Algorithms.Strings
 {
     class StringCompression
     {
-        public string StringCompression1(string str)
+        /// <summary>
+        /// BruteForce Method
+        /// Time Complexity : O(26*N)
+        /// </summary>
+        /// <param name="str"></param>
+        public void StringCompression1(string str)
+        {
+            for (char c = 'a'; c <= 'z'; c++)
+            {
+                int frequency = 0; ;
+                for (int i = 0; i < str.Length; i++)
+                {
+                    if (str[i]== c)
+                    {
+                        frequency++;
+                    }
+                }
+                if (frequency > 0)
+                {
+                    Console.Write(c.ToString() + frequency);
+                }
+            }
+        }
+
+        /// <summary>
+        /// Using Direct Access Table
+        /// </summary>
+        /// <param name="str"></param>
+        /// <returns></returns>
+        public string StringCompression2(string str)
         {
             int[] intArr = new int[256];
             for(int i =0; i<str.Length;i++)
@@ -36,7 +65,33 @@ namespace Algorithms.Strings
             }
         }
 
-     
+        /// <summary>
+        /// Using Hashing
+        /// Time Complexity : O(N)
+        /// </summary>
+        /// <param name="str"></param>
+        public void StringCompression3(string str)
+        {
+            int[] frequency = new int[26];
 
+            for(int i =0; i<str.Length;i++)
+            {
+                int index = Hash(str[i]);
+                frequency[index]++;
+            }
+
+            for (int i = 0; i < 26; i++)
+            {
+                if (frequency[i] > 0)
+                {
+                    Console.Write(((char)(i + 'a')).ToString() + frequency[i]);
+                }
+            }
+        }
+        private int Hash(char c)
+        {
+            return c - 'a';
+        }
+           
     }
 }
