@@ -47,6 +47,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="ReverseString.cs" />
     <Compile Include="StackUsingArray.cs" />
+    <Compile Include="TwoStacks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
