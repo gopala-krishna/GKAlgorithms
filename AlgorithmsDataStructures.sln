@@ -66,6 +66,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.ArrayList", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.StringBuilder", "DataStructures.StringBuilder\DataStructures.StringBuilder.csproj", "{E0D28A6B-7051-4079-9A5F-A588BB01C669}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.HashSet", "DataStructures.HashSet\DataStructures.HashSet.csproj", "{3799298F-74C5-4B60-8CF4-8462C57DEB86}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -168,6 +170,10 @@ Global
 		{E0D28A6B-7051-4079-9A5F-A588BB01C669}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{E0D28A6B-7051-4079-9A5F-A588BB01C669}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{E0D28A6B-7051-4079-9A5F-A588BB01C669}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3799298F-74C5-4B60-8CF4-8462C57DEB86}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3799298F-74C5-4B60-8CF4-8462C57DEB86}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3799298F-74C5-4B60-8CF4-8462C57DEB86}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3799298F-74C5-4B60-8CF4-8462C57DEB86}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
