@@ -37,17 +37,17 @@ namespace DataStructures.HashTable
 
             ClosedHashingHashTable ch = new ClosedHashingHashTable();
 
-            //ch.LinearInsert(1, "Gopala");
-            //ch.LinearInsert(2, "Krishna");
-            //ch.LinearInsert(3, "Rao");
+            ch.LinearInsert(1, "Gopala");
+            ch.LinearInsert(2, "Krishna");
+            ch.LinearInsert(3, "Rao");
 
             //ch.QuadraticInsert(1, "Gopala");
             //ch.QuadraticInsert(2, "Krishna");
             //ch.QuadraticInsert(3, "Rao");
 
-            ch.DoubleHashInsert(1, "Gopala");
-            ch.DoubleHashInsert(2, "Krishna");
-            ch.DoubleHashInsert(3, "Rao");
+            //ch.DoubleHashInsert(1, "Gopala");
+            //ch.DoubleHashInsert(2, "Krishna");
+            //ch.DoubleHashInsert(3, "Rao");
 
 
             ch.Search(2);

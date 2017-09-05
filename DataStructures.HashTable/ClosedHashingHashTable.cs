@@ -52,20 +52,29 @@ namespace DataStructures.HashTable
             }
             return isOpen;
         }
-        public void LinearInsert(int key, string data)
+
+        public int GetHashIndex(int key)
         {
             int hash = key % tableSize;
+            while (table[hash] != null && table[hash].GetKey() != key % tableSize)
+            {
+                hash = (hash + 1) % tableSize;
+            }
+            return hash;
+        }
 
+
+
+        public void LinearInsert(int key, string data)
+        {
             if (!CheckOpenSpace()) //if no open spaces available
             {
                 Console.WriteLine("Table is at full capacity!");
                 return;
             }
 
-            while (table[hash] != null && table[hash].GetKey() != key%tableSize)
-            {
-                hash = (hash + 1) % tableSize;
-            }
+            int hash = GetHashIndex(key);
+
             table[hash] = new HashEntry(key, data);
         }
 
@@ -109,11 +118,7 @@ namespace DataStructures.HashTable
 
         public void Search(int key)
         {
-            int hash = key % tableSize;
-            while (table[hash] != null && table[hash].GetKey() != key)
-            {
-                hash = (hash + 1) % tableSize;
-            }
+            int hash = GetHashIndex(key);
             if (table[hash] == null)
             {
                 Console.WriteLine("Nothing found!");
@@ -126,11 +131,7 @@ namespace DataStructures.HashTable
 
         public void Delete(int key)
         {
-            int hash = key % tableSize;
-            while (table[hash] != null && table[hash].GetKey() != key)
-            {
-                hash = (hash + 1) % tableSize;
-            }
+            int hash = GetHashIndex(key);
             if (table[hash] == null)
             {
                 Console.WriteLine("Nothing found to Delete!");
