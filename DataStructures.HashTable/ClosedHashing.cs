@@ -26,5 +26,15 @@ namespace DataStructures.HashTable
         {
 
         }
+
+        public void RandomProbing()
+        {
+
+        }
+
+        public void DoubleHashing
+        {
+
+        }
     }
 }
