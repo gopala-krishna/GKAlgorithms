@@ -6,8 +6,9 @@ namespace Algorithms.Strings
     {
         static void Main(string[] args)
         {
-            StringCompression sc = new StringCompression();
-            sc.StringCompression3("aaabbccccc");
+            //StringCompression sc = new StringCompression();
+            //sc.StringCompression3("aaabbccccc");
+
             //StringRotation sr = new StringRotation();
             //sr.AreRotaredStrings("water", "terwa");
             //Console.Read();

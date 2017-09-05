@@ -10,6 +10,9 @@ namespace DataStructures.HashTable
     {
         static void Main(string[] args)
         {
+            //StringHash sh = new StringHash();
+            //sh.StringHash1("a");
+
             //AnagramsForWordInDict ana = new AnagramsForWordInDict();
             //string[] arr = new string[] { "bca", "cde", "cac", "cab", "ccc" };
             //ana.AnagramsForWordInDict1("abc", arr);
