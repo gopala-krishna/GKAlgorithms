@@ -18,11 +18,15 @@ namespace DataStructures.Stack
             //sua.Push(40);
 
             //sua.Pop();
-            
+
             //Console.WriteLine(sua.Peek());
 
-            ReverseString rs = new ReverseString();
-            rs.ReverseStringUsingStack("Gopala");
+            //ReverseString rs = new ReverseString();
+            //rs.ReverseStringUsingStack("Gopala");
+
+            EvaluatePostfix ep = new EvaluatePostfix();
+            ep.EvaluatePostfixExpression("231*+9-");
+
 
             Console.Read();
         }
