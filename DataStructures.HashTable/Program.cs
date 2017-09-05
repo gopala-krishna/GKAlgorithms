@@ -14,7 +14,8 @@ namespace DataStructures.HashTable
             //string[] arr = new string[] { "bca", "cde", "cac", "cab", "ccc" };
             //ana.AnagramsForWordInDict1("abc", arr);
 
-            HashTableBasics();
+            //HashTableBasics();
+            HashTableChaining();
             Console.Read();
         }
 
@@ -29,7 +30,7 @@ namespace DataStructures.HashTable
         public static void HashTableBasics()
         {
             Hashtable ht = new Hashtable();
-            
+
 
             ht.Add(1, "Gopala");
             //ht.Add(1, "krishna");  // Can't add same key
@@ -44,8 +45,31 @@ namespace DataStructures.HashTable
 
             // ht.Add(null, "test"); can't add null key
             ht.Add(5, null);
-            var value5 =  ht[5];
+            var value5 = ht[5];
 
         }
-    }
+
+        public static void HashTableChaining()
+        {
+            Hashtable ht = new Hashtable();
+
+            List<string> chain1 = new List<string>();
+            chain1.Add("Gopala");
+            chain1.Add("Krishna");
+
+            List<string> chain2 = new List<string>();
+            chain2.Add("Rao");
+            chain2.Add("N");
+
+            ht.Add(1, chain1);
+            ht.Add(2, chain2);
+
+            var value = (List<string>)ht[2];
+            foreach(string i in value)
+            {
+                Console.WriteLine(i);
+            }
+
+        }
+    }   
 }
