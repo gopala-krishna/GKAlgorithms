@@ -62,13 +62,6 @@ namespace DataStructures.HashTable
         }
 
         HashNode[] table = new HashNode[tableSize];
-        public OpenHashingHashTable()
-        {
-            for(int i = 0; i<table.Length; i++)
-            {
-                table[i] = null;
-            }
-        }
 
         public void InsertData(int key, string data)
         {

@@ -16,24 +16,53 @@ namespace DataStructures.HashTable
 
             //HashTableBasics();
 
-            OpenHashingHashTable oh = new OpenHashingHashTable();
-            oh.InsertData(1, "gopala");
-            oh.InsertData(2, "krishna");
-            oh.InsertData(3, "rao");
+            //OpenHashingHashTable oh = new OpenHashingHashTable();
+            //oh.InsertData(1, "gopala");
+            //oh.InsertData(2, "krishna");
+            //oh.InsertData(3, "rao");
 
-            Console.WriteLine(oh.Search(2));
-            Console.WriteLine(oh.Search(3));
+            //Console.WriteLine(oh.Search(2));
+            //Console.WriteLine(oh.Search(3));
 
-            oh.Delete(2);
+            //oh.Delete(2);
 
-            Console.WriteLine(oh.Search(2));
-            Console.WriteLine(oh.Search(3));
+            //Console.WriteLine(oh.Search(2));
+            //Console.WriteLine(oh.Search(3));
 
-            oh.Delete(3);
+            //oh.Delete(3);
 
-            oh.InsertData(2, "Krishna Rao");
-            Console.WriteLine(oh.Search(2));
-            Console.WriteLine(oh.Search(3));
+            //oh.InsertData(2, "Krishna Rao");
+            //Console.WriteLine(oh.Search(2));
+            //Console.WriteLine(oh.Search(3));
+
+            ClosedHashingHashTable ch = new ClosedHashingHashTable();
+
+            //ch.LinearInsert(1, "Gopala");
+            //ch.LinearInsert(2, "Krishna");
+            //ch.LinearInsert(3, "Rao");
+
+            //ch.QuadraticInsert(1, "Gopala");
+            //ch.QuadraticInsert(2, "Krishna");
+            //ch.QuadraticInsert(3, "Rao");
+
+            ch.DoubleHashInsert(1, "Gopala");
+            ch.DoubleHashInsert(2, "Krishna");
+            ch.DoubleHashInsert(3, "Rao");
+
+
+            ch.Search(2);
+            ch.Search(3);
+
+            ch.Delete(2);
+
+            ch.Search(2);
+            ch.Search(3);
+
+            ch.Delete(3);
+
+            ch.LinearInsert(2, "Krishna Rao");
+            ch.Search(2);
+            ch.Search(3);
 
 
             Console.Read();
@@ -67,8 +96,11 @@ namespace DataStructures.HashTable
             ht.Add(5, null);
             var value5 = ht[5];
 
+            var hash = "abcdefgh".GetHashCode();
+
+
         }
 
-       
+
     }   
 }
