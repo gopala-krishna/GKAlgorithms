@@ -34,7 +34,7 @@ namespace Datastructures.Queue
         }
 
         // Method to add an item to the queue. It changes rear and size
-       public  void Enqueue(int item)
+       public void Enqueue(int item)
         {
             if (IsFull(this))
                 return;

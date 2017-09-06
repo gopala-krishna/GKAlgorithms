@@ -31,7 +31,6 @@ namespace Datastructures.Queue
             Console.WriteLine(queue.Dequeue().key);
             Console.WriteLine(queue.front.key);
             Console.WriteLine(queue.rear.key);
-
             Console.Read();
 
         }
