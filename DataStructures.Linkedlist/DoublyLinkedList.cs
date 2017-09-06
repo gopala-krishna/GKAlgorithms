@@ -123,10 +123,15 @@ namespace DataStructures.Linkedlist
             }
         }
 
+        /// <summary>
+        /// Time Complexity :O(1)
+        /// </summary>
+        /// <param name="head_ref"></param>
+        /// <param name="del"></param>
         /*Function to delete a node in a Doubly Linked List.
         head_ref --> pointer to head node pointer.
         del  -->  pointer to node to be deleted. */
-        public void DeleteNode(Node head_ref, Node del)
+        public void DeleteNode(Node del)
         {
 
             /* base case */

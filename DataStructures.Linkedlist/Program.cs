@@ -18,7 +18,7 @@ namespace DataStructures.Linkedlist
             //sll.DeleteNode(12);
             //sll.PrintList();
 
-            
+
             /* Three nodes have been allocated dynamically.
           We have refernces to these three blocks as first,  
           second and third
@@ -62,19 +62,18 @@ namespace DataStructures.Linkedlist
 
             //sll.PrintList();
 
-            //DoublyLinkedList dll = new DoublyLinkedList();
-            //dll.InsertAtStart(11);
-            //dll.InsertAtStart(12);
-            //dll.Append(14);
-            //dll.PrintList(dll.head);
-            //dll.DeleteNode(dll.head,dll.head.next);
-            //dll.PrintList(dll.head);
+            DoublyLinkedList dll = new DoublyLinkedList();
+            dll.InsertAtStart(11);
+            dll.InsertAtStart(12);
+            dll.Append(14);
 
+            dll.PrintList(dll.head);
+            //dll.DeleteNode(dll.head);
+            //dll.DeleteNode(dll.head.next);
+            dll.DeleteNode(dll.head.next.next);
 
-
-
+            dll.PrintList(dll.head);
             Console.Read();
-
         }
     }
 }
