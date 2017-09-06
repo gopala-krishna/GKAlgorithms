@@ -51,6 +51,10 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
+    <Content Include="DoublyLinkedList_AddAfter.jpg" />
+    <Content Include="DoublyLinkedList_AddAtStart.jpg" />
+    <Content Include="DoublyLinkedList_Append.jpg" />
+    <Content Include="DoublyLinledlist_Delete.JPG" />
     <Content Include="SinglyLinkedlist_deletion.jpg" />
     <Content Include="SinglyLinkedlist_insert_at_start.jpg" />
     <Content Include="SinglyLinkedlist_insert_last.jpg" />
