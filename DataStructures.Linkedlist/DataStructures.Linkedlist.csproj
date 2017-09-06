@@ -50,5 +50,11 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
+  <ItemGroup>
+    <Content Include="SinglyLinkedlist_deletion.jpg" />
+    <Content Include="SinglyLinkedlist_insert_at_start.jpg" />
+    <Content Include="SinglyLinkedlist_insert_last.jpg" />
+    <Content Include="SinglyLinkedlist_insert_middle.jpg" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
