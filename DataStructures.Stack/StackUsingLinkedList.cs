@@ -30,7 +30,6 @@ namespace DataStructures.Stack
         public void Push(int newData)
         {
             Node newNode = new Node(newData);
-            newNode.next = null;
             //If Linkedlist is empty
             if (head == null)
             {
