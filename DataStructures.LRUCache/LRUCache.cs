@@ -4,8 +4,16 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
+/// <summary>
+/// O(1) lookup time ~ O(1) insertion time ~ O(1) deletion time
+/// </summary>
 namespace DataStructures.LRUCache
 {
+    /// <summary>
+    /// 
+    /// </summary>
+    /// <typeparam name="D"></typeparam>
+    /// <typeparam name="K"></typeparam>
     public class Node<D, K>
     {
         public D Data { get; private set; }
