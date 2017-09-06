@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}</ProjectGuid>
+    <ProjectGuid>{28DBB8C9-51BE-4C3D-A7EE-CBB709F15DB6}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataStructures.BinaryTree</RootNamespace>
-    <AssemblyName>DataStructures.BinaryTree</AssemblyName>
+    <RootNamespace>DataStructures.BinaryHeap</RootNamespace>
+    <AssemblyName>DataStructures.BinaryHeap</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

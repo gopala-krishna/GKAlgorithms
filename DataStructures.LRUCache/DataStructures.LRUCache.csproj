@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{C7F7ED54-B5E6-419A-9D3F-03FEAFBAB9C8}</ProjectGuid>
+    <ProjectGuid>{62603F9D-95FD-4F9A-A0EF-D6EE4A172029}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataStructures.BinaryTree</RootNamespace>
-    <AssemblyName>DataStructures.BinaryTree</AssemblyName>
+    <RootNamespace>DataStructures.LRUCache</RootNamespace>
+    <AssemblyName>DataStructures.LRUCache</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,7 +42,6 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinaryTree.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>

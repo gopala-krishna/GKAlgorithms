@@ -70,6 +70,10 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.HashSet", "D
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.BinarySearchTree", "DataStructures.BinarySearchTree\DataStructures.BinarySearchTree.csproj", "{B9E44A34-B31B-4DE6-B5B1-A7939FB10531}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.BinaryHeap", "DataStructures.BinaryHeap\DataStructures.BinaryHeap.csproj", "{28DBB8C9-51BE-4C3D-A7EE-CBB709F15DB6}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.LRUCache", "DataStructures.LRUCache\DataStructures.LRUCache.csproj", "{62603F9D-95FD-4F9A-A0EF-D6EE4A172029}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -180,6 +184,14 @@ Global
 		{B9E44A34-B31B-4DE6-B5B1-A7939FB10531}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B9E44A34-B31B-4DE6-B5B1-A7939FB10531}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B9E44A34-B31B-4DE6-B5B1-A7939FB10531}.Release|Any CPU.Build.0 = Release|Any CPU
+		{28DBB8C9-51BE-4C3D-A7EE-CBB709F15DB6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{28DBB8C9-51BE-4C3D-A7EE-CBB709F15DB6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{28DBB8C9-51BE-4C3D-A7EE-CBB709F15DB6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{28DBB8C9-51BE-4C3D-A7EE-CBB709F15DB6}.Release|Any CPU.Build.0 = Release|Any CPU
+		{62603F9D-95FD-4F9A-A0EF-D6EE4A172029}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{62603F9D-95FD-4F9A-A0EF-D6EE4A172029}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{62603F9D-95FD-4F9A-A0EF-D6EE4A172029}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{62603F9D-95FD-4F9A-A0EF-D6EE4A172029}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
