@@ -85,17 +85,6 @@ namespace DataStructures.Linkedlist
             return;
         }
 
-        /* This function prints contents of linked list starting from
-            the given node */
-        public void PrintList()
-        {
-            Node tnode = head;
-            while (tnode != null)
-            {
-                Console.WriteLine(tnode.data + " ");
-                tnode = tnode.next;
-            }
-        }
         /* Given a key, deletes the first occurrence of key in linked list */
         public void DeleteNode(int key)
         {
@@ -123,5 +112,17 @@ namespace DataStructures.Linkedlist
             // Unlink the node from linked list
             prev.next = temp.next;
         }
-    }
+
+        /* This function prints contents of linked list starting from
+            the given node */
+        public void PrintList()
+        {
+            Node tnode = head;
+            while (tnode != null)
+            {
+                Console.WriteLine(tnode.data + " ");
+                tnode = tnode.next;
+            }
+        }
+            }
 }
