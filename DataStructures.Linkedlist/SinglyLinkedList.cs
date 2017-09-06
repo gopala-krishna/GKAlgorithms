@@ -19,7 +19,10 @@ namespace DataStructures.Linkedlist
 
         /* Linked list Node*/
         
-
+        /// <summary>
+        ///  Time Complexity : O(1)
+        /// </summary>
+        /// <param name="new_data"></param>
         /* Inserts a new Node at front of the list. */
         public void InsertAtStart(int new_data)
         {
@@ -34,6 +37,10 @@ namespace DataStructures.Linkedlist
             head = new_node;
         }
 
+        /// <summary>
+        ///  Time Complexity : O(1)
+        /// </summary>
+        /// <param name="new_data"></param>
         /* Inserts a new node after the given prev_node. */
         public void insertAfter(Node prev_node, int new_data)
         {
@@ -55,6 +62,11 @@ namespace DataStructures.Linkedlist
             prev_node.next = new_node;
         }
 
+
+        /// <summary>
+        ///  Time Complexity : O(N)
+        /// </summary>
+        /// <param name="new_data"></param>
         /* Appends a new node at the end.  This method is 
            defined inside LinkedList class shown above */
         public void Append(int new_data)
