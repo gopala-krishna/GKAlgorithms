@@ -6,18 +6,19 @@ using System.Threading.Tasks;
 
 namespace DataStructures.Linkedlist
 {
-    class SinglyLinkedList
+    public class Node
+    {
+        public int data;
+        public Node next;
+        public Node(int d) { data = d; next = null; }
+    }
+    public class SinglyLinkedList
     {
         // head of list
-        Node head;  
+        public Node head;  
 
         /* Linked list Node*/
-        public class Node
-        {
-            public int data;
-            public Node next;
-            public Node(int d) { data = d; next = null; }
-        }
+        
 
         /* Inserts a new Node at front of the list. */
         public void InsertAtStart(int new_data)
@@ -117,12 +118,12 @@ namespace DataStructures.Linkedlist
             the given node */
         public void PrintList()
         {
-            Node tnode = head;
-            while (tnode != null)
+            Node node = head;
+            while (node != null)
             {
-                Console.WriteLine(tnode.data + " ");
-                tnode = tnode.next;
+                Console.WriteLine(node.data + " ");
+                node = node.next;
             }
         }
-            }
+     }
 }
