@@ -21,11 +21,23 @@ namespace DataStructures.Stack
 
             //Console.WriteLine(sua.Peek());
 
+            StackUsingLinkedList sull = new StackUsingLinkedList();
+
+            sull.Push(10);
+            sull.Push(20);
+            sull.Push(30);
+            sull.Push(40);
+
+            sull.Pop();
+
+            Console.WriteLine(sull.Peek());
+
+
             //ReverseString rs = new ReverseString();
             //rs.ReverseStringUsingStack("Gopala");
 
-            EvaluatePostfix ep = new EvaluatePostfix();
-            ep.EvaluatePostfixExpression("231*+9-");
+            //EvaluatePostfix ep = new EvaluatePostfix();
+            //ep.EvaluatePostfixExpression("231*+9-");
 
 
             Console.Read();

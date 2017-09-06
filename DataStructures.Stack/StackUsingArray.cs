@@ -40,8 +40,7 @@ namespace DataStructures.Stack
             }
             else
             {
-                int x = arr[top--];
-                return x;
+                return arr[top--];
             }
         }
 
