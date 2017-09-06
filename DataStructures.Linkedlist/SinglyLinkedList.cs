@@ -104,6 +104,9 @@ namespace DataStructures.Linkedlist
             // Store head node
             Node temp = head, prev = null;
 
+            // If key was not present in linked list
+            if (temp == null) return;
+
             // If head node itself holds the key to be deleted
             if (temp != null && temp.data == key)
             {
@@ -118,9 +121,6 @@ namespace DataStructures.Linkedlist
                 prev = temp;
                 temp = temp.next;
             }
-
-            // If key was not present in linked list
-            if (temp == null) return;
 
             // Unlink the node from linked list
             prev.next = temp.next;
