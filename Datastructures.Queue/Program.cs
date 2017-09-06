@@ -10,6 +10,30 @@ namespace Datastructures.Queue
     {
         static void Main(string[] args)
         {
+            // QueueUsingArray queue = new QueueUsingArray(1000);
+
+            // queue.Enqueue(10);
+            // queue.Enqueue(20);
+            // queue.Enqueue(30);
+            // queue.Enqueue(40);
+
+            //Console.WriteLine(queue.Dequeue());
+            //Console.WriteLine(queue.Front());
+            //Console.WriteLine(queue.Rear());
+
+            QueueUsingLinkedList queue = new QueueUsingLinkedList();
+
+            queue.Enqueue(10);
+            queue.Enqueue(20);
+            queue.Enqueue(30);
+            queue.Enqueue(40);
+
+            Console.WriteLine(queue.Dequeue().key);
+            Console.WriteLine(queue.front.key);
+            Console.WriteLine(queue.rear.key);
+
+            Console.Read();
+
         }
     }
 }
