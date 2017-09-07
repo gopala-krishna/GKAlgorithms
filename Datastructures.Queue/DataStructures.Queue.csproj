@@ -45,11 +45,18 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueueUsingArray.cs" />
+    <Compile Include="QueueUsingCSharpStack.cs" />
     <Compile Include="QueueUsingLinkedList.cs" />
     <Compile Include="QueueUsingStack.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\DataStructures.Stack\DataStructures.Stack.csproj">
+      <Project>{b7402103-f8ef-40f5-b9f0-63d8f6b6fc67}</Project>
+      <Name>DataStructures.Stack</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

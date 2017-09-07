@@ -6,6 +6,9 @@ using System.Threading.Tasks;
 
 namespace Datastructures.Queue
 {
+    /// <summary>
+    /// Time Complexity for all operations : O(1)
+    /// </summary>
     public class QueueUsingArray
     {
         int front = 0; int rear = 0; int size = 0;
@@ -15,8 +18,8 @@ namespace Datastructures.Queue
         public QueueUsingArray(int capacity)
         {
             this.capacity = capacity;
-            front = this.size;
-            rear = capacity - 1;
+            this.front = this.size;
+            this.rear = this.capacity - 1;
             array = new int[this.capacity];
 
         }
@@ -45,7 +48,7 @@ namespace Datastructures.Queue
         }
 
         // Method to remove an item from queue. It changes front and size
-       public  int Dequeue()
+        public  int Dequeue()
         {
             if (IsEmpty(this))
                 return int.MinValue;

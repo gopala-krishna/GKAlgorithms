@@ -25,7 +25,6 @@ namespace DataStructures.Stack
                 result += (char)stack.Pop();
             }
             Console.WriteLine(result);
-
         }
     }
 }
