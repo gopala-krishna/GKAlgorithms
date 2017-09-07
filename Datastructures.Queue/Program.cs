@@ -74,7 +74,7 @@ namespace DataStructures.Queue
             queue.Enqueue(40);
 
             Console.WriteLine(queue.Dequeue());
-            Console.WriteLine(queue.Dequeue());
+            //Console.WriteLine(queue.Dequeue());
             Console.WriteLine(queue.Front());
             Console.WriteLine(queue.Rear());
 
