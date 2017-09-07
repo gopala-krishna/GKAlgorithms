@@ -43,6 +43,23 @@ namespace DataStructures.BinaryTree
               null null
              */
 
+            Console.WriteLine(tree.root.key);
+            while(tree.root.left != null || tree.root.right != null)
+            {
+                if (tree.root.left != null)
+                {
+                    Console.WriteLine(tree.root.left.key);
+                    tree.root.left = tree.root.left.left;
+                }
+
+                if (tree.root.right != null)
+                {
+                    Console.WriteLine(tree.root.right.key);
+                    tree.root.right = tree.root.right.right;
+                }
+            }
+
+
             Console.Read();
         }
     }
