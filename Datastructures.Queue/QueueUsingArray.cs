@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Datastructures.Queue
+namespace DataStructures.Queue
 {
     /// <summary>
     /// Time Complexity for all operations : O(1)

@@ -53,5 +53,10 @@ namespace DataStructures.Stack
         {
             return arr[top];
         }
+
+        public int Count()
+        {
+            return top+1;
+        }
     }
 }

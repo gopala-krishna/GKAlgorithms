@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Datastructures.Queue
+namespace DataStructures.Queue
 {
     // A linked list (LL) node to store a queue entry
     public class QNode

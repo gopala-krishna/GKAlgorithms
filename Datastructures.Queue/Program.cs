@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Datastructures.Queue
+namespace DataStructures.Queue
 {
     class Program
     {
@@ -32,7 +32,7 @@ namespace Datastructures.Queue
             //Console.WriteLine(queue.front.key);
             //Console.WriteLine(queue.rear.key);
 
-            //QueueUsingStack queue = new QueueUsingStack();
+            //QueueUsingTwoStacks queue = new QueueUsingTwoStacks();
 
             //queue.Enqueue(10);
             //queue.Enqueue(20);
@@ -43,7 +43,30 @@ namespace Datastructures.Queue
             //Console.WriteLine(queue.Front());
             //Console.WriteLine(queue.Rear());
 
-            QueueUsingCSharpStack queue = new QueueUsingCSharpStack();
+            //QueueUsingTwoCSharpStacks queue = new QueueUsingTwoCSharpStacks();
+
+            //queue.Enqueue(10);
+            //queue.Enqueue(20);
+            //queue.Enqueue(30);
+            //queue.Enqueue(40);
+
+            //Console.WriteLine(queue.Dequeue());
+            //Console.WriteLine(queue.Front());
+            //Console.WriteLine(queue.Rear());
+
+            //QueueUsingOneStack queue = new QueueUsingOneStack();
+
+            //queue.Enqueue(10);
+            //queue.Enqueue(20);
+            //queue.Enqueue(30);
+            //queue.Enqueue(40);
+
+            //Console.WriteLine(queue.Dequeue());
+            ////Console.WriteLine(queue.Dequeue());
+            //Console.WriteLine(queue.Front());
+            //Console.WriteLine(queue.Rear());
+
+            QueueUsingOneCsharpStack queue = new QueueUsingOneCsharpStack();
 
             queue.Enqueue(10);
             queue.Enqueue(20);
@@ -51,8 +74,11 @@ namespace Datastructures.Queue
             queue.Enqueue(40);
 
             Console.WriteLine(queue.Dequeue());
+            Console.WriteLine(queue.Dequeue());
             Console.WriteLine(queue.Front());
             Console.WriteLine(queue.Rear());
+
+
 
 
             Console.Read();

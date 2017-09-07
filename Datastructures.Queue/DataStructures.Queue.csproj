@@ -45,9 +45,11 @@
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="QueueUsingArray.cs" />
-    <Compile Include="QueueUsingCSharpStack.cs" />
+    <Compile Include="QueueUsingOneCsharpStack.cs" />
+    <Compile Include="QueueUsingOneStack.cs" />
+    <Compile Include="QueueUsingTwoCSharpStacks.cs" />
     <Compile Include="QueueUsingLinkedList.cs" />
-    <Compile Include="QueueUsingStack.cs" />
+    <Compile Include="QueueUsingTwoStacks.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

@@ -10,27 +10,30 @@ namespace DataStructures.Stack
     {
         static void Main(string[] args)
         {
-            //StackUsingArray sua = new StackUsingArray();
+            StackUsingArray sua = new StackUsingArray();
 
-            //sua.Push(10);
-            //sua.Push(20);
-            //sua.Push(30);
-            //sua.Push(40);
+            sua.Push(10);
+            sua.Push(20);
+            sua.Push(30);
+            sua.Push(40);
 
-            //sua.Pop();
+            sua.Pop();
+            sua.Pop();
 
-            //Console.WriteLine(sua.Peek());
+            Console.WriteLine(sua.Peek());
+            Console.WriteLine(sua.Count());
 
-            StackUsingLinkedList sull = new StackUsingLinkedList();
 
-            sull.Push(10);
-            sull.Push(20);
-            sull.Push(30);
-            sull.Push(40);
+            //StackUsingLinkedList sull = new StackUsingLinkedList();
 
-            sull.Pop();
+            //sull.Push(10);
+            //sull.Push(20);
+            //sull.Push(30);
+            //sull.Push(40);
 
-            Console.WriteLine(sull.Peek());
+            //sull.Pop();
+
+            //Console.WriteLine(sull.Peek());
 
 
             //ReverseString rs = new ReverseString();
