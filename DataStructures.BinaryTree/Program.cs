@@ -11,7 +11,6 @@ namespace DataStructures.BinaryTree
         static void Main(string[] args)
         {
             BinaryTree tree = new BinaryTree();
-
             /*create root*/
             tree.root = new Node(1);
 
@@ -58,8 +57,6 @@ namespace DataStructures.BinaryTree
                     tree.root.right = tree.root.right.right;
                 }
             }
-
-
             Console.Read();
         }
     }
