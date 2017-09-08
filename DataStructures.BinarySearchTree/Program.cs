@@ -50,7 +50,6 @@ namespace DataStructures.BinarySearchTree
             //tree.Search(null, 50);
 
             Console.Read();
-
         }
     }
 }

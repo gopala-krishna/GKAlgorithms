@@ -7,8 +7,6 @@
 
   <ItemGroup>
     <Compile Remove="Aho-Corasick.cs" />
-    <Compile Remove="BreadthFirstSearch.cs" />
-    <Compile Remove="DepthFirstSearch.cs" />
     <Compile Remove="TernarySearch.cs" />
   </ItemGroup>
 
