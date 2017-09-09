@@ -20,9 +20,9 @@ namespace Algorithms.Search
         }
 
         // Function to add an edge into the graph
-        public void AddEdge(int v, int w)
+        public void AddEdge(int vertice , int edge)
         {
-            adjLists[v].Add(w);
+            adjLists[vertice].Add(edge);
         }
     }
 
