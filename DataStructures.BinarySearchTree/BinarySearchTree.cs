@@ -30,6 +30,10 @@ namespace DataStructures.BinarySearchTree
             root = null;
         }
 
+        /// <summary>
+        /// Time Complexity: O(logN)
+        /// </summary>
+        /// <param name="key"></param>
         // This method mainly calls insertRec()
         public void Insert(int key)
         {
@@ -57,6 +61,10 @@ namespace DataStructures.BinarySearchTree
             return root;
         }
 
+        /// <summary>
+        ///  Depth First Transversals - InOrder
+        ///  Time Complexity :O(N)
+        /// </summary>
         // This method mainly calls InorderRec()
         public void Inorder()
         {
@@ -74,13 +82,57 @@ namespace DataStructures.BinarySearchTree
             }
         }
 
+        /// <summary>
+        ///  Depth First Transversals - PreOrder
+        ///  Time Complexity :O(N)
+        /// </summary>
+        public void Preorder()
+        {
+            PreorderRec(root);
+        }
+
+        // A utility function to do pre order traversal of BST
+        void PreorderRec(Node root)
+        {
+            if (root != null)
+            {
+                Console.WriteLine(root.key);
+                PreorderRec(root.left);
+                PreorderRec(root.right);
+            }
+        }
+
+        public void Postorder()
+        {
+            PostorderRec(root);
+        }
+
+        /// <summary>
+        ///  Depth First Transversals - PostOrder
+        ///  Time Complexity :O(N)
+        /// </summary>
+        // A utility function to do  postorder traversal of BST
+        void PostorderRec(Node root)
+        {
+            if (root != null)
+            {
+                PostorderRec(root.left);
+                PostorderRec(root.right);
+                Console.WriteLine(root.key);
+            }
+        }
+
+        /// <summary>
+        /// Time Complexity: O(logN)
+        /// </summary>
+        /// <param name="key"></param>
         // This method mainly calls deleteRec()
         public void DeleteKey(int key)
         {
             root = DeleteRec(root, key);
         }
 
-        /* A recursive function to insert a new key in BST */
+        /* A recursive function to delete a key in BST */
         Node DeleteRec(Node root, int key)
         {
             /* Base Case: If the tree is empty */
@@ -123,7 +175,12 @@ namespace DataStructures.BinarySearchTree
             return minv;
         }
 
-
+        /// <summary>
+        /// Time Complexity: O(logN)
+        /// </summary>
+        /// <param name="root"></param>
+        /// <param name="key"></param>
+        /// <returns></returns>
         public Node Search(Node root, int key)
         {
             // Base Cases: root is null or key is present at root

@@ -10,14 +10,15 @@ namespace DataStructures.BinarySearchTree
     {
         static void Main(string[] args)
         {
-            BinarySearchTree tree = new BinarySearchTree();
 
             /* Let us create following BST
                   50
                /     \
               30      70
-             /  \    /  \
+             /  \        /  \
            20   40  60   80 */
+
+            BinarySearchTree tree = new BinarySearchTree();
 
             tree.Insert(50);
             tree.Insert(30);
@@ -32,22 +33,36 @@ namespace DataStructures.BinarySearchTree
 
             tree.Inorder();
 
-            Console.WriteLine("\nDelete 20");
-            tree.DeleteKey(20);
+            //// print pre order traversal of the BST
+            //Console.WriteLine("pre order traversal of the given tree");
+
+            //tree.Preorder();
+
+            //// print post order traversal of the BST
+            //Console.WriteLine("post  order traversal of the given tree");
+
+            //tree.Postorder();
+
+
+            //Console.WriteLine("\nDelete 20");
+            //tree.DeleteKey(20);
+            //Console.WriteLine("Inorder traversal of the modified tree");
+            //tree.Inorder();
+
+            //Console.WriteLine("\nDelete 30");
+            //tree.DeleteKey(30);
+            //Console.WriteLine("Inorder traversal of the modified tree");
+            //tree.Inorder();
+
+            Console.WriteLine("\nDelete 70");
+            tree.DeleteKey(70);
             Console.WriteLine("Inorder traversal of the modified tree");
             tree.Inorder();
 
-            Console.WriteLine("\nDelete 30");
-            tree.DeleteKey(30);
-            Console.WriteLine("Inorder traversal of the modified tree");
-            tree.Inorder();
+            Console.WriteLine("Searching...");
 
-            Console.WriteLine("\nDelete 50");
-            tree.DeleteKey(50);
-            Console.WriteLine("Inorder traversal of the modified tree");
-            tree.Inorder();
+            Console.WriteLine(tree.Search(tree.root, 40).key);
 
-            //tree.Search(null, 50);
 
             Console.Read();
         }
