@@ -56,7 +56,7 @@ namespace Algorithms.Search
                 // visited and enqueue it
                 foreach (var i in graph.adjLists[startVertex])
                 {
-                    if (!visited[i])
+                    if (visited[i] == false)
                     {
                         visited[i] = true;
                         queue.Enqueue(i);

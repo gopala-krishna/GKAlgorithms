@@ -59,9 +59,12 @@ namespace Algorithms.Search
 
             Console.WriteLine("Following is Breadth First Traversal " +
                                "(starting from vertex 2)");
-            BreadthFirstSearch bfs = new BreadthFirstSearch();
-            bfs.BreadthFirstSearch1(graph, 2);
 
+            //BreadthFirstSearch bfs = new BreadthFirstSearch();
+            //bfs.BreadthFirstSearch1(graph, 2);
+
+            DepthFirstSearch dfs = new DepthFirstSearch();
+            dfs.DepthFirstSearch1(graph, 1);
 
 
             Console.Read();
