@@ -28,12 +28,16 @@ namespace Algorithms.Search
         }
     }
 
+    /// <summary>
+    /// Time Complexity: O(V+E) where V is number of vertices in the graph and E is number of edges in the graph.
+    /// </summary>
     public class BreadthFirstSearch
     {
         // prints BFS traversal from a given source s
         public void BreadthFirstSearch1(Graph graph, int startVertex)
         {
-            
+           
+
             // Mark all the vertices as not visited(By default
             // set as false)
             bool[] visited = new bool[graph.verticesCount];
@@ -41,9 +45,18 @@ namespace Algorithms.Search
             // Create a queue for BFS
             Queue<int> queue = new Queue<int>();
 
+            // For all vertices one by one
+            for (int i = 0; i < graph.verticesCount; ++i)
+                if (visited[i] == false)
+                {
+                    visited[i] = true;
+                    queue.Enqueue(i);
+                }
+
+
             // Mark the current node as visited and enqueue it
-            visited[startVertex] = true;
-            queue.Enqueue(startVertex);
+            //visited[startVertex] = true;
+            //queue.Enqueue(startVertex);
 
             while (queue.Count != 0)
             {
