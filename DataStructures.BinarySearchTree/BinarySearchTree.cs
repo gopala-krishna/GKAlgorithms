@@ -6,21 +6,20 @@ using System.Threading.Tasks;
 
 namespace DataStructures.BinarySearchTree
 {
-   public class BinarySearchTree
+    /* Class containing left and right child of current node and key value*/
+    public class Node
     {
-        /* Class containing left and right child of current node and key value*/
-        public class Node
+        public int key;
+        public Node left, right;
+
+        public Node(int item)
         {
-           public int key;
-           public Node left, right;
-
-            public Node(int item)
-            {
-                key = item;
-                left = right = null;
-            }
+            key = item;
+            left = right = null;
         }
-
+    }
+    public class BinarySearchTree
+    {
         // Root of BST
         public Node root;
 
@@ -61,66 +60,7 @@ namespace DataStructures.BinarySearchTree
             return root;
         }
 
-        /// <summary>
-        ///  Depth First Transversals - InOrder
-        ///  Time Complexity :O(N)
-        /// </summary>
-        // This method mainly calls InorderRec()
-        public void Inorder()
-        {
-            InorderRec(root);
-        }
-
-        // A utility function to do inorder traversal of BST
-        void InorderRec(Node root)
-        {
-            if (root != null)
-            {
-                InorderRec(root.left);
-                Console.WriteLine(root.key);
-                InorderRec(root.right);
-            }
-        }
-
-        /// <summary>
-        ///  Depth First Transversals - PreOrder
-        ///  Time Complexity :O(N)
-        /// </summary>
-        public void Preorder()
-        {
-            PreorderRec(root);
-        }
-
-        // A utility function to do pre order traversal of BST
-        void PreorderRec(Node root)
-        {
-            if (root != null)
-            {
-                Console.WriteLine(root.key);
-                PreorderRec(root.left);
-                PreorderRec(root.right);
-            }
-        }
-
-        public void Postorder()
-        {
-            PostorderRec(root);
-        }
-
-        /// <summary>
-        ///  Depth First Transversals - PostOrder
-        ///  Time Complexity :O(N)
-        /// </summary>
-        // A utility function to do  postorder traversal of BST
-        void PostorderRec(Node root)
-        {
-            if (root != null)
-            {
-                PostorderRec(root.left);
-                PostorderRec(root.right);
-                Console.WriteLine(root.key);
-            }
-        }
+        
 
         /// <summary>
         /// Time Complexity: O(logN)

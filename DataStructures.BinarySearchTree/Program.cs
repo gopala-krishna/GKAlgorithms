@@ -31,17 +31,18 @@ namespace DataStructures.BinarySearchTree
             // print inorder traversal of the BST
             Console.WriteLine("Inorder traversal of the given tree");
 
-            tree.Inorder();
+            DepthFirstTransversals tv = new DepthFirstTransversals();
+            tv.Inorder(tree.root);
 
-            //// print pre order traversal of the BST
-            //Console.WriteLine("pre order traversal of the given tree");
+            // print pre order traversal of the BST
+            Console.WriteLine("pre order traversal of the given tree");
 
-            //tree.Preorder();
+            tv.Preorder(tree.root);
 
-            //// print post order traversal of the BST
-            //Console.WriteLine("post  order traversal of the given tree");
+            // print post order traversal of the BST
+            Console.WriteLine("post  order traversal of the given tree");
 
-            //tree.Postorder();
+            tv.Postorder(tree.root);
 
 
             //Console.WriteLine("\nDelete 20");
@@ -57,11 +58,11 @@ namespace DataStructures.BinarySearchTree
             Console.WriteLine("\nDelete 70");
             tree.DeleteKey(70);
             Console.WriteLine("Inorder traversal of the modified tree");
-            tree.Inorder();
+            tv.Inorder(tree.root);
 
-            Console.WriteLine("Searching...");
+            //Console.WriteLine("Searching...");
 
-            Console.WriteLine(tree.Search(tree.root, 40).key);
+            //Console.WriteLine(tree.Search(tree.root, 40).key);
 
 
             Console.Read();
