@@ -7,8 +7,10 @@ namespace Algorithms.Search
 
     public class Graph
     {
-         public int verticesCount;   // No. of vertices
-         public List<int>[] adjLists; //Adjacency Lists
+        // No. of vertices
+        public int verticesCount;
+        //Adjacency Lists
+        public List<int>[] adjLists;
 
         // Constructor
         public Graph(int v)
