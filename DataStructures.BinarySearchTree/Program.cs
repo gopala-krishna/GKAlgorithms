@@ -28,28 +28,28 @@ namespace DataStructures.BinarySearchTree
             tree.Insert(60);
             tree.Insert(80);
 
-            // print inorder traversal of the BST
-            Console.WriteLine("Inorder traversal of the given tree");
+            //// print inorder traversal of the BST
+            //Console.WriteLine("Inorder traversal of the given tree");
 
-            DepthFirstTransversals tv = new DepthFirstTransversals();
-            tv.Inorder(tree.root);
+            //DepthFirstTransversals tv = new DepthFirstTransversals();
+            //tv.Inorder(tree.root);
 
-            // print pre order traversal of the BST
-            Console.WriteLine("pre order traversal of the given tree");
-
-            tv.Preorder(tree.root);
+            //// print pre order traversal of the BST
+            //Console.WriteLine("pre order traversal of the given tree");
+            //DepthFirstTransversals tv = new DepthFirstTransversals();
+            //tv.Preorder(tree.root);
 
             // print post order traversal of the BST
             Console.WriteLine("post  order traversal of the given tree");
-
+            DepthFirstTransversals tv = new DepthFirstTransversals();
             tv.Postorder(tree.root);
 
 
-            BreadthFirstTransversals bftv = new BreadthFirstTransversals();
+            //BreadthFirstTransversals bftv = new BreadthFirstTransversals();
 
-            // print level order traversal of the BST
-            Console.WriteLine("level order traversal of the given tree");
-            bftv.PrintLevelOrderUsingQueue(tree.root);
+            //// Print level order traversal of the BST
+            //Console.WriteLine("level order traversal of the given tree");
+            //bftv.BreadthFirstSearchUsingQueue(tree.root);
 
 
 

@@ -12,6 +12,7 @@ namespace DataStructures.BinarySearchTree
         /// <summary>
         ///  Depth First Transversals - InOrder(Left, Root, Right) 
         ///  Time Complexity :O(N)
+        ///  Space  Complexity : If we don’t consider size of stack for function calls then O(1) otherwise O(N).
         /// </summary>
         // This method mainly calls InorderRec()
         public void Inorder(Node root)
@@ -33,6 +34,7 @@ namespace DataStructures.BinarySearchTree
         /// <summary>
         ///  Depth First Transversals - PreOrder(Root, Left, Right)
         ///  Time Complexity :O(N)
+        ///  Space  Complexity : If we don’t consider size of stack for function calls then O(1) otherwise O(N).
         /// </summary>
         public void Preorder(Node root)
         {
@@ -50,15 +52,15 @@ namespace DataStructures.BinarySearchTree
             }
         }
 
+        /// <summary>
+        ///  Depth First Transversals - PostOrder(Left, Right, Root)
+        ///  Time Complexity :O(N)
+        ///  Space  Complexity : If we don’t consider size of stack for function calls then O(1) otherwise O(N).
+        /// </summary>
         public void Postorder(Node root)
         {
             PostorderRec(root);
         }
-
-        /// <summary>
-        ///  Depth First Transversals - PostOrder(Left, Right, Root)
-        ///  Time Complexity :O(N)
-        /// </summary>
         // A utility function to do  postorder traversal of BST
         void PostorderRec(Node root)
         {
