@@ -10,22 +10,40 @@ namespace DataStructures.LRUCache
     {
         static void Main(string[] args)
         {
-            LRUCacheUsingList<int, int> cache = new LRUCacheUsingList<int, int>();
-            cache.Add(1, 10);
-            cache.Add(4, 40);
-            cache.Add(5, 50);
-            cache.Add(85, 150);
-            cache.Add(25, 250);
+            //LRUCacheUsingList<int, int> cache = new LRUCacheUsingList<int, int>();
+            //cache.Add(1, 10);
+            //cache.Add(4, 40);
+            //cache.Add(5, 50);
+            //cache.Add(85, 150);
+            //cache.Add(25, 250);
 
-            cache.Print();
+            //cache.Print();
+            //Console.WriteLine();
+
+            //Console.WriteLine(cache.Get(5).ToString());
+            //Console.WriteLine(cache.Get(85).ToString());
+            //Console.WriteLine(cache.Get(25).ToString());
+            //Console.WriteLine();
+
+            //cache.Print();
+
+
+
+            LRUCacheUsingPriorityQueue pq = new LRUCacheUsingPriorityQueue();
+            pq.Add(3, 100, "Gpala");
+            pq.Add(8, 108, "Gopla");
+            pq.Add(4, 104, "Gpala");
+            pq.Add(9, 109, "Goala");
+            pq.Add(12, 110, "Goalapp");
+
+            pq.Print();
             Console.WriteLine();
 
-            Console.WriteLine(cache.Get(5).ToString());
-            Console.WriteLine(cache.Get(85).ToString());
-            Console.WriteLine(cache.Get(25).ToString());
-            Console.WriteLine();
 
-            cache.Print();
+            pq.Get(104);
+
+            pq.Print();
+
 
 
             //int cacheSize = 10;

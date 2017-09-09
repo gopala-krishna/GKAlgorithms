@@ -44,6 +44,7 @@
   <ItemGroup>
     <Compile Include="LRUCache.cs" />
     <Compile Include="LRUCacheUsingList.cs" />
+    <Compile Include="LRUCacheUsingPriorityQueue.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
