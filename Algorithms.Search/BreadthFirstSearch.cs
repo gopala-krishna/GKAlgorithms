@@ -4,61 +4,63 @@ using System.Text;
 
 namespace Algorithms.Search
 {
-    public class Graph<T>
+
+    public class Graph
     {
-        public Graph() { }
-        public Graph(IEnumerable<T> vertices, IEnumerable<Tuple<T, T>> edges)
-        {
-            foreach (var vertex in vertices)
-                AddVertex(vertex);
+         public int verticesCount;   // No. of vertices
+         public List<int>[] adjLists; //Adjacency Lists
 
-            foreach (var edge in edges)
-                AddEdge(edge);
+        // Constructor
+        public Graph(int v)
+        {
+            verticesCount = v;
+            adjLists = new List<int>[v];
+            for (int i = 0; i < v; ++i)
+                adjLists[i] = new List<int>();
         }
 
-        public Dictionary<T, HashSet<T>> AdjacencyList { get; } = new Dictionary<T, HashSet<T>>();
-
-        public void AddVertex(T vertex)
+        // Function to add an edge into the graph
+        public void AddEdge(int v, int w)
         {
-            AdjacencyList[vertex] = new HashSet<T>();
-        }
-
-        public void AddEdge(Tuple<T, T> edge)
-        {
-            if (AdjacencyList.ContainsKey(edge.Item1) && AdjacencyList.ContainsKey(edge.Item2))
-            {
-                AdjacencyList[edge.Item1].Add(edge.Item2);
-                AdjacencyList[edge.Item2].Add(edge.Item1);
-            }
+            adjLists[v].Add(w);
         }
     }
 
     public class BreadthFirstSearch
     {
-        public HashSet<T> BFS<T>(Graph<T> graph, T start)
+        // prints BFS traversal from a given source s
+        public void BreadthFirstSearch1(Graph graph, int startVertex)
         {
-            var visited = new HashSet<T>();
+            
+            // Mark all the vertices as not visited(By default
+            // set as false)
+            bool[] visited = new bool[graph.verticesCount];
 
-            if (!graph.AdjacencyList.ContainsKey(start))
-                return visited;
+            // Create a queue for BFS
+            Queue<int> queue = new Queue<int>();
 
-            var queue = new Queue<T>();
-            queue.Enqueue(start);
+            // Mark the current node as visited and enqueue it
+            visited[startVertex] = true;
+            queue.Enqueue(startVertex);
 
-            while (queue.Count > 0)
+            while (queue.Count != 0)
             {
-                var vertex = queue.Dequeue();
+                // Dequeue a vertex from queue and print it
+                startVertex = queue.Dequeue();
+                Console.WriteLine(startVertex + " ");
 
-                if (visited.Contains(vertex))
-                    continue;
-
-                visited.Add(vertex);
-
-                foreach (var neighbor in graph.AdjacencyList[vertex])
-                    if (!visited.Contains(neighbor))
-                        queue.Enqueue(neighbor);
+                // Get all adjacent vertices of the dequeued vertex s
+                // If a adjacent has not been visited, then mark it
+                // visited and enqueue it
+                foreach (var i in graph.adjLists[startVertex])
+                {
+                    if (!visited[i])
+                    {
+                        visited[i] = true;
+                        queue.Enqueue(i);
+                    }
+                }
             }
-            return visited;
         }
     }
 }

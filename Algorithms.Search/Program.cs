@@ -20,8 +20,6 @@ namespace Algorithms.Search
             //Console.WriteLine(string.Join(", ", bfs.BFS(graph, 1)));
 
 
-
-
             //var vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
             //var edges = new[]{Tuple.Create(1,2), Tuple.Create(1,3),
             //    Tuple.Create(2,4), Tuple.Create(3,5), Tuple.Create(3,6),
@@ -34,20 +32,36 @@ namespace Algorithms.Search
             //Console.WriteLine(string.Join(", ", dfs.DFS(graph, 1)));
 
 
-            var vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
-            var edges = new[]{Tuple.Create(1,2), Tuple.Create(1,3),
-                Tuple.Create(2,4), Tuple.Create(3,5), Tuple.Create(3,6),
-                Tuple.Create(4,7), Tuple.Create(5,7), Tuple.Create(5,8),
-                Tuple.Create(5,6), Tuple.Create(8,9), Tuple.Create(9,10)};
+            //var vertices = new[] { 1, 2, 3, 4, 5, 6, 7, 8, 9, 10 };
+            //var edges = new[]{Tuple.Create(1,2), Tuple.Create(1,3),
+            //    Tuple.Create(2,4), Tuple.Create(3,5), Tuple.Create(3,6),
+            //    Tuple.Create(4,7), Tuple.Create(5,7), Tuple.Create(5,8),
+            //    Tuple.Create(5,6), Tuple.Create(8,9), Tuple.Create(9,10)};
 
-            var graph = new Graph<int>(vertices, edges);
-            var shortestPathBFS = new ShortestPathUsingBFS();
+            //var graph = new Graph<int>(vertices, edges);
+            //var shortestPathBFS = new ShortestPathUsingBFS();
 
-            var startVertex = 1;
-            var shortestPath = shortestPathBFS.ShortestPathFunction(graph, startVertex);
-            foreach (var vertex in vertices)
-                Console.WriteLine("shortest path to {0,2}: {1}",
-                        vertex, string.Join(", ", shortestPath(vertex)));
+            //var startVertex = 1;
+            //var shortestPath = shortestPathBFS.ShortestPathFunction(graph, startVertex);
+            //foreach (var vertex in vertices)
+            //    Console.WriteLine("shortest path to {0,2}: {1}",
+            //            vertex, string.Join(", ", shortestPath(vertex)));
+
+
+            Graph graph = new Graph(4);
+
+            graph.AddEdge(0, 1);
+            graph.AddEdge(0, 2);
+            graph.AddEdge(1, 2);
+            graph.AddEdge(2, 0);
+            graph.AddEdge(2, 3);
+            graph.AddEdge(3, 3);
+
+            Console.WriteLine("Following is Breadth First Traversal " +
+                               "(starting from vertex 2)");
+            BreadthFirstSearch bfs = new BreadthFirstSearch();
+            bfs.BreadthFirstSearch1(graph, 2);
+
 
 
             Console.Read();

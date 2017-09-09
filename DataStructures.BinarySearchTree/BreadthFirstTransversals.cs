@@ -9,7 +9,7 @@ namespace DataStructures.BinarySearchTree
 {
     class BreadthFirstTransversals
     {
-       
+
         /* function to print level order traversal of tree*/
         public void PrintLevelOrderRecursive(Node root)
         {
@@ -39,7 +39,7 @@ namespace DataStructures.BinarySearchTree
                 else return (rheight + 1);
             }
         }
-   
+
         /* Print nodes at the given level */
         private void PrintGivenLevel(Node root, int level)
         {
@@ -64,7 +64,7 @@ namespace DataStructures.BinarySearchTree
             Queue<Node> queue = new Queue<Node>(1024);
 
             queue.Enqueue(root);
-                                                                         //   60 80 20 40 70 30 50 
+            //   60 80 20 40 70 30 50 
             while (queue.Count > 0)
             {
                 Node node = queue.Dequeue();
