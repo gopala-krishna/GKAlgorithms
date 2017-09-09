@@ -45,6 +45,14 @@ namespace DataStructures.BinarySearchTree
             tv.Postorder(tree.root);
 
 
+            BreadthFirstTransversals bftv = new BreadthFirstTransversals();
+
+            // print level order traversal of the BST
+            Console.WriteLine("level order traversal of the given tree");
+            bftv.PrintLevelOrderUsingQueue(tree.root);
+
+
+
             //Console.WriteLine("\nDelete 20");
             //tree.DeleteKey(20);
             //Console.WriteLine("Inorder traversal of the modified tree");
@@ -55,10 +63,10 @@ namespace DataStructures.BinarySearchTree
             //Console.WriteLine("Inorder traversal of the modified tree");
             //tree.Inorder();
 
-            Console.WriteLine("\nDelete 70");
-            tree.DeleteKey(70);
-            Console.WriteLine("Inorder traversal of the modified tree");
-            tv.Inorder(tree.root);
+            //Console.WriteLine("\nDelete 70");
+            //tree.DeleteKey(70);
+            //Console.WriteLine("Inorder traversal of the modified tree");
+            //tv.Inorder(tree.root);
 
             //Console.WriteLine("Searching...");
 

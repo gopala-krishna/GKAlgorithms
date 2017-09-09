@@ -4,10 +4,10 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{B9E44A34-B31B-4DE6-B5B1-A7939FB10531}</ProjectGuid>
+    <ProjectGuid>{8C921C45-A49A-4081-BEBD-3E184FBAA81B}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>DataStructures.BinarySearchTree</RootNamespace>
-    <AssemblyName>DataStructures.BinarySearchTree</AssemblyName>
+    <RootNamespace>DataStructures.PriorityQueue</RootNamespace>
+    <AssemblyName>DataStructures.PriorityQueue</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
@@ -42,20 +42,11 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="BinarySearchTree.cs" />
-    <Compile Include="BreadthFirstTransversals.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="DepthFirstTransversals.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />
-  </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\Datastructures.Queue\DataStructures.Queue.csproj">
-      <Project>{f8827c45-91af-42a0-b57e-bff3674407ef}</Project>
-      <Name>DataStructures.Queue</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
