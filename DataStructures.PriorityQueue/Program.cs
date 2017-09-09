@@ -17,13 +17,16 @@ namespace DataStructures.PriorityQueue
             pq.Enqueue(9, 109, "Goala");
             pq.Enqueue(12, 110, "Goalapp");
 
-            pq.Print();
+            pq.PrintBefore();
+            Console.WriteLine();
+
+            pq.PrintAfter();
             Console.WriteLine();
 
 
-            pq.Dequeue(104);
+            pq.Dequeue();
 
-            pq.Print();
+            pq.PrintAfter();
 
             Console.Read();
         }
