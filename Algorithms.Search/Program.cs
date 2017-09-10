@@ -119,7 +119,7 @@ namespace Algorithms.Search
                                   {0, 0, 2, 0, 0, 0, 6, 7, 0}
                                  };
             DijsktrasShortestPath dsp = new DijsktrasShortestPath();
-            dsp.Dijkstra(graph, 0);
+            dsp.Dijkstra(graph, 3);
 
 
 

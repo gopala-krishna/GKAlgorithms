@@ -25,10 +25,10 @@ namespace Algorithms.Search
         }
 
         // A utility function to print the constructed distance array
-        void PrintSolution(int[] dist)
+        void PrintSolution(int src, int[] dist)
         {
             for (int i = 0; i < V; i++)
-                Console.WriteLine("0" + " -> " +i+" "+ "Shortest distance Is"+" "+ dist[i]);
+                Console.WriteLine(src + " -> " +i+" "+ "Shortest distance Is"+" "+ dist[i]);
         }
 
         // Funtion that implements Dijkstra's single source shortest path
@@ -78,7 +78,7 @@ namespace Algorithms.Search
             }
 
             // print the constructed distance array
-            PrintSolution(dist);
+            PrintSolution(src, dist);
         }
 
     }
