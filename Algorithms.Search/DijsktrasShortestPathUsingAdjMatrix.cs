@@ -223,7 +223,6 @@ namespace Algorithms.Search
                     {
                         dist[v] = dist[pickedVertexIndex] + graph[pickedVertexIndex, v];
                         parent[v] = pickedVertexIndex;
-
                     }
             }
             PrintSolution(src, target, dist, parent);
