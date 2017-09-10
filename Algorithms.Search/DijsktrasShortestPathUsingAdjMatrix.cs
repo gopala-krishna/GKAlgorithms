@@ -69,15 +69,16 @@ namespace Algorithms.Search
                 // picked vertex.
                 for (int v = 0; v < verticesCount; v++)
 
-                    // Update dist[v] only if is not in sptSet, there is an
-                    // edge from u to v, and total weight of path from src to
-                    // v through u is smaller than current value of dist[v]
+                    // Update dist[v] only if 
+                    // 1) The value is not in sptSet,
+                    //  2) There exists an edge from pickedVertexIndex to v
+                    //  3) Distance is not infinite
+                    //  4) Total weight of path from src to v through pickedVertexIndex is smaller than current value of dist[v]
                     if (sptSet[v] == false && graph[pickedVertexIndex, v] != 0 && dist[pickedVertexIndex] != int.MaxValue && dist[pickedVertexIndex] + graph[pickedVertexIndex, v] < dist[v])
                     {
                         dist[v] = dist[pickedVertexIndex] + graph[pickedVertexIndex, v];
                     }
             }
-
             // print the constructed distance array
             PrintSolution(src, dist);
         }
