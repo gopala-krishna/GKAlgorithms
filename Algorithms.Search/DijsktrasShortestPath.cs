@@ -25,9 +25,8 @@ namespace Algorithms.Search
         }
 
         // A utility function to print the constructed distance array
-        void PrintSolution(int[] dist, int n)
+        void PrintSolution(int[] dist)
         {
-            Console.WriteLine("Vertex   Distance from Source");
             for (int i = 0; i < V; i++)
                 Console.WriteLine("0" + " -> " +i+" "+ "Shortest distance Is"+" "+ dist[i]);
         }
@@ -72,14 +71,14 @@ namespace Algorithms.Search
                     // Update dist[v] only if is not in sptSet, there is an
                     // edge from u to v, and total weight of path from src to
                     // v through u is smaller than current value of dist[v]
-                    if (!sptSet[v] && graph[pickedVertexIndex, v] != 0 && dist[pickedVertexIndex] != int.MaxValue && dist[pickedVertexIndex] + graph[pickedVertexIndex, v] < dist[v])
+                    if (sptSet[v] == false && graph[pickedVertexIndex, v] != 0 && dist[pickedVertexIndex] != int.MaxValue && dist[pickedVertexIndex] + graph[pickedVertexIndex, v] < dist[v])
                     {
                         dist[v] = dist[pickedVertexIndex] + graph[pickedVertexIndex, v];
                     }
             }
 
             // print the constructed distance array
-            PrintSolution(dist, V);
+            PrintSolution(dist);
         }
 
     }
