@@ -52,6 +52,7 @@ namespace Algorithms.Search
             }
 
             // Distance of source vertex from itself is always 0
+            //Assign distance value as 0 for the source vertex so that it is picked first.
             dist[src] = 0;
 
             // Find shortest path for all vertices
@@ -74,7 +75,7 @@ namespace Algorithms.Search
                     //  2) There exists an edge from pickedVertexIndex to v
                     //  3) Distance is not infinite
                     //  4) Total weight of path from src to v through pickedVertexIndex is smaller than current value of dist[v]
-                    if ( sptSet[v] == false &&
+                    if (sptSet[v] == false &&
                         graph[pickedVertexIndex, v] != 0 && 
                         dist[pickedVertexIndex] != int.MaxValue && 
                         dist[pickedVertexIndex] + graph[pickedVertexIndex, v] < dist[v])
