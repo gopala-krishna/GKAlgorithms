@@ -118,7 +118,7 @@ namespace Algorithms.Search
                                   {8, 11, 0, 0, 0, 0, 1, 0, 7},
                                   {0, 0, 2, 0, 0, 0, 6, 7, 0}
                                  };
-            DijsktrasShortestPath dsp = new DijsktrasShortestPath();
+            DijsktrasShortestPathUsingAdjMatrix dsp = new DijsktrasShortestPathUsingAdjMatrix();
             dsp.Dijkstra(graph, 3);
 
 

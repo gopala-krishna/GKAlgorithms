@@ -4,7 +4,7 @@ using System.Text;
 
 namespace Algorithms.Search
 {
-    class DijsktrasShortestPath
+    class DijsktrasShortestPathUsingAdjMatrix
     {
         // A utility function to find the vertex with minimum distance value,
         // from the set of vertices not yet included in shortest path tree
