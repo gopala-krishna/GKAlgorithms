@@ -196,6 +196,7 @@ namespace Algorithms.Search
                 // not yet processed. pickedVertexIndex is always equal to src in first
                 // iteration.
                 int pickedVertexIndex = MinDistance(dist, sptSet);
+
                 //if (pickedVertexIndex == target)
                 //{
                 //    Console.WriteLine("Shortest distance is " + dist[pickedVertexIndex].ToString() + " from :" + src + "-->" + pickedVertexIndex.ToString());
@@ -222,6 +223,7 @@ namespace Algorithms.Search
                     {
                         dist[v] = dist[pickedVertexIndex] + graph[pickedVertexIndex, v];
                         parent[v] = pickedVertexIndex;
+
                     }
             }
             PrintSolution(src, target, dist, parent);
