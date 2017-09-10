@@ -28,14 +28,22 @@ namespace Algorithms.Search
         {
             if (path[j] == -1) return;
             PrintPath(path, path[j]);
-            Console.WriteLine(j +" ");
+            Console.Write(j + "--> ");
         }
 
         // A utility function to print the constructed distance array
-        void PrintSolution(int src, int[] dist)
+        void PrintSolution(int src, int target, int[] dist, int[] path)
         {
-            for (int i = 0; i < verticesCount; i++)
-                Console.WriteLine(src + " -> " +i+" "+ "Shortest distance Is"+" "+ dist[i]);
+            for (int i = src; i <= target; i++)
+                Console.WriteLine(src + " -> " + i + " " + "Shortest distance Is" + " " + dist[i]);
+
+            Console.WriteLine();
+
+            for (int i = src; i <= target; i++)
+            {
+                PrintPath(path, i);
+                Console.WriteLine();
+            }
         }
 
         /// <summary>
@@ -96,7 +104,7 @@ namespace Algorithms.Search
                     }
             }
             // print the constructed distance array
-            PrintSolution(src, dist);
+            //PrintSolution(src, dist, null);
         }
 
         public void Dijkstra(int[,] graph, int src , int target)
@@ -168,13 +176,11 @@ namespace Algorithms.Search
             // path tree or shortest distance from src to i is finalized
             bool[] sptSet = new bool[verticesCount];
 
-            //Print path
-            int[] path = new int[verticesCount];
-
+            int[] parent = new int[verticesCount];
             // Initialize all distances as INFINITE and stpSet[] as false
             for (int i = 0; i < verticesCount; i++)
             {
-                path[0] = -1;
+                parent[src] = -1;
                 dist[i] = int.MaxValue;
                 sptSet[i] = false;
             }
@@ -215,11 +221,10 @@ namespace Algorithms.Search
                         dist[pickedVertexIndex] + graph[pickedVertexIndex, v] < dist[v])
                     {
                         dist[v] = dist[pickedVertexIndex] + graph[pickedVertexIndex, v];
-                        path[v] = pickedVertexIndex;
+                        parent[v] = pickedVertexIndex;
                     }
             }
-            PrintSolution(src, dist);
-            PrintPath(path, target);
+            PrintSolution(src, target, dist, parent);
         }
     }
 }

@@ -121,7 +121,7 @@ namespace Algorithms.Search
             DijsktrasShortestPathUsingAdjMatrix dsp = new DijsktrasShortestPathUsingAdjMatrix();
            // dsp.Dijkstra(graph, 3);
             Console.WriteLine();
-            dsp.Dijkstra(graph, 0, 5,true);
+            dsp.Dijkstra(graph, 3, 8,true);
 
 
 
