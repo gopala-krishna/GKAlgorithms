@@ -7,7 +7,9 @@
 
   <ItemGroup>
     <Compile Remove="Aho-Corasick.cs" />
+    <Compile Remove="ShortestPathUsingBFS.cs" />
     <Compile Remove="TernarySearch.cs" />
+    <Compile Remove="Test.cs" />
   </ItemGroup>
 
   <ItemGroup>

@@ -1,5 +1,6 @@
 ﻿using System;
 using Algorithms.Entities;
+using System.Collections.Generic;
 
 
 namespace Algorithms.Search
@@ -48,23 +49,77 @@ namespace Algorithms.Search
             //            vertex, string.Join(", ", shortestPath(vertex)));
 
 
-            Graph graph = new Graph(4);
+            //Graph graph = new Graph(4);
 
-            graph.AddEdge(0, 1);
-            graph.AddEdge(0, 2);
-            graph.AddEdge(1, 2);
-            graph.AddEdge(2, 0);
-            graph.AddEdge(2, 3);
-            graph.AddEdge(3, 3);
+            //graph.AddEdge(0, 1);
+            //graph.AddEdge(0, 2);
+            //graph.AddEdge(1, 2);
+            //graph.AddEdge(2, 0);
+            //graph.AddEdge(2, 3);
+            //graph.AddEdge(3, 3);
 
-            Console.WriteLine("Following is Breadth First Traversal " +
-                               "(starting from vertex 2)");
+            //Console.WriteLine("Following is Breadth First Traversal " +
+            //                   "(starting from vertex 2)");
 
-            BreadthFirstSearch bfs = new BreadthFirstSearch();
-            bfs.BreadthFirstSearch1(graph, 2);
+            //BreadthFirstSearch bfs = new BreadthFirstSearch();
+            //bfs.BreadthFirstSearch1(graph, 0);
+            //ShortestPathUsingBFS sp = new ShortestPathUsingBFS();
+            //sp.ShortestPathUsingBFS1(graph, 0, 3);
 
             //DepthFirstSearch dfs = new DepthFirstSearch();
             //dfs.DepthFirstSearch1(graph, 2);
+
+
+            //List<List<int>> g = new List<List<int>>();
+            // number of vertices
+            //int v = 4;
+            // g.resize(4);
+
+            //List<int> a = new List<int>();
+            //a.Add(3); a.Add(1);a.Add(2);
+            //g.Add(a);
+
+            //List<int> b = new List<int>();
+            //b.Add(3); 
+            //g.Add(b);
+
+            //List<int> c  = new List<int>();
+            //c.Add(0); c.Add(1);
+            //g.Add(c);
+
+            // construct a graph
+            //g[0].Add(3);
+            //g[0].Add(1);
+            //g[0].Add(2);
+            //g[1].Add(3);
+            //g[2].Add(0);
+            //g[2].Add(1);
+
+            //int src = 2, dst = 3;
+            //cout << "path from src " << src
+            //     << " to dst " << dst << " are \n";
+
+            //Console.Write(src + "" + dst);
+
+            //Test t = new Test();
+            // function for finding the paths
+            //t.findpaths(g, src, dst);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
             Console.Read();

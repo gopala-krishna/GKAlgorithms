@@ -6,6 +6,55 @@ namespace Algorithms.Search
 {
     class ShortestPathUsingBFS
     {
+        public void ShortestPathUsingBFS1(Graph graph, int startVertex, int endVertex)
+        {
+            // Mark all the vertices as not visited(By default
+            // set as false)
+            bool[] visited = new bool[graph.verticesCount];
+
+          // Create a queue for BFS
+          Queue<int> queue = new Queue<int>();
+
+
+
+            //Mark the current node as visited and enqueue it
+           visited[startVertex] = true;
+            queue.Enqueue(startVertex);
+
+            List<int> path = new List<int>();
+            while (queue.Count != 0)
+            {
+                // Dequeue a vertex from queue and print it
+                startVertex = queue.Dequeue();
+
+                Console.WriteLine(startVertex + " ");
+
+                //path.Add(startVertex);
+
+                //if (startVertex == endVertex)
+                //{
+                //    foreach (var i in path)
+                //    {
+                //        Console.Write(i + "-->");
+                //    }
+                //    return;
+                //}
+
+
+                // Get all adjacent vertices of the dequeued vertex s
+                // If a adjacent has not been visited, then mark it
+                // visited and enqueue it
+                foreach (var i in graph.adjLists[startVertex])
+                {
+                    if (visited[i] == false)
+                    {
+                        visited[i] = true;
+                        queue.Enqueue(i);
+                    }
+                }
+            }
+        }
+    
 
 
 
