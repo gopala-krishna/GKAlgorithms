@@ -57,18 +57,18 @@ namespace Algorithms.Search
             // Step 2: Relax all edges |V| - 1 times. A simple
             // shortest path from src to any other vertex can
             // have at-most |V| - 1 edges
-            for (int i = 1; i < V; ++i)
-            {
-                for (int j = 0; j < E; ++j)
-                {
-                    int u = graph.edge[j].src;
-                    int v = graph.edge[j].dest;
-                    int weight = graph.edge[j].weight;
+            //for (int i = 1; i < V; ++i)
+            //{
+                    for (int j = 0; j < E; ++j)
+                    {
+                        int u = graph.edge[j].src;
+                        int v = graph.edge[j].dest;
+                        int weight = graph.edge[j].weight;
 
-                    if (dist[u] != int.MaxValue && dist[u] + weight < dist[v])
-                        dist[v] = dist[u] + weight;
-                }
-            }
+                        if (dist[u] != int.MaxValue && dist[u] + weight < dist[v])
+                            dist[v] = dist[u] + weight;
+                    }
+            //}
 
             // Step 3: check for negative-weight cycles.  The above
             // step guarantees shortest distances if graph doesn't
