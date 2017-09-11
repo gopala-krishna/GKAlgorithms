@@ -126,7 +126,7 @@ namespace Algorithms.Search
             int V = 5;  // Number of vertices in graph
             int E = 8;  // Number of edges in graph
 
-            Graph1 graph = new Graph1(V, E);
+            EdgeGraph graph = new EdgeGraph(V, E);
 
             // add edge 0-1 (or A-B in above figure)
             graph.edge[0].src = 0;

@@ -10,23 +10,21 @@ namespace Algorithms.Strings
         ///  Time Complexity : O(n*n)
         ///  Space Complexity : O(1)
         /// </summary>
-        public void CharsIsUnique1(string str)
+        public bool CharsIsUnique1(string str)
         {
             bool unique = false;
-            for( int i = 0; i< str.Length;i++)
+            for (int i = 0; i < str.Length; i++)
             {
-                for(int j = i+1; j< str.Length; j++)
+                for (int j = i + 1; j < str.Length; j++)
                 {
-                    if(str[i] == str[j])
+                    if (str[i] == str[j])
                     {
                         unique = true;
                     }
                 }
             }
-           
-
+            return unique;
         }
-
         /// <summary>
         ///  Time Complexity : O(n)
         ///  Space Complexity : O(1)
