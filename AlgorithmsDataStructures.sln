@@ -76,6 +76,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.LRUCache", "
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.PriorityQueue", "DataStructures.PriorityQueue\DataStructures.PriorityQueue.csproj", "{8C921C45-A49A-4081-BEBD-3E184FBAA81B}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.MapReduce", "Algorithms.MapReduce\Algorithms.MapReduce.csproj", "{8288FC84-9598-4A85-BC99-DA7CB55DB157}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -198,6 +200,10 @@ Global
 		{8C921C45-A49A-4081-BEBD-3E184FBAA81B}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8C921C45-A49A-4081-BEBD-3E184FBAA81B}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8C921C45-A49A-4081-BEBD-3E184FBAA81B}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8288FC84-9598-4A85-BC99-DA7CB55DB157}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8288FC84-9598-4A85-BC99-DA7CB55DB157}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8288FC84-9598-4A85-BC99-DA7CB55DB157}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8288FC84-9598-4A85-BC99-DA7CB55DB157}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
