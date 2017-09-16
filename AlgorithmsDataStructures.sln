@@ -78,6 +78,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "DataStructures.PriorityQueu
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.MapReduce", "Algorithms.MapReduce\Algorithms.MapReduce.csproj", "{8288FC84-9598-4A85-BC99-DA7CB55DB157}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Algorithms.Hashing", "Algorithms.Hashing\Algorithms.Hashing.csproj", "{805310C6-DB6A-48EA-B00C-AD36E157A2FF}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -204,6 +206,10 @@ Global
 		{8288FC84-9598-4A85-BC99-DA7CB55DB157}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8288FC84-9598-4A85-BC99-DA7CB55DB157}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8288FC84-9598-4A85-BC99-DA7CB55DB157}.Release|Any CPU.Build.0 = Release|Any CPU
+		{805310C6-DB6A-48EA-B00C-AD36E157A2FF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{805310C6-DB6A-48EA-B00C-AD36E157A2FF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{805310C6-DB6A-48EA-B00C-AD36E157A2FF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{805310C6-DB6A-48EA-B00C-AD36E157A2FF}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
