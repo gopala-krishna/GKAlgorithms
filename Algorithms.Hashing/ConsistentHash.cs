@@ -212,8 +212,8 @@ namespace Algorithms.Hashing
         {
             SHA1Managed sha1 = new SHA1Managed();
             var hash = sha1.ComputeHash(Encoding.Default.GetBytes(key));
-            Int32 hashCodeStart = BitConverter.ToInt32(hash, 0);
-            return hashCodeStart;
+            Int32 hashCode = BitConverter.ToInt32(hash, 0);
+            return hashCode;
         }
     }
 

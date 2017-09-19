@@ -6,6 +6,11 @@ namespace Algorithms.Strings
     {
         static void Main(string[] args)
         {
+            TinyUrl turl = new TinyUrl();
+            string tinyurl = turl.GetShortUrl("https://tblogs.msdn.microsoft.com/csharpfaq/2006/10/09/how-do-i-calculate-a-md5-hash-from-a-string");
+            //turl.GetOriginalUrl(tinyurl);
+            turl.GetOriginalUrl("hnd");
+
             //StringCompression sc = new StringCompression();
             //sc.StringCompression3("aaabbccccc");
 
@@ -43,7 +48,7 @@ namespace Algorithms.Strings
 
             //StringRotation sr = new StringRotation();
             //sr.StringRotation123("Gopala", "palaGa");
-       
+
             //SearchSubString ss = new SearchSubString();
             //ss.SearchSubstring3("abcabcdgb", "abc");
 
