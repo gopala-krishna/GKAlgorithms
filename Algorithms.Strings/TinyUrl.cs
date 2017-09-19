@@ -28,8 +28,11 @@ namespace Algorithms.Strings
 
             string str = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
             StringBuilder shorturl = new StringBuilder();
-            int n = url.GetHashCode();
-            Console.WriteLine(n.ToString());
+
+            // This should be database unique id . using this for simplicity
+            int n = 12345;
+            //Console.WriteLine(n.ToString());
+
             // Convert given integer id to a base 62 number
             while (n > 0)
             {
