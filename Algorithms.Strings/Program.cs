@@ -8,8 +8,8 @@ namespace Algorithms.Strings
         {
             TinyUrl turl = new TinyUrl();
             string tinyurl = turl.GetShortUrl("https://tblogs.msdn.microsoft.com/csharpfaq/2006/10/09/how-do-i-calculate-a-md5-hash-from-a-string");
-            //turl.GetOriginalUrl(tinyurl);
-            turl.GetOriginalUrl("hnd");
+            turl.GetOriginalUrl(tinyurl);
+            //turl.GetOriginalUrl("hnd");
 
             //StringCompression sc = new StringCompression();
             //sc.StringCompression3("aaabbccccc");

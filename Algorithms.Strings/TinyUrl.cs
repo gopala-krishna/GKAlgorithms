@@ -28,15 +28,22 @@ namespace Algorithms.Strings
 
             string str = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
             StringBuilder shorturl = new StringBuilder();
-            // Convert given integer id to a base 62 number
             int n = url.GetHashCode();
+            Console.WriteLine(n.ToString());
+            // Convert given integer id to a base 62 number
             while (n > 0)
             {
                 shorturl.Append(str[(int)n % 62]);
                 n = n / 62;
             }
             // Reverse shortURL to complete base conversion
-            return shorturl.ToString();
+            string rstring = string.Empty;
+            for (int i = shorturl.Length - 1; i >= 0; i--)
+            {
+                rstring += shorturl[i];
+            }
+
+            return rstring.ToString();
         }
 
         public int GetOriginalUrl(string tinyUrl)
@@ -57,6 +64,7 @@ namespace Algorithms.Strings
                     id = id * 62 + tinyUrl[i] - 'A' + 36;
                 }
             }
+            Console.WriteLine(id.ToString());
             return id;
         }
 
