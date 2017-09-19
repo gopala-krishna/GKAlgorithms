@@ -29,7 +29,7 @@ namespace Algorithms.Strings
             string str = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ";
             StringBuilder shorturl = new StringBuilder();
 
-            // This should be database unique id . using this for simplicity
+            // This should be database unique id for url. using this for simplicity
             int n = 12345;
             //Console.WriteLine(n.ToString());
 
