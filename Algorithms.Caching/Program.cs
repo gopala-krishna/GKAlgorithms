@@ -12,6 +12,13 @@ namespace Algorithms.Caching
         {
             LazyCaching lc = new LazyCaching();
             lc.LazyCaching1();
+
+            Console.WriteLine();
+
+            EagerCaching ec = new EagerCaching();
+            ec.EagerCaching1();
+            Console.Read();
+
             Console.Read();
         }
     }
