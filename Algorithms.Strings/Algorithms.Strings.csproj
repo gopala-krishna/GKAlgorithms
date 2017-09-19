@@ -6,6 +6,10 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <Compile Remove="TinyUrl.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
     <ProjectReference Include="..\Algorithms.Sorting\Algorithms.Sorting.csproj" />
   </ItemGroup>
 
