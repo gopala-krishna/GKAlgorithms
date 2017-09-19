@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace DataStructures.LRUCache
 {
-    class LRUCacheUsingList<Key,Value>
+   public class LRUCacheUsingList<Key,Value>
     {
         int CacheSize = 4;
         List<KeyValuePair<Key, Value>> dict = new List<KeyValuePair<Key, Value>>();

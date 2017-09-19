@@ -10,6 +10,9 @@ namespace Algorithms.Caching
     {
         static void Main(string[] args)
         {
+            LazyCaching lc = new LazyCaching();
+            lc.LazyCaching1();
+            Console.Read();
         }
     }
 }
