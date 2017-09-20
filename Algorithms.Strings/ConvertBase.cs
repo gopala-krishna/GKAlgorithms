@@ -8,8 +8,6 @@ namespace Algorithms.Strings
     {
         public void ConvertBase1(int baseInt, int targetBase)
         {
-            //Console.WriteLine(Convert.ToString(Convert.ToInt32(baseInt, 10), targetBase)); 
-
             List<int> result = new List<int>();
             while (baseInt > 0)
             {
